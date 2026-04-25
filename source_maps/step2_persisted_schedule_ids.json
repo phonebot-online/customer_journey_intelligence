@@ -1,0 +1,16 @@
+{
+  "comment": "These schedule_ids are landed in Supermetrics cache but persisted output exceeds 25k tokens. Re-pull with weekly granularity for context-efficient ingest.",
+  "as_of_utc": "2026-04-25",
+  "persisted_too_big_to_ingest": {
+    "FA_12m_act14359173_daily": "264d791f5f7cc912c1a0b4e5ea80b15347a976a94da189fe4c9a26c429fa2cde",
+    "AW_6m_daily": "67b44548e1504e542dca224c25525506d73124daa21c7ac23215c95ea6c09bb4",
+    "AW_12m_daily": "214616ce97c29df29fc5241353fe9e03369d02c9920e7f805fd7dc832f80b0bc",
+    "AC_6m_daily_lean": "cbd411a65e7aa5cce2ad927cf3ec415a282651b5b5ab203d36fbaae406bde3d9",
+    "AC_12m_daily_lean": "d21c89e86b3847294b5e5e46f73ea5551e2291ed930170d125d3847f72253db5",
+    "GAWA_AU_6m_daily": "0361b731c6802a23dfa9628bba26d84bafd2eef3fd7e348b23398ebc50c4d1dc",
+    "GAWA_AU_12m_daily": "75c07045f77b8132f91f07d2fb86de4107803dc6f9a8ea7f6eb3ebf9a87879bd",
+    "GW_12m_daily": "41189f7593a7c1f68c9ebb944e2731f26c64a33c7c11b86e0e9d591881524795",
+    "FA_6m_resubmit_daily": "58957fb7a4b13b94dffddf53c71e481d77e48c90b4b742617e14af0cbd6d1281"
+  },
+  "resolution_strategy": "Re-pull 6m+12m at WEEKLY granularity (use Yearweekiso dimension) — ~52 weeks vs ~365 days. Daily resolution lives on disk for 1m + 3m windows only."
+}

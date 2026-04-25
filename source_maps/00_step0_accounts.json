@@ -1,0 +1,76 @@
+{
+  "discovery_date_utc": "2026-04-25",
+  "supermetrics_user": "phonebot3073@gmail.com",
+  "license_status": "DEMO valid through 2026-05-09",
+  "sources": {
+    "FA": {
+      "name": "Facebook Ads",
+      "auth": "AUTHENTICATED",
+      "accounts": [
+        {"id": "act_14359173", "name": "Phonebot", "use": "PRIMARY", "ds_user": "Fahad Zafar (10161601735525350)"},
+        {"id": "act_1141970792623135", "name": "Fahad Zafar", "use": "EXCLUDE_PERSONAL", "note": "personal account, do not blend"}
+      ]
+    },
+    "AW": {
+      "name": "Google Ads",
+      "auth": "AUTHENTICATED",
+      "accounts": [
+        {"id": "3900249467", "name": "Phonebot", "use": "PRIMARY", "ds_user": "phonebot3073@gmail.com"}
+      ]
+    },
+    "GAWA": {
+      "name": "Google Analytics 4",
+      "auth": "AUTHENTICATED",
+      "accounts": [
+        {"id": "284223207", "name": "Phonebot - GA4", "group": "phonebot", "use": "PRIMARY_AU"},
+        {"id": "434168263", "name": "Phonebot AE", "group": "Phonebot AE (main)", "use": "PRIMARY_AE_CANDIDATE_1"},
+        {"id": "433775991", "name": "Phonebot AE", "group": "phonebot", "use": "PRIMARY_AE_CANDIDATE_2", "note": "potential duplicate of 434168263 — verify"},
+        {"id": "488590631", "name": "Phonebot - ProfitMetrics Revenue", "use": "DERIVED_PM_REVENUE"},
+        {"id": "488618020", "name": "Phonebot - ProfitMetrics Gross Profit", "use": "DERIVED_PM_GROSS_PROFIT"}
+      ]
+    },
+    "GW": {
+      "name": "Google Search Console",
+      "auth": "AUTHENTICATED",
+      "accounts": [
+        {"id": "https://www.phonebot.com.au/", "name": "phonebot.com.au (URL property)", "country": "AU"},
+        {"id": "sc-domain:phonebot.ae", "name": "phonebot.ae (domain property)", "country": "AE"},
+        {"id": "sc-domain:phonebot.co.uk", "name": "phonebot.co.uk (domain property)", "country": "UK", "note": "NOT in user's stated source list"}
+      ]
+    },
+    "AC": {
+      "name": "Microsoft Advertising (Bing)",
+      "auth": "AUTHENTICATED",
+      "accounts": [
+        {"id": "180388397", "name": "phonebot", "ds_user": "phonebot3073@outlook.com.au", "note": "NOT in user's stated source list"}
+      ]
+    },
+    "SIB": {
+      "name": "Brevo",
+      "auth": "AUTHENTICATED",
+      "accounts": [{"id": "(single_login)", "name": "Brevo single login", "note": "no account list"}],
+      "history_starts": "2025-10-27"
+    },
+    "GMB": {
+      "name": "Google My Business",
+      "auth": "AUTHENTICATED",
+      "accounts": "to_discover",
+      "note": "NOT in user's stated source list"
+    },
+    "IGI": {
+      "name": "Instagram Insights",
+      "auth": "AUTHENTICATED",
+      "accounts": [],
+      "note": "no accounts wired — organic IG insights unavailable"
+    },
+    "FB": {
+      "name": "Facebook Insights",
+      "auth": "AUTHENTICATED",
+      "accounts": [],
+      "note": "no accounts wired — organic page insights unavailable"
+    }
+  },
+  "not_authenticated_checked": ["SHP (Shopify)", "KLAV (Klaviyo)", "LIA (LinkedIn Ads)", "YT (YouTube)", "BQ (BigQuery)", "SCM (Snapchat)"],
+  "tt_not_found": "TikTok ds_id 'TT' did not resolve via Supermetrics — not available in this Supermetrics product",
+  "cms_status": "NOT_DELIVERED — uploads folder empty. Spec exists at /Users/mic/Documents/Claude/Projects/fb shit/cms_api_spec_for_phonebot.md"
+}

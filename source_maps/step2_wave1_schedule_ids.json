@@ -1,0 +1,18 @@
+{
+  "wave": 1,
+  "window": "last_30_days",
+  "as_of_utc": "2026-04-25",
+  "schedule_ids": {
+    "FA_spine_1m": "e6fd1094bbccf9cbd4703e37c0c7048cf758d7d11b56f59f902ac5e915a067ac",
+    "FA_placement_1m": "db343bcd743fb72fdc007e027459d9f298b3119eeb894e0d35acea177fcc60c4",
+    "AC_campaign_1m": "445c00371b81e506b0b9b02bb2feac26e3e2d28f2ff12c62f42306b3ecf51e02",
+    "GAWA_channel_1m": "fa552436cb451b5a58b5fdd7a07b7ef28bacaac0c11379464ec4cd73f6d2bd02",
+    "GAWA_srcMedium_1m": "b5a300ec1612433a3cae2760dd77f4c1dc761673bb792b63cc71f7407c939d7d",
+    "GW_branded_1m": "0035ce7ef7832c09b854e1d562b765ca7b8544fbc3a34da7a6601e1695c56861",
+    "SIB_campaigns_1m": "08ab17208120cdbe4738a705a7feaadb2267cafde1e8798e9de9f86bdb5fc2fc",
+    "AW_campaign_1m": "a059b9d5b23f9ad3e910ee4da75e86b855552224f75a0f4a2b1ba1fb22228262",
+    "GMB_locations_1m": "9f3206178f975e73d9fda306e8235451bb931a03d8623e76cca2e21f4dc3e7fc"
+  },
+  "saved_to_disk": ["AC_campaign_1m"],
+  "still_to_save": ["AW_campaign_1m","GMB_locations_1m","GAWA_channel_1m","GW_branded_1m","SIB_campaigns_1m","FA_spine_1m (persisted, too big)","FA_placement_1m (persisted, too big)","GAWA_srcMedium_1m (persisted, too big)"]
+}

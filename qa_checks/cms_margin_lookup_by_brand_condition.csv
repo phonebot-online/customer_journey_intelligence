@@ -1,0 +1,39 @@
+Brand,Condition,n_orders,avg_margin_pct,median_margin_pct,avg_AOV
+AirPods,Grade A,45,42.55,39.86,399.73
+AirPods,Like New,21,56.18,55.63,518.33
+Apple Watch,Grade A,448,32.23,30.56,348.55
+Apple Watch,Grade B,76,30.2,30.74,279.11
+Apple Watch,Like New,243,38.89,37.5,435.4
+Google Pixel,Brand New,32,31.9,26.6,1083.5
+Google Pixel,Grade A,376,22.77,20.53,550.09
+Google Pixel,Grade B,60,23.98,21.88,508.6
+Google Pixel,Like New,448,25.05,23.31,568.35
+Google Pixel,Open Box,56,27.37,21.16,755.88
+MacBook,Grade A,130,27.28,20.11,756.58
+MacBook,Like New,72,43.63,40.81,1265.33
+Motorola,Grade A,36,34.6,30.75,491.42
+Motorola,Like New,60,31.76,29.06,659.4
+OPPO,Grade A,50,37.65,40.05,397.84
+OPPO,Grade B,23,39.74,29.69,335.78
+OPPO,Like New,59,36.23,31.86,521.05
+OnePlus,Like New,36,32.42,30.05,738.25
+Other,Brand New,26,34.1,26.04,529.0
+Other,Grade A,62,44.8,51.51,630.79
+Other,Grade B,29,42.77,42.26,455.1
+Other,Like New,64,38.43,37.03,807.98
+Samsung,Brand New,69,32.17,30.11,696.7
+Samsung,Grade A,1071,28.34,25.34,533.71
+Samsung,Grade B,135,33.98,30.19,503.01
+Samsung,Like New,1395,30.02,27.65,600.96
+Samsung,Open Box,152,28.83,26.86,780.57
+Xiaomi,Open Box,20,44.2,49.46,695.0
+iPad,Brand New,23,41.91,45.54,763.57
+iPad,Grade A,759,31.19,29.49,519.43
+iPad,Grade B,190,26.41,24.36,480.08
+iPad,Like New,435,35.27,31.37,646.8
+iPad,Open Box,41,30.19,25.19,1034.29
+iPhone,Brand New,48,23.19,21.78,1745.52
+iPhone,Grade A,1615,21.73,20.85,684.57
+iPhone,Grade B,216,22.46,19.45,542.88
+iPhone,Like New,2210,25.65,24.72,718.29
+iPhone,Open Box,65,20.62,23.05,1423.09

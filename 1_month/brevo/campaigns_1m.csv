@@ -1,0 +1,4 @@
+Date,Campaign name,Subject,Sender name,Recipients,Delivered,Opens_unique,Opens_total,Clicks_unique,Clicks_total,Click_to_open_rate,Soft_bounces,Hard_bounces,Unsubscribes
+2026-04-04,Easter Sale,You're going to like these prices,Phonebot,25687,25450,6746,4363,438,685,0.1394,199,60,509
+2026-04-15,TrustPilot Campaign,How's Your Recent Order from Phonebot?,Phonebot,373,362,133,111,14,16,0.1972,2,9,4
+2026-04-22,TrustPilot Campaign (8th April - 15th april),How's Your Recent Order from Phonebot?,Phonebot,165,160,66,49,8,20,0.2286,2,3,1

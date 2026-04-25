@@ -1,0 +1,364 @@
+Order ID,Postcode,Products,Category,Total Quantity,Total,Cost Price,Gross Profit,__total,__cost,__gp,Date Added,__date,Payment Method,Platform
+220879,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,24/04/2026 5:29:15 pm,2026-04-24 17:29:15,cash,Store
+220873,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,24/04/2026 4:44:08 pm,2026-04-24 16:44:08,card,Store
+220871,3073.0,"pending paid for screen replacement samsung a56 5g - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$160,A$2,A$158,160.0,2.0,158.0,24/04/2026 4:37:18 pm,2026-04-24 16:37:18,card,Store
+220870,3073.0,"glass protector - (ID : 0, Qty : 2, Type : )",Accessory,2,A$40,A$0,A$40,40.0,0.0,40.0,24/04/2026 4:16:16 pm,2026-04-24 16:16:16,cash,Store
+220869,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,24/04/2026 3:50:55 pm,2026-04-24 15:50:55,card,Store
+220868,3073.0,"Google Pixel 8 5G (128GB) [Like New] - (ID : 5940, Qty : 1, Type : Phone)",Device,1,A$499,A$292,A$207,499.0,292.0,207.0,24/04/2026 3:42:17 pm,2026-04-24 15:42:17,cash,Store
+220866,3073.0,"Google Pixel 8 5G (128GB) [Grade A] - (ID : 5959, Qty : 1, Type : Phone)
+case - (ID : 0, Qty : 1, Type : )",Device,2,A$500,A$320,A$180,500.0,320.0,180.0,24/04/2026 2:52:21 pm,2026-04-24 14:52:21,cash,Store
+220865,3073.0,"Cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,24/04/2026 2:36:05 pm,2026-04-24 14:36:05,cash,Store
+220864,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$30,A$0,A$30,30.0,0.0,30.0,24/04/2026 2:35:30 pm,2026-04-24 14:35:30,cash,Store
+220862,3073.0,"Google Pixel 9a 5G (256GB) [Like new] - (ID : 8435, Qty : 1, Type : Phone)
+Google Pixel 8a 5G (128GB) [Grade B] - (ID : 7987, Qty : 1, Type : Phone)
+Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,3,"A$1,400",A$923,A$477,1400.0,923.0,477.0,24/04/2026 2:07:48 pm,2026-04-24 14:07:48,cash,Store
+220861,3073.0,"screen replacement for 14 plus - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$170,A$0,A$170,170.0,0.0,170.0,24/04/2026 2:02:46 pm,2026-04-24 14:02:46,cash,Store
+220860,3044.0,"Samsung Galaxy S23 Ultra 5G (256GB) [Like New] - (ID : 5150, Qty : 1, Type : Phone)",Device,1,A$759,A$561,A$198,759.0,561.0,198.0,24/04/2026 1:35:58 pm,2026-04-24 13:35:58,card,Store
+220859,3073.0,"11 pro battery replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$100,A$1,A$99,100.0,1.0,99.0,24/04/2026 1:13:43 pm,2026-04-24 13:13:43,card,Store
+220855,3073.0,"svcreen replacement for iphone 11 - (ID : 0, Qty : 1, Type : )",Device,1,A$110,A$1,A$109,110.0,1.0,109.0,24/04/2026 12:16:02 pm,2026-04-24 12:16:02,card,Store
+220812,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,23/04/2026 5:00:30 pm,2026-04-23 17:00:30,cash,Store
+220804,3082.0,"Apple iPhone 12 5G (128GB) [Like New] - (ID : 2154, Qty : 1, Type : Phone)",Device,1,A$379,A$273,A$106,379.0,273.0,106.0,23/04/2026 2:36:50 pm,2026-04-23 14:36:50,card,Store
+220802,3073.0,"Apple iPhone 17 Pro Max 5G (256GB) [Open Box] - (ID : 8417, Qty : 1, Type : Phone)",Device,1,"A$1,949","A$1,519",A$430,1949.0,1519.0,430.0,23/04/2026 2:07:09 pm,2026-04-23 14:07:09,card,Store
+220800,3079.0,"Apple iPhone 14 5G (128GB) [Like New] - (ID : 4867, Qty : 1, Type : Phone)",Device,1,A$540,A$460,A$80,540.0,460.0,80.0,23/04/2026 2:01:52 pm,2026-04-23 14:01:52,card,Store
+220797,3073.0,"watch charger - (ID : 0, Qty : 1, Type : )",Accessory,1,A$19,A$0,A$19,19.0,0.0,19.0,23/04/2026 1:30:39 pm,2026-04-23 13:30:39,card,Store
+220795,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,23/04/2026 1:17:32 pm,2026-04-23 13:17:32,cash,Store
+220791,3073.0,"power bank - (ID : 0, Qty : 1, Type : )",Other,1,A$20,A$0,A$20,20.0,0.0,20.0,23/04/2026 12:40:22 pm,2026-04-23 12:40:22,cash,Store
+220790,3073.0,"graphene os - (ID : 0, Qty : 1, Type : )
+Google Pixel 8 5G (128GB) [Grade A] - (ID : 5959, Qty : 1, Type : Phone)",Device,2,A$619,A$320,A$299,619.0,320.0,299.0,23/04/2026 12:38:41 pm,2026-04-23 12:38:41,cash,Store
+220789,3072.0,"Samsung Galaxy S25 Edge 5G (256GB) [Grade A] - (ID : 8617, Qty : 1, Type : Phone)",Device,1,A$829,A$655,A$174,829.0,655.0,174.0,23/04/2026 12:25:54 pm,2026-04-23 12:25:54,card,Store
+220786,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$40,A$0,A$40,40.0,0.0,40.0,23/04/2026 11:56:22 am,2026-04-23 11:56:22,card,Store
+220785,3073.0,"Apple iPad Mini 6 (64GB) WiFi Cellular [Grade A] - (ID : 5957, Qty : 1, Type : Tablet)",Device,1,A$480,A$300,A$180,480.0,300.0,180.0,23/04/2026 11:07:34 am,2026-04-23 11:07:34,cash,Store
+220782,3073.0,"Speaker + Mic Clean Iphone 16 Pro Max - (ID : 0, Qty : 1, Type : )",Device,1,A$35,A$0,A$35,35.0,0.0,35.0,23/04/2026 10:21:55 am,2026-04-23 10:21:55,card,Store
+220748,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$220,A$138,A$82,220.0,138.0,82.0,22/04/2026 3:54:39 pm,2026-04-22 15:54:39,cash,Store
+220747,3073.0,"screen replacement 12 mini - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$130,A$1,A$129,130.0,1.0,129.0,22/04/2026 3:34:54 pm,2026-04-22 15:34:54,card,Store
+220742,3073.0,"Samsung Galaxy Z Flip6 5G (256GB) [Open Box] - (ID : 7033, Qty : 1, Type : Phone)",Device,1,A$730,A$540,A$190,730.0,540.0,190.0,22/04/2026 2:41:12 pm,2026-04-22 14:41:12,cash,Store
+220739,3073.0,"cable and adapter - (ID : 0, Qty : 1, Type : )",Accessory,1,A$40,A$0,A$40,40.0,0.0,40.0,22/04/2026 2:08:31 pm,2026-04-22 14:08:31,card,Store
+220725,3073.0,"Apple Watch Series 8 45mm GPS Aluminium Case [Grade A] - (ID : 5184, Qty : 1, Type : Smartwatch)",Device,1,A$300,A$199,A$101,300.0,199.0,101.0,22/04/2026 10:56:15 am,2026-04-22 10:56:15,card,Store
+220722,3073.0,"Apple iPhone 12 Pro Max 5G (512GB) [Like New] - (ID : 3141, Qty : 1, Type : Phone)",Device,1,A$550,A$354,A$196,550.0,354.0,196.0,22/04/2026 10:00:15 am,2026-04-22 10:00:15,cash,Store
+220721,3073.0,"advance samsung a56 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$100,A$1,A$99,100.0,1.0,99.0,22/04/2026 9:52:28 am,2026-04-22 09:52:28,card,Store
+220693,3073.0,"graphen os for 10a - (ID : 0, Qty : 1, Type : )
+Google Pixel 8a 5G | DeGoogled Graphene OS Secure (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,2,A$849,A$300,A$549,849.0,300.0,549.0,21/04/2026 5:22:25 pm,2026-04-21 17:22:25,cash,Store
+220692,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,21/04/2026 5:01:14 pm,2026-04-21 17:01:14,cash,Store
+220690,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,21/04/2026 4:45:57 pm,2026-04-21 16:45:57,card,Store
+220689,3073.0,"12 pro max screen repalcement - (ID : 0, Qty : 1, Type : )",Other,1,A$150,A$2,A$149,150.0,2.0,149.0,21/04/2026 4:19:50 pm,2026-04-21 16:19:50,card,Store
+220688,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,21/04/2026 4:05:34 pm,2026-04-21 16:05:34,card,Store
+220687,3073.0,"tg+cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$39,A$0,A$39,39.0,0.0,39.0,21/04/2026 4:04:42 pm,2026-04-21 16:04:42,card,Store
+220680,3073.0,"Apple iPhone 15 Pro Max 5G (512GB) [Grade a] - (ID : 6029, Qty : 1, Type : Phone)",Device,1,"A$1,149",A$910,A$239,1149.0,910.0,239.0,21/04/2026 2:32:18 pm,2026-04-21 14:32:18,cash,Store
+220679,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$230,A$150,A$80,230.0,150.0,80.0,21/04/2026 2:21:47 pm,2026-04-21 14:21:47,cash,Store
+220678,3073.0,"battery replacement for macbook - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$180,A$2,A$178,180.0,2.0,178.0,21/04/2026 1:59:45 pm,2026-04-21 13:59:45,card,Store
+220675,3073.0,"Google Pixel 8a 5G (128GB) [Open Box] - (ID : 6558, Qty : 1, Type : Phone)",Device,1,A$499,A$250,A$249,499.0,250.0,249.0,21/04/2026 1:43:16 pm,2026-04-21 13:43:16,cash,Store
+220674,3073.0,"Apple iPhone 14 5G (512GB) [Grade A] - (ID : 5840, Qty : 1, Type : Phone)",Device,1,A$629,A$413,A$216,629.0,413.0,216.0,21/04/2026 12:45:31 pm,2026-04-21 12:45:31,card,Store
+220668,3073.0,"software for phone - (ID : 0, Qty : 1, Type : )",Other,1,A$50,A$0,A$50,50.0,0.0,50.0,21/04/2026 12:01:51 pm,2026-04-21 12:01:51,cash,Store
+220667,3073.0,"iphone 6s plus screen - (ID : 0, Qty : 1, Type : )",Device,1,A$70,A$0,A$70,70.0,0.0,70.0,21/04/2026 12:01:25 pm,2026-04-21 12:01:25,cash,Store
+220666,3070.0,"Apple iPhone 13 Mini (256GB) [Grade A] - (ID : 4078, Qty : 1, Type : Phone)",Device,1,A$449,A$304,A$145,449.0,304.0,145.0,21/04/2026 11:58:31 am,2026-04-21 11:58:31,cash,Store
+220665,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$239,A$152,A$87,239.0,152.0,87.0,21/04/2026 11:39:49 am,2026-04-21 11:39:49,card,Store
+220658,3073.0,"case for iphone 17 - (ID : 0, Qty : 1, Type : )
+Apple iPhone 14 5G (128GB) [Like New] - (ID : 4867, Qty : 2, Type : Phone)",Device,3,"A$1,020",A$799,A$221,1020.0,799.0,221.0,21/04/2026 10:16:01 am,2026-04-21 10:16:01,cash,Store
+220629,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,20/04/2026 5:06:29 pm,2026-04-20 17:06:29,cash,Store
+220627,3073.0,"pending for 14 pro back replacement - (ID : 0, Qty : 1, Type : )",Other,1,A$200,A$2,A$198,200.0,2.0,198.0,20/04/2026 5:03:47 pm,2026-04-20 17:03:47,card,Store
+220625,3076.0,"Samsung Galaxy S23 FE 5G (128GB) [Grade A] - (ID : 6391, Qty : 1, Type : Phone)",Device,1,A$429,A$305,A$124,429.0,305.0,124.0,20/04/2026 4:19:07 pm,2026-04-20 16:19:07,cash,Store
+220624,3073.0,"cable - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,20/04/2026 3:35:56 pm,2026-04-20 15:35:56,cash,Store
+220623,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,20/04/2026 3:34:00 pm,2026-04-20 15:34:00,cash,Store
+220620,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$30,A$0,A$30,30.0,0.0,30.0,20/04/2026 3:08:14 pm,2026-04-20 15:08:14,card,Store
+220617,3073.0,"OS Update - (ID : 0, Qty : 1, Type : )",Other,1,A$50,A$1,A$50,50.0,1.0,50.0,20/04/2026 2:18:20 pm,2026-04-20 14:18:20,card,Store
+220616,3073.0,"Google Pixel 6 Screen deposit - (ID : 0, Qty : 1, Type : )",Device,1,A$100,A$1,A$99,100.0,1.0,99.0,20/04/2026 2:14:26 pm,2026-04-20 14:14:26,card,Store
+220613,3073.0,"Apple iPhone 16e 5G (128GB) [Grade A]-nfc faulty - (ID : 8330, Qty : 1, Type : Phone)",Device,1,A$620,A$327,A$293,620.0,327.0,293.0,20/04/2026 12:59:12 pm,2026-04-20 12:59:12,pb_splitpay,Store
+220611,3073.0,"Apple iPhone 12 Pro Max 5G (512GB) [Like New] - (ID : 3141, Qty : 1, Type : Phone)",Device,1,A$579,A$389,A$190,579.0,389.0,190.0,20/04/2026 12:44:57 pm,2026-04-20 12:44:57,cash,Store
+220607,3073.0,"screen replacement for se 3rd gen - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$90,A$1,A$89,90.0,1.0,89.0,20/04/2026 11:23:04 am,2026-04-20 11:23:04,card,Store
+220601,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$225,A$157,A$68,225.0,157.0,68.0,20/04/2026 10:35:22 am,2026-04-20 10:35:22,cash,Store
+220569,3151.0,"Samsung Galaxy A54 5G Dual Sim (128GB) [Grade A] - (ID : 5765, Qty : 1, Type : Phone)",Device,1,A$279,A$205,A$74,279.0,205.0,74.0,19/04/2026 3:59:34 pm,2026-04-19 15:59:34,card,Store
+220564,3075.0,"Charger - (ID : 0, Qty : 1, Type : )
+Samsung Galaxy S25 Ultra 5G (1TB) [Like New] - (ID : 8258, Qty : 1, Type : Phone)",Device,2,"A$1,549","A$1,160",A$389,1549.0,1160.0,389.0,19/04/2026 2:06:02 pm,2026-04-19 14:06:02,card,Store
+220562,3073.0,"Google Pixel 9 Pro XL 5G (256GB) [Grade A] - (ID : 7076, Qty : 1, Type : Phone)
+surcharge amax - (ID : 0, Qty : 1, Type : )",Device,2,A$891,A$460,A$431,891.0,460.0,431.0,19/04/2026 1:32:38 pm,2026-04-19 13:32:38,card,Store
+220561,3073.0,"Apple Watch Series 10 42mm GPS Cellular Aluminium Case [Grade A] - (ID : 8504, Qty : 1, Type : Smartwatch)",Device,1,A$450,A$351,A$99,450.0,351.0,99.0,19/04/2026 1:06:10 pm,2026-04-19 13:06:10,cash,Store
+220560,3073.0,"Oppo Find X3 Pro 5G (256GB) [Brand New] - (ID : 8539, Qty : 1, Type : Phone)",Other,1,A$419,A$319,A$100,419.0,319.0,100.0,19/04/2026 12:54:35 pm,2026-04-19 12:54:35,card,Store
+220556,3073.0,"Google Pixel 9a 5G (128GB) [Brand New] - (ID : 7877, Qty : 1, Type : Phone)",Device,1,A$650,A$477,A$174,650.0,477.0,174.0,19/04/2026 11:56:00 am,2026-04-19 11:56:00,card,Store
+220555,3073.0,"12 mini case - (ID : 0, Qty : 1, Type : )",Accessory,1,A$19,A$0,A$19,19.0,0.0,19.0,19/04/2026 11:29:32 am,2026-04-19 11:29:32,card,Store
+220554,3073.0,"Apple iPhone 14 Pro Max 5G (256GB) [Like New] - (ID : 4794, Qty : 1, Type : Phone)",Device,1,A$850,A$971,A$-121,850.0,971.0,-121.0,19/04/2026 11:25:58 am,2026-04-19 11:25:58,cash,Store
+220550,3073.0,"Samsung Galaxy Z Fold6 5G (512GB) [Like New] - (ID : 8078, Qty : 1, Type : Phone)",Device,1,"A$1,199","A$1,093",A$106,1199.0,1093.0,106.0,19/04/2026 11:14:00 am,2026-04-19 11:14:00,card,Store
+220542,,"Apple iPhone 14 Pro 5G (256GB) [Grade A] - (ID : 4673, Qty : 1, Type : Phone)",Device,1,A$700,A$528,A$172,700.0,528.0,172.0,18/04/2026 4:06:08 pm,2026-04-18 16:06:08,cash,Store
+220538,3073.0,"case - (ID : 0, Qty : 1, Type : )",Accessory,1,A$49,A$0,A$49,49.0,0.0,49.0,18/04/2026 3:43:10 pm,2026-04-18 15:43:10,card,Store
+220536,3073.0,"Apple iPhone 13 (512GB) [Grade B] - (ID : 5190, Qty : 1, Type : Phone)
+Apple iPhone 13 (512GB) [Like New] - (ID : 3761, Qty : 1, Type : Phone)",Device,2,"A$1,098",A$781,A$317,1098.0,781.0,317.0,18/04/2026 3:00:04 pm,2026-04-18 15:00:04,card,Store
+220535,3073.0,"Samsung Galaxy S24 FE 5G (128GB) [Open Box] - (ID : 7183, Qty : 1, Type : Phone)",Device,1,A$599,A$428,A$171,599.0,428.0,171.0,18/04/2026 2:28:04 pm,2026-04-18 14:28:04,card,Store
+220533,3073.0,"Apple iPhone 11 Pro Max (256GB) [Grade A] - (ID : 2060, Qty : 1, Type : Phone)",Device,1,A$399,A$262,A$137,399.0,262.0,137.0,18/04/2026 2:06:43 pm,2026-04-18 14:06:43,card,Store
+220531,3073.0,"paid pending for screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$250,A$3,A$248,250.0,3.0,248.0,18/04/2026 2:03:35 pm,2026-04-18 14:03:35,card,Store
+220529,3073.0,"case for iphone 16 pro - (ID : 0, Qty : 1, Type : )
+Apple iPhone 16 Pro 5G (512GB) [Grade A] - (ID : 8381, Qty : 1, Type : Phone)",Device,2,"A$1,419","A$1,060",A$359,1419.0,1060.0,359.0,18/04/2026 1:25:57 pm,2026-04-18 13:25:57,card,Store
+220528,3073.0,"battery replacement for 12 pro - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$80,A$1,A$79,80.0,1.0,79.0,18/04/2026 1:22:26 pm,2026-04-18 13:22:26,card,Store
+220527,3073.0,"iphone 14 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$200,A$2,A$198,200.0,2.0,198.0,18/04/2026 1:21:38 pm,2026-04-18 13:21:38,card,Store
+220522,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Like New] - (ID : 4548, Qty : 1, Type : Phone)",Device,1,A$259,A$160,A$99,259.0,160.0,99.0,18/04/2026 12:48:01 pm,2026-04-18 12:48:01,card,Store
+220520,3073.0,"iphone 13 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$130,A$0,A$130,130.0,0.0,130.0,18/04/2026 12:29:42 pm,2026-04-18 12:29:42,cash,Store
+220517,3764.0,"Apple iPhone 13 (128GB) [Grade A] - (ID : 3612, Qty : 1, Type : Phone)",Device,1,A$449,A$364,A$85,449.0,364.0,85.0,18/04/2026 11:21:46 am,2026-04-18 11:21:46,cash,Store
+220448,3073.0,"Google Pixel 9 Pro XL 5G (256GB) [Like New] - (ID : 7070, Qty : 1, Type : Phone)",Device,1,A$919,A$600,A$319,919.0,600.0,319.0,17/04/2026 6:09:55 pm,2026-04-17 18:09:55,cash,Store
+220446,3073.0,"case - (ID : 0, Qty : 1, Type : )",Accessory,1,A$25,A$0,A$25,25.0,0.0,25.0,17/04/2026 5:24:00 pm,2026-04-17 17:24:00,card,Store
+220444,3073.0,"cases +tg+cover for 10 phone - (ID : 0, Qty : 1, Type : )",Accessory,1,A$560,A$0,A$560,560.0,0.0,560.0,17/04/2026 5:14:39 pm,2026-04-17 17:14:39,cash,Store
+220443,3073.0,"mate 20 screen only parts given to cx - (ID : 0, Qty : 1, Type : )",Other,1,A$50,A$0,A$50,50.0,0.0,50.0,17/04/2026 5:14:19 pm,2026-04-17 17:14:19,cash,Store
+220439,3073.0,"Apple iPad Mini 6 (64GB) WiFi Cellular [Grade A] - (ID : 5957, Qty : 1, Type : Tablet)",Device,1,A$479,A$315,A$164,479.0,315.0,164.0,17/04/2026 4:56:10 pm,2026-04-17 16:56:10,card,Store
+220437,3073.0,"Apple iPhone 12 Mini 5G (64GB) [Grade a] - (ID : 2330, Qty : 1, Type : Phone)",Device,1,A$279,A$180,A$99,279.0,180.0,99.0,17/04/2026 4:46:01 pm,2026-04-17 16:46:01,afterpay,Store
+220435,3073.0,"Samsung Galaxy Tab S9 Ultra Wifi (1TB) [Grade A] - (ID : 8047, Qty : 1, Type : Tablet)",Device,1,A$899,"A$1,122",A$-223,899.0,1122.0,-223.0,17/04/2026 4:24:44 pm,2026-04-17 16:24:44,card,Store
+220431,3052.0,"Apple iPhone 15 Pro 5G (1TB) [Grade A] - (ID : 6018, Qty : 1, Type : Phone)",Device,1,"A$1,199",A$893,A$306,1199.0,893.0,306.0,17/04/2026 4:18:35 pm,2026-04-17 16:18:35,card,Store
+220424,3073.0,"Samsung Galaxy S22 Plus Smart LED View Cover - (ID : 5666, Qty : 1, Type : Accessories)",Device,1,A$29,A$0,A$29,29.0,0.0,29.0,17/04/2026 3:22:25 pm,2026-04-17 15:22:25,cash,Store
+220423,3073.0,"graphene os - (ID : 0, Qty : 1, Type : )
+Google Pixel 8 5G (128GB) [Brand New] - (ID : 8614, Qty : 1, Type : Phone)",Device,2,A$749,A$348,A$401,749.0,348.0,401.0,17/04/2026 3:17:59 pm,2026-04-17 15:17:59,card,Store
+220422,3064.0,"Apple iPhone 13 Pro Max (256GB) [Grade A] - (ID : 3665, Qty : 1, Type : Phone)",Device,1,A$649,A$448,A$201,649.0,448.0,201.0,17/04/2026 3:00:59 pm,2026-04-17 15:00:59,card,Store
+220421,3073.0,"Samsung Galaxy A36 5G (128GB) [Open Box] - (ID : 8583, Qty : 1, Type : Phone)",Device,1,A$380,A$332,A$48,380.0,332.0,48.0,17/04/2026 2:57:42 pm,2026-04-17 14:57:42,cash,Store
+220402,3073.0,"Google Pixel 7a 5G (128GB) [Like New] - (ID : 5376, Qty : 1, Type : Phone)
+Google Pixel 7a 5G (128GB) [Like New] - (ID : 5376, Qty : 3, Type : Phone)
+Google Pixel 7a 5G (128GB) [Like New] - (ID : 5376, Qty : 1, Type : Phone)",Device,5,"A$1,695","A$1,145",A$550,1695.0,1145.0,550.0,17/04/2026 12:35:54 pm,2026-04-17 12:35:54,cash,Store
+220401,3073.0,"Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)
+Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,2,A$878,A$564,A$314,878.0,564.0,314.0,17/04/2026 12:32:38 pm,2026-04-17 12:32:38,cash,Store
+220400,3073.0,"Google Pixel 7 5G (256GB) [Grade A] - (ID : 5188, Qty : 1, Type : Phone)
+Google Pixel 7 5G (256GB) [Like New] - (ID : 5009, Qty : 1, Type : Phone)
+Google Pixel 7 5G (256GB) [Like New] - (ID : 5009, Qty : 1, Type : Phone)",Device,3,"A$1,167",A$810,A$357,1167.0,810.0,357.0,17/04/2026 12:30:04 pm,2026-04-17 12:30:04,cash,Store
+220394,3073.0,"Samsung Galaxy S24 Ultra 5G (1TB) [Like New] - (ID : 6913, Qty : 1, Type : Phone)",Device,1,"A$1,200",A$833,A$367,1200.0,833.0,367.0,17/04/2026 11:19:51 am,2026-04-17 11:19:51,cash,Store
+220392,3147.0,"Apple iPhone 14 Pro Max 5G (128GB) [Like New] - (ID : 4677, Qty : 1, Type : Phone)
+Apple iPhone 14 Pro Max 5G (128GB) [Like New] - (ID : 4677, Qty : 1, Type : Phone)
+Apple iPhone 11 Pro Max (64GB) [Grade A] - (ID : 1974, Qty : 1, Type : Phone)",Device,3,"A$1,900","A$1,717",A$183,1900.0,1717.0,183.0,17/04/2026 10:59:55 am,2026-04-17 10:59:55,cash,Store
+219771,3073.0,"Google Pixel 9a 5G (128GB) [Like New] - (ID : 7957, Qty : 2, Type : Phone)
+Google Pixel 9a 5G (128GB) [Like New] - (ID : 7957, Qty : 8, Type : Phone)",Device,10,"A$6,100","A$4,398","A$1,702",6100.0,4398.0,1702.0,16/04/2026 6:44:54 pm,2026-04-16 18:44:54,cash,Store
+219770,3073.0,"accessories for today - (ID : 0, Qty : 1, Type : )",Other,1,A$55,A$1,A$54,55.0,1.0,54.0,16/04/2026 6:41:46 pm,2026-04-16 18:41:46,card,Store
+219769,3073.0,"Google Pixel 8a 5G | DeGoogled Graphene OS Secure (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,1,A$649,A$300,A$349,649.0,300.0,349.0,16/04/2026 6:14:00 pm,2026-04-16 18:14:00,cash,Store
+219767,3073.0,"Samsung Galaxy S24 5G (256GB) [Grade A] - (ID : 6569, Qty : 1, Type : Phone)",Device,1,A$699,A$516,A$183,699.0,516.0,183.0,16/04/2026 5:25:51 pm,2026-04-16 17:25:51,card,Store
+219764,3082.0,"Apple iPhone 11 Pro Max (64GB) [Grade A] - (ID : 1974, Qty : 1, Type : Phone)",Device,1,A$350,A$118,A$233,350.0,118.0,233.0,16/04/2026 4:37:41 pm,2026-04-16 16:37:41,card,Store
+219760,3073.0,"﻿Samsung Galaxy S22 5G (128GB) [Grade B]-screen burn - (ID : 5044, Qty : 1, Type : Phone)",Device,1,A$280,A$238,A$42,280.0,238.0,42.0,16/04/2026 4:02:48 pm,2026-04-16 16:02:48,cash,Store
+219759,3073.0,"Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,1,A$420,A$171,A$249,420.0,171.0,249.0,16/04/2026 3:32:36 pm,2026-04-16 15:32:36,cash,Store
+219752,3073.0,"Apple iPhone 13 Mini (256GB) [Like New]-nfc faulty - (ID : 3951, Qty : 1, Type : Phone)",Device,1,A$399,A$410,A$-11,399.0,410.0,-11.0,16/04/2026 2:53:14 pm,2026-04-16 14:53:14,card,Store
+219742,3073.0,"back repair for 14 pro max - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$180,A$0,A$180,180.0,0.0,180.0,16/04/2026 12:15:38 pm,2026-04-16 12:15:38,cash,Store
+219741,3073.0,"cable+tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$38,A$0,A$38,38.0,0.0,38.0,16/04/2026 12:15:12 pm,2026-04-16 12:15:12,card,Store
+219740,3073.0,"Apple iPhone 14 Pro 5G (256GB) [Grade A] - (ID : 4673, Qty : 1, Type : Phone)",Device,1,A$729,A$535,A$194,729.0,535.0,194.0,16/04/2026 11:45:53 am,2026-04-16 11:45:53,card,Store
+219423,3073.0,"iPhone 13 Pro Screen Replacement - (ID : 0, Qty : 1, Type : )
+TG X 1 - (ID : 0, Qty : 1, Type : )",Repair Service,2,A$170,A$2,A$168,170.0,2.0,168.0,15/04/2026 6:15:23 pm,2026-04-15 18:15:23,card,Store
+219419,3073.0,"case+tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$49,A$0,A$49,49.0,0.0,49.0,15/04/2026 5:33:42 pm,2026-04-15 17:33:42,pb_splitpay,Store
+219394,3073.0,"Apple AirPods Max [Grade A] - (ID : 7425, Qty : 1, Type : Acc_with_serial)
+Apple iPhone 15 Pro 5G (256GB) [Grade A] - (ID : 6016, Qty : 1, Type : Phone)",Device,2,"A$1,419","A$1,110",A$309,1419.0,1110.0,309.0,15/04/2026 12:19:56 pm,2026-04-15 12:19:56,cash,Store
+219391,3073.0,"Samsung Galaxy A54 5G Dual Sim (128GB) -screen burn - (ID : 5766, Qty : 1, Type : Phone)",Device,1,A$180,A$201,A$-21,180.0,201.0,-21.0,15/04/2026 11:45:51 am,2026-04-15 11:45:51,cash,Store
+219363,3073.0,"pop socket - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,14/04/2026 6:34:51 pm,2026-04-14 18:34:51,cash,Store
+219359,3073.0,"Oppo A6 5G (256GB) [Like New] - (ID : 8606, Qty : 1, Type : Phone)",Other,1,A$299,A$130,A$169,299.0,130.0,169.0,14/04/2026 5:56:19 pm,2026-04-14 17:56:19,cash,Store
+219354,3073.0,"Apple iPhone 14 Plus 5G (256GB) [Like New] - (ID : 4808, Qty : 1, Type : Phone)",Device,1,A$649,A$392,A$257,649.0,392.0,257.0,14/04/2026 4:47:28 pm,2026-04-14 16:47:28,card,Store
+219351,3073.0,"Apple iPhone 12 Mini 5G (64GB) [Grade A] - (ID : 2331, Qty : 1, Type : Phone)",Device,1,A$279,A$130,A$149,279.0,130.0,149.0,14/04/2026 4:37:20 pm,2026-04-14 16:37:20,pb_splitpay,Store
+219347,3073.0,"Apple iPhone 15 5G (128GB) [Grade A] - (ID : 6009, Qty : 1, Type : Phone)",Device,1,A$700,A$561,A$139,700.0,561.0,139.0,14/04/2026 3:52:38 pm,2026-04-14 15:52:38,cash,Store
+219345,3073.0,"ipad 9th gen screen +battery - (ID : 0, Qty : 1, Type : )",Device,1,A$200,A$0,A$200,200.0,0.0,200.0,14/04/2026 3:38:46 pm,2026-04-14 15:38:46,cash,Store
+219344,3073.0,"screen for se 3rd gen - (ID : 0, Qty : 1, Type : )",Other,1,A$80,A$0,A$80,80.0,0.0,80.0,14/04/2026 3:34:07 pm,2026-04-14 15:34:07,cash,Store
+219340,3073.0,"battery for iphone 6s - (ID : 0, Qty : 1, Type : )",Device,1,A$65,A$0,A$65,65.0,0.0,65.0,14/04/2026 2:35:20 pm,2026-04-14 14:35:20,cash,Store
+219326,3073.0,"Oppo Find X3 Pro 5G (256GB) [Open Box] - (ID : 3599, Qty : 1, Type : Phone)",Other,1,A$369,A$315,A$54,369.0,315.0,54.0,14/04/2026 12:31:31 pm,2026-04-14 12:31:31,cash,Store
+219325,3048.0,"Motorola Razr 50 Ultra 5G (256GB) [Brand New] - (ID : 8120, Qty : 1, Type : Phone)
+tgx1+cleaning - (ID : 0, Qty : 1, Type : )",Device,2,A$934,A$697,A$237,934.0,697.0,237.0,14/04/2026 11:41:18 am,2026-04-14 11:41:18,card,Store
+219306,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$15,A$0,A$15,15.0,0.0,15.0,13/04/2026 6:14:43 pm,2026-04-13 18:14:43,card,Store
+219305,3073.0,"pending pay for 11 pro screen - (ID : 0, Qty : 1, Type : )",Other,1,A$60,A$1,A$59,60.0,1.0,59.0,13/04/2026 6:13:18 pm,2026-04-13 18:13:18,card,Store
+219304,3073.0,"screen macbook air advance - (ID : 0, Qty : 1, Type : )",Device,1,A$200,A$2,A$198,200.0,2.0,198.0,13/04/2026 6:12:54 pm,2026-04-13 18:12:54,card,Store
+219303,3073.0,"software +cable+tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$90,A$1,A$89,90.0,1.0,89.0,13/04/2026 6:12:30 pm,2026-04-13 18:12:30,card,Store
+219302,3073.0,"Apple iPhone 12 5G (64GB) [Like New] - (ID : 2151, Qty : 3, Type : Phone)",Device,3,A$960,A$607,A$353,960.0,607.0,353.0,13/04/2026 4:36:00 pm,2026-04-13 16:36:00,card,Store
+219298,3752.0,"Apple iPad 10th Gen (64GB) Wifi Cellular [Grade A] - (ID : 5243, Qty : 1, Type : Tablet)
+tgx1 - (ID : 0, Qty : 1, Type : )",Device,2,A$479,A$242,A$237,479.0,242.0,237.0,13/04/2026 2:59:07 pm,2026-04-13 14:59:07,card,Store
+219289,3089.0,"Apple iPhone 13 (512GB) [Like New] - (ID : 3761, Qty : 1, Type : Phone)",Device,1,A$579,A$361,A$218,579.0,361.0,218.0,13/04/2026 1:00:46 pm,2026-04-13 13:00:46,card,Store
+219288,3073.0,"paid advance for screen replacement 11 pro - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$50,A$1,A$50,50.0,1.0,50.0,13/04/2026 12:37:52 pm,2026-04-13 12:37:52,card,Store
+219284,3073.0,"advance paid for Mate 20 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$50,A$0,A$50,50.0,0.0,50.0,13/04/2026 11:45:08 am,2026-04-13 11:45:08,cash,Store
+219273,3073.0,"Apple iPhone 16 Plus 5G (128GB) [Like New] - (ID : 7141, Qty : 1, Type : Phone)",Device,1,"A$1,030",A$760,A$270,1030.0,760.0,270.0,12/04/2026 4:35:17 pm,2026-04-12 16:35:17,card,Store
+219270,3073.0,"cable - (ID : 0, Qty : 1, Type : )",Accessory,1,A$40,A$0,A$40,40.0,0.0,40.0,12/04/2026 3:46:04 pm,2026-04-12 15:46:04,pb_splitpay,Store
+219264,3101.0,"Samsung Galaxy A36 5G (128GB) [Open Box] - (ID : 8583, Qty : 1, Type : Phone)",Device,1,A$389,A$336,A$53,389.0,336.0,53.0,12/04/2026 2:27:19 pm,2026-04-12 14:27:19,card,Store
+219262,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$239,A$169,A$70,239.0,169.0,70.0,12/04/2026 2:07:36 pm,2026-04-12 14:07:36,card,Store
+219259,3073.0,"cleaning - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,12/04/2026 1:23:00 pm,2026-04-12 13:23:00,card,Store
+219257,3073.0,"assessment paid for 12 mini - (ID : 0, Qty : 1, Type : )",Other,1,A$30,A$0,A$30,30.0,0.0,30.0,12/04/2026 12:15:28 pm,2026-04-12 12:15:28,card,Store
+219256,3073.0,"advance for 14 pro frame replacement - (ID : 0, Qty : 1, Type : )",Other,1,A$50,A$1,A$50,50.0,1.0,50.0,12/04/2026 12:11:38 pm,2026-04-12 12:11:38,card,Store
+219224,3073.0,"Apple iPhone 13 Pro Max (256GB) [Grade A] - (ID : 3665, Qty : 1, Type : Phone)",Device,1,A$649,A$552,A$97,649.0,552.0,97.0,11/04/2026 4:51:25 pm,2026-04-11 16:51:25,card,Store
+219223,3073.0,"Samsung Galaxy S24 Ultra 5G (512GB) [Grade A] - (ID : 6764, Qty : 1, Type : Phone)",Device,1,"A$1,029",A$776,A$253,1029.0,776.0,253.0,11/04/2026 4:43:12 pm,2026-04-11 16:43:12,cash,Store
+219221,3073.0,"assessment for samsung water damage - (ID : 0, Qty : 1, Type : )",Device,1,A$50,A$1,A$50,50.0,1.0,50.0,11/04/2026 4:03:00 pm,2026-04-11 16:03:00,card,Store
+219219,3073.0,"Apple iPhone 12 Pro 5G (256GB) [Grade A] - (ID : 2157, Qty : 1, Type : Phone)",Device,1,A$449,A$308,A$141,449.0,308.0,141.0,11/04/2026 2:41:13 pm,2026-04-11 14:41:13,cash,Store
+219216,3073.0,"case+tg - (ID : 0, Qty : 1, Type : )
+Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,2,A$459,A$305,A$154,459.0,305.0,154.0,11/04/2026 1:36:24 pm,2026-04-11 13:36:24,card,Store
+219215,,"Apple iPhone 13 Mini (128GB) [Grade A] - (ID : 3711, Qty : 1, Type : Phone)",Device,1,A$399,A$288,A$111,399.0,288.0,111.0,11/04/2026 1:31:33 pm,2026-04-11 13:31:33,card,Store
+219197,870.0,"Apple iPhone 12 Pro 5G (128GB) [Like New] - (ID : 2155, Qty : 1, Type : Phone)
+Apple iPhone 12 Pro Max 5G (128GB) [Like New] - (ID : 2457, Qty : 1, Type : Phone)
+Samsung Galaxy S22 Plus 5G (128GB) [Like New] - (ID : 4224, Qty : 1, Type : Phone)
+Samsung Galaxy S23 Ultra 5G (256GB) [Grade B] - (ID : 5152, Qty : 1, Type : Phone)
+Apple iPhone 12 Pro Max 5G (128GB) [Like New] - (ID : 2457, Qty : 1, Type : Phone)
+Samsung Galaxy A25 5G (128GB) [Grade A] - (ID : 7961, Qty : 2, Type : Phone)
+Samsung Galaxy A25 5G (128GB) [Grade B] - (ID : 8529, Qty : 1, Type : Phone)
+Samsung Galaxy A25 5G (128GB) [Grade A] - (ID : 7961, Qty : 1, Type : Phone)
+Samsung Galaxy A24 (128GB) [Grade A] - (ID : 6550, Qty : 1, Type : Phone)
+Samsung Galaxy A24 (128GB) [Like New] - (ID : 6343, Qty : 1, Type : Phone)
+Pout Hands 5 Wireless Keyboard With Qi Charging Pad &amp; Mouse Combo - (ID : 5993, Qty : 30, Type : Accessories)
+Samsung Galaxy A15 5G (128GB) [Grade A] - (ID : 8599, Qty : 1, Type : Phone)
+Samsung Galaxy S22 Ultra 5G (256GB) [Grade A] - (ID : 4079, Qty : 1, Type : Phone)
+Apple iPhone 14 Plus 5G (128GB) [Grade A] - (ID : 4873, Qty : 1, Type : Phone)
+Apple iPhone 14 Plus 5G (128GB) [Grade A] - (ID : 4873, Qty : 1, Type : Phone)
+Apple iPhone 14 Plus 5G (128GB) [Grade A] - (ID : 4873, Qty : 1, Type : Phone)
+Apple iPhone 14 Plus 5G (128GB) [Grade A] - (ID : 4873, Qty : 1, Type : Phone)
+Apple iPhone 12 Pro Max 5G (128GB) [Grade A] - (ID : 2609, Qty : 1, Type : Phone)
+Apple iPad Mini 4 (128GB) WiFi Cellular [Grade B] - (ID : 1331, Qty : 2, Type : Tablet)
+Apple iPad 7th Gen (32GB) WiFi [Grade A] - (ID : 1715, Qty : 1, Type : Tablet)
+Apple iPad 6th Gen (32GB) WiFi Cellular [Grade B] - (ID : 2385, Qty : 1, Type : Tablet)
+Apple iPad 7th Gen (32GB) WiFi Cellular [Grade A] - (ID : 2350, Qty : 4, Type : Tablet)
+Apple iPad 5th Gen (32GB) WiFi Cellular [Grade A] - (ID : 1116, Qty : 4, Type : Tablet)
+Apple iPad 10th Gen (64GB) Wifi Cellular [Like New] - (ID : 5265, Qty : 1, Type : Tablet)",Device,61,"A$8,690","A$5,528","A$3,162",8690.0,5528.0,3162.0,10/04/2026 7:23:16 pm,2026-04-10 19:23:16,card,Store
+219194,3073.0,"iPhone 13 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$150,A$1,A$149,150.0,1.0,149.0,10/04/2026 6:23:44 pm,2026-04-10 18:23:44,pb_splitpay,Store
+219193,3073.0,"screen replacement 12 mini - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$100,A$1,A$99,100.0,1.0,99.0,10/04/2026 5:49:48 pm,2026-04-10 17:49:48,card,Store
+219190,3073.0,"cable+charger +tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$65,A$0,A$65,65.0,0.0,65.0,10/04/2026 5:26:18 pm,2026-04-10 17:26:18,pb_splitpay,Store
+219187,3754.0,"Apple MacBook Pro 13-inch 2020 Two Thunderbolt 3 ports i5 (8GB 256GB) [Grade A] - (ID : 3737, Qty : 1, Type : Latop)",Device,1,A$620,A$902,A$-282,620.0,902.0,-282.0,10/04/2026 5:03:15 pm,2026-04-10 17:03:15,card,Store
+219182,3073.0,"Google Pixel 7 5G (128GB) [Grade A] - (ID : 4966, Qty : 1, Type : Phone)
+case +cable - (ID : 0, Qty : 1, Type : )
+Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 2, Type : Phone)",Device,4,"A$1,250",A$647,A$603,1250.0,647.0,603.0,10/04/2026 3:52:06 pm,2026-04-10 15:52:06,cash,Store
+219181,3073.0,"12 pro max screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$200,A$2,A$198,200.0,2.0,198.0,10/04/2026 3:38:12 pm,2026-04-10 15:38:12,card,Store
+219172,3073.0,"Apple iPhone 13 Mini (128GB) [Grade A] - (ID : 3711, Qty : 1, Type : Phone)",Device,1,A$399,A$271,A$128,399.0,271.0,128.0,10/04/2026 2:40:45 pm,2026-04-10 14:40:45,card,Store
+219165,3073.0,"Apple iPhone 14 Plus 5G (256GB) [Like New] - (ID : 4808, Qty : 1, Type : Phone)",Device,1,A$659,A$423,A$236,659.0,423.0,236.0,10/04/2026 12:43:11 pm,2026-04-10 12:43:11,cash,Store
+219164,3073.0,"Oppo Find X3 Pro 5G (256GB) [Brand New] - (ID : 8539, Qty : 1, Type : Phone)",Other,1,A$419,A$317,A$102,419.0,317.0,102.0,10/04/2026 12:13:40 pm,2026-04-10 12:13:40,pb_splitpay,Store
+219129,3073.0,"Samsung S23 ultra screen - (ID : 0, Qty : 1, Type : )",Device,1,A$350,A$0,A$350,350.0,0.0,350.0,09/04/2026 6:30:12 pm,2026-04-09 18:30:12,cash,Store
+219128,3073.0,"Paid advance for p30 lite screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$50,A$0,A$50,50.0,0.0,50.0,09/04/2026 6:08:27 pm,2026-04-09 18:08:27,cash,Store
+219127,3073.0,"Samsung Galaxy A54 5G Dual Sim (128GB) [Grade A] - (ID : 5765, Qty : 1, Type : Phone)",Device,1,A$260,A$207,A$53,260.0,207.0,53.0,09/04/2026 5:43:34 pm,2026-04-09 17:43:34,cash,Store
+219125,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,09/04/2026 5:29:32 pm,2026-04-09 17:29:32,cash,Store
+219124,3073.0,"camera lens - (ID : 0, Qty : 1, Type : )",Other,1,A$15,A$0,A$15,15.0,0.0,15.0,09/04/2026 5:29:11 pm,2026-04-09 17:29:11,card,Store
+219123,3073.0,"Apple iPhone 15 Pro 5G (128GB) [Grade A] - (ID : 5811, Qty : 1, Type : Phone)",Device,1,A$919,A$792,A$127,919.0,792.0,127.0,09/04/2026 5:24:24 pm,2026-04-09 17:24:24,card,Store
+219122,3073.0,"pending for 14 pro max back replacement - (ID : 0, Qty : 1, Type : )",Other,1,A$170,A$2,A$168,170.0,2.0,168.0,09/04/2026 5:17:16 pm,2026-04-09 17:17:16,card,Store
+219121,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Like New] - (ID : 4548, Qty : 1, Type : Phone)",Device,1,A$259,A$151,A$108,259.0,151.0,108.0,09/04/2026 5:13:50 pm,2026-04-09 17:13:50,cash,Store
+219119,3073.0,"case - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,09/04/2026 4:32:50 pm,2026-04-09 16:32:50,card,Store
+219115,3073.0,"case+tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$40,A$0,A$40,40.0,0.0,40.0,09/04/2026 3:38:51 pm,2026-04-09 15:38:51,card,Store
+219104,3073.0,"screen replacement for iphone 11 - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$110,A$1,A$109,110.0,1.0,109.0,09/04/2026 1:48:15 pm,2026-04-09 13:48:15,card,Store
+219102,3073.0,"Apple iPhone 16 Pro 5G (256GB) [Grade A] - (ID : 7134, Qty : 1, Type : Phone)",Device,1,"A$1,349","A$1,044",A$305,1349.0,1044.0,305.0,09/04/2026 1:01:45 pm,2026-04-09 13:01:45,card,Store
+219061,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,08/04/2026 6:13:43 pm,2026-04-08 18:13:43,card,Store
+219059,3073.0,"car holder - (ID : 0, Qty : 1, Type : )
+Google Pixel 8a 5G (128GB) [Grade A] - (ID : 6623, Qty : 1, Type : Phone)",Device,2,A$464,A$245,A$219,464.0,245.0,219.0,08/04/2026 6:02:41 pm,2026-04-08 18:02:41,card,Store
+219058,3073.0,"Apple iPhone 13 Pro (128GB) [Grade A] - (ID : 3613, Qty : 1, Type : Phone)",Device,1,A$520,A$357,A$163,520.0,357.0,163.0,08/04/2026 5:53:11 pm,2026-04-08 17:53:11,cash,Store
+219054,3073.0,"usb connector+case - (ID : 0, Qty : 1, Type : )",Accessory,1,A$30,A$0,A$30,30.0,0.0,30.0,08/04/2026 5:14:25 pm,2026-04-08 17:14:25,pb_splitpay,Store
+219052,3073.0,"screen replacement for 14 plus - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$170,A$2,A$168,170.0,2.0,168.0,08/04/2026 5:12:38 pm,2026-04-08 17:12:38,card,Store
+219050,3073.0,"Apple iPad 9th Gen (64GB) Wifi [Grade A] - (ID : 3926, Qty : 1, Type : Tablet)",Device,1,A$299,A$204,A$95,299.0,204.0,95.0,08/04/2026 4:45:48 pm,2026-04-08 16:45:48,cash,Store
+219047,3073.0,"Iphone 13 back repair - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$230,A$2,A$228,230.0,2.0,228.0,08/04/2026 4:02:28 pm,2026-04-08 16:02:28,card,Store
+219045,3072.0,"Apple iPhone 16 5G (256GB) [Grade A] - (ID : 7207, Qty : 1, Type : Phone)",Device,1,"A$1,049",A$727,A$322,1049.0,727.0,322.0,08/04/2026 3:34:28 pm,2026-04-08 15:34:28,card,Store
+219042,3978.0,"Apple iPad 9th Gen (256GB) Wifi [Grade A] - (ID : 5257, Qty : 1, Type : Tablet)",Device,1,A$350,A$250,A$100,350.0,250.0,100.0,08/04/2026 2:32:37 pm,2026-04-08 14:32:37,cash,Store
+219039,3074.0,"Samsung Galaxy Z Fold7 5G (1TB) [Grade A] - (ID : 8531, Qty : 1, Type : Phone)",Device,1,"A$1,900",A$484,"A$1,416",1900.0,484.0,1416.0,08/04/2026 1:58:35 pm,2026-04-08 13:58:35,cash,Store
+219036,3073.0,"Apple iPhone 16 Pro 5G (128GB) [Grade A] - (ID : 7511, Qty : 1, Type : Phone)",Device,1,"A$1,120",A$866,A$254,1120.0,866.0,254.0,08/04/2026 1:40:05 pm,2026-04-08 13:40:05,cash,Store
+219035,3073.0,"Google Pixel 10a 5G (128GB) [Open Box] - (ID : 8598, Qty : 1, Type : Phone)",Device,1,A$699,A$487,A$212,699.0,487.0,212.0,08/04/2026 1:26:18 pm,2026-04-08 13:26:18,card,Store
+219025,3070.0,"Apple iPhone 17 Pro Max 5G (256GB) [Brand New] - (ID : 8194, Qty : 1, Type : Phone)",Device,1,"A$2,099","A$1,721",A$378,2099.0,1721.0,378.0,08/04/2026 12:55:43 pm,2026-04-08 12:55:43,card,Store
+219024,3088.0,"Apple iPhone 16 Pro 5G (128GB) [Grade A] - (ID : 7511, Qty : 1, Type : Phone)",Device,1,"A$1,149",A$850,A$299,1149.0,850.0,299.0,08/04/2026 12:33:05 pm,2026-04-08 12:33:05,cash,Store
+219012,3072.0,"Apple iPhone 13 Pro (256GB) [Grade A] - (ID : 3614, Qty : 1, Type : Phone)",Device,1,A$580,A$474,A$106,580.0,474.0,106.0,08/04/2026 11:01:07 am,2026-04-08 11:01:07,card,Store
+218986,3073.0,"cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,07/04/2026 6:06:00 pm,2026-04-07 18:06:00,cash,Store
+218982,3073.0,"Apple Watch Series 11 42mm GPS Aluminium Case [Grade A] - (ID : 8581, Qty : 1, Type : Smartwatch)",Device,1,A$499,A$255,A$244,499.0,255.0,244.0,07/04/2026 5:50:39 pm,2026-04-07 17:50:39,card,Store
+218981,3072.0,"Apple iPhone 15 Pro 5G (256GB) [Like New] - (ID : 6015, Qty : 1, Type : Phone)
+case - (ID : 0, Qty : 1, Type : )",Device,2,"A$1,050",A$696,A$354,1050.0,696.0,354.0,07/04/2026 5:45:12 pm,2026-04-07 17:45:12,cash,Store
+218978,3073.0,"Samsung Galaxy S24 5G (256GB) [Grade A] - (ID : 6569, Qty : 1, Type : Phone)",Device,1,A$699,A$453,A$246,699.0,453.0,246.0,07/04/2026 5:20:11 pm,2026-04-07 17:20:11,card,Store
+218973,3073.0,"Apple iPhone 16 Pro Max 5G (1TB) [Grade B] - (ID : 8197, Qty : 1, Type : Phone)",Device,1,"A$1,559","A$1,240",A$319,1559.0,1240.0,319.0,07/04/2026 4:30:55 pm,2026-04-07 16:30:55,card,Store
+218971,3073.0,"screen replacement 15 pro max - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$200,A$0,A$200,200.0,0.0,200.0,07/04/2026 4:12:16 pm,2026-04-07 16:12:16,cash,Store
+218968,3083.0,"Motorola Edge 30 Fusion 5G Dual Sim (128GB) [Grade B] - (ID : 5845, Qty : 1, Type : Phone)",Device,1,A$229,A$96,A$133,229.0,96.0,133.0,07/04/2026 3:34:31 pm,2026-04-07 15:34:31,afterpay,Store
+218967,3073.0,"Apple iPhone 13 Pro Max (128GB) [Grade A] - (ID : 3713, Qty : 1, Type : Phone)",Device,1,A$570,A$318,A$252,570.0,318.0,252.0,07/04/2026 3:22:41 pm,2026-04-07 15:22:41,pb_splitpay,Store
+218964,3073.0,"Blackview Tab 70 Wifi (64GB) [Like New] - (ID : 7551, Qty : 1, Type : Tablet)",Other,1,A$99,A$36,A$63,99.0,36.0,63.0,07/04/2026 2:35:24 pm,2026-04-07 14:35:24,cash,Store
+218963,3073.0,"software reset - (ID : 0, Qty : 1, Type : )",Other,1,A$30,A$0,A$30,30.0,0.0,30.0,07/04/2026 2:09:43 pm,2026-04-07 14:09:43,card,Store
+218959,3073.0,"Samsung Galaxy Z Flip 5 5G (256GB) [Grade A] - (ID : 6082, Qty : 1, Type : Phone)",Device,1,A$529,A$55,A$474,529.0,55.0,474.0,07/04/2026 12:42:35 pm,2026-04-07 12:42:35,card,Store
+218957,3073.0,"Samsung Galaxy A54 5G Dual Sim (128GB) [Grade A] - (ID : 5765, Qty : 1, Type : Phone)",Device,1,A$279,A$207,A$72,279.0,207.0,72.0,07/04/2026 12:35:40 pm,2026-04-07 12:35:40,card,Store
+218952,3087.0,"Apple iPhone 12 5G (256GB) [Grade A] - (ID : 2153, Qty : 1, Type : Phone)",Device,1,A$399,A$248,A$151,399.0,248.0,151.0,07/04/2026 12:07:04 pm,2026-04-07 12:07:04,card,Store
+218950,3073.0,"Google Pixel 6 5G (128GB) [Like New] - (ID : 3601, Qty : 1, Type : Phone)",Device,1,A$210,A$237,A$-27,210.0,237.0,-27.0,07/04/2026 11:55:13 am,2026-04-07 11:55:13,card,Store
+218942,3073.0,"Apple iPhone 14 5G (512GB) [Grade A] - (ID : 5840, Qty : 1, Type : Phone)",Device,1,A$630,A$513,A$117,630.0,513.0,117.0,07/04/2026 10:56:58 am,2026-04-07 10:56:58,card,Store
+218914,3073.0,"Apple iPad 9th Gen (64GB) Wifi Cellular [Grade A] - (ID : 3775, Qty : 1, Type : Tablet)
+Apple iPad 9th Gen (64GB) Wifi [Like New] - (ID : 4385, Qty : 1, Type : Tablet)
+Apple iPad 9th Gen (64GB) Wifi Cellular [Grade A] - (ID : 3775, Qty : 5, Type : Tablet)
+Apple iPad 9th Gen (64GB) Wifi Cellular [Grade B] - (ID : 3777, Qty : 1, Type : Tablet)
+Apple iPad 9th Gen (64GB) Wifi Cellular [Like New] - (ID : 3544, Qty : 1, Type : Tablet)
+Apple iPad 9th Gen (64GB) Wifi [Grade A] - (ID : 3926, Qty : 1, Type : Tablet)",Device,10,"A$3,200","A$2,273",A$927,3200.0,2273.0,927.0,06/04/2026 5:05:23 pm,2026-04-06 17:05:23,card,Store
+218910,3072.0,"Apple iPhone 15 Pro 5G (256GB) [Like New] - (ID : 6015, Qty : 1, Type : Phone)
+Apple iPhone 13 (256GB) [Grade A] - (ID : 3605, Qty : 1, Type : Phone)",Device,2,"A$1,500","A$1,062",A$438,1500.0,1062.0,438.0,06/04/2026 4:28:46 pm,2026-04-06 16:28:46,cash,Store
+218906,3073.0,"Oppo Find X3 Pro 5G (256GB) [Brand New] - (ID : 8539, Qty : 1, Type : Phone)",Other,1,A$390,A$319,A$71,390.0,319.0,71.0,06/04/2026 3:57:29 pm,2026-04-06 15:57:29,card,Store
+218901,3073.0,"Apple iPad 9th Gen (64GB) Wifi Cellular [Grade A] - (ID : 3775, Qty : 1, Type : Tablet)",Device,1,A$309,A$252,A$57,309.0,252.0,57.0,06/04/2026 1:39:44 pm,2026-04-06 13:39:44,card,Store
+218898,3073.0,"ipad 12.9 -inch 3rd gen. repair motherboard - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$300,A$3,A$297,300.0,3.0,297.0,06/04/2026 12:22:01 pm,2026-04-06 12:22:01,card,Store
+218895,3073.0,"Apple iPad 9th Gen (64GB) Wifi Cellular [Grade A] - (ID : 3775, Qty : 1, Type : Tablet)",Device,1,A$339,A$224,A$115,339.0,224.0,115.0,06/04/2026 11:33:39 am,2026-04-06 11:33:39,card,Store
+218836,3073.0,"﻿Samsung Galaxy S22 5G (128GB) [Grade B] - (ID : 5044, Qty : 1, Type : Phone)
+tgx1 - (ID : 0, Qty : 1, Type : )",Device,2,A$290,A$257,A$33,290.0,257.0,33.0,04/04/2026 4:00:42 pm,2026-04-04 16:00:42,card,Store
+218829,3073.0,"Apple iPad 8th Gen (128GB) WiFi [Grade A] - (ID : 2712, Qty : 1, Type : Tablet)
+Apple iPad 8th Gen (128GB) WiFi [Grade B] - (ID : 4049, Qty : 1, Type : Tablet)
+Apple Watch Ultra 49mm Titanium Case GPS Cellular [Grade A] - (ID : 5875, Qty : 1, Type : Smartwatch)",Device,3,"A$1,060",A$831,A$229,1060.0,831.0,229.0,04/04/2026 2:55:51 pm,2026-04-04 14:55:51,cash,Store
+218825,3073.0,"iphone xs face id flex replacement - (ID : 0, Qty : 1, Type : )",Device,1,A$60,A$0,A$60,60.0,0.0,60.0,04/04/2026 1:49:18 pm,2026-04-04 13:49:18,cash,Store
+218823,3073.0,"Apple iPhone 16 Plus 5G (128GB) [Like New] - (ID : 7141, Qty : 1, Type : Phone)",Device,1,"A$1,049",A$796,A$253,1049.0,796.0,253.0,04/04/2026 1:35:55 pm,2026-04-04 13:35:55,pb_splitpay,Store
+218822,3058.0,"Apple iPhone 14 Plus 5G (256GB) [Like New] - (ID : 4808, Qty : 1, Type : Phone)",Device,1,A$639,A$458,A$181,639.0,458.0,181.0,04/04/2026 12:59:38 pm,2026-04-04 12:59:38,card,Store
+218821,3073.0,"Apple iPhone 13 (256GB) [Like New] - (ID : 3782, Qty : 1, Type : Phone)",Device,1,A$529,A$378,A$151,529.0,378.0,151.0,04/04/2026 12:05:00 pm,2026-04-04 12:05:00,card,Store
+218819,3073.0,"Apple iPhone 13 (256GB) [Like New] - (ID : 3605, Qty : 1, Type : Phone)",Device,1,A$529,A$377,A$152,529.0,377.0,152.0,04/04/2026 11:57:46 am,2026-04-04 11:57:46,afterpay,Store
+218817,3073.0,"14 pro max frame repair advance - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$100,A$1,A$99,100.0,1.0,99.0,04/04/2026 11:51:41 am,2026-04-04 11:51:41,card,Store
+218815,3073.0,"Apple iPhone 13 Pro (128GB) [Grade A] - (ID : 3613, Qty : 1, Type : Phone)",Device,1,A$549,A$358,A$191,549.0,358.0,191.0,04/04/2026 11:19:02 am,2026-04-04 11:19:02,pb_splitpay,Store
+218754,3073.0,"iphone 12 screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$120,A$1,A$119,120.0,1.0,119.0,02/04/2026 5:20:51 pm,2026-04-02 17:20:51,card,Store
+218751,3073.0,"tgx1+cover - (ID : 0, Qty : 1, Type : )",Accessory,1,A$30,A$0,A$30,30.0,0.0,30.0,02/04/2026 5:06:19 pm,2026-04-02 17:06:19,pb_splitpay,Store
+218750,3073.0,"data transfer - (ID : 0, Qty : 1, Type : )",Other,1,A$50,A$1,A$50,50.0,1.0,50.0,02/04/2026 5:03:35 pm,2026-04-02 17:03:35,card,Store
+218748,3073.0,"screen replaceemnt iphone 11 - (ID : 0, Qty : 1, Type : )",Device,1,A$110,A$0,A$110,110.0,0.0,110.0,02/04/2026 4:49:19 pm,2026-04-02 16:49:19,cash,Store
+218743,3073.0,"Apple iPhone 13 Pro Max (256GB) [Grade A] - (ID : 3665, Qty : 1, Type : Phone)",Device,1,A$649,A$588,A$61,649.0,588.0,61.0,02/04/2026 3:42:15 pm,2026-04-02 15:42:15,card,Store
+218740,3071.0,"Samsung Galaxy S24 Plus 5G (256GB) [Like New] - (ID : 6395, Qty : 1, Type : Phone)
+tgx1 - (ID : 0, Qty : 1, Type : )",Device,2,A$819,A$580,A$239,819.0,580.0,239.0,02/04/2026 3:29:49 pm,2026-04-02 15:29:49,card,Store
+218733,3073.0,"Apple iPhone 16 Pro Max 5G (256GB) - (ID : 7569, Qty : 1, Type : Phone)",Device,1,"A$1,400","A$1,083",A$317,1400.0,1083.0,317.0,02/04/2026 2:41:14 pm,2026-04-02 14:41:14,card,Store
+218726,3095.0,"Samsung Galaxy S24 Ultra 5G (256GB) [Like New] - (ID : 6478, Qty : 1, Type : Phone)",Device,1,A$999,A$659,A$340,999.0,659.0,340.0,02/04/2026 1:14:46 pm,2026-04-02 13:14:46,card,Store
+218724,3073.0,"Apple iPhone 12 5G (64GB) [Grade A] - (ID : 2145, Qty : 1, Type : Phone)",Device,1,A$329,A$153,A$176,329.0,153.0,176.0,02/04/2026 12:53:59 pm,2026-04-02 12:53:59,card,Store
+218723,3073.0,"sim tray 16e - (ID : 0, Qty : 1, Type : )",Other,1,A$15,A$0,A$15,15.0,0.0,15.0,02/04/2026 12:24:30 pm,2026-04-02 12:24:30,cash,Store
+218722,3073.0,"Google Pixel 8a 5G (128GB) [Like New] - (ID : 6599, Qty : 1, Type : Phone)",Device,1,A$469,A$326,A$143,469.0,326.0,143.0,02/04/2026 12:19:38 pm,2026-04-02 12:19:38,afterpay,Store
+218721,3073.0,"Apple iPhone 13 (256GB) [Like New] - (ID : 3782, Qty : 1, Type : Phone)",Device,1,A$529,A$403,A$126,529.0,403.0,126.0,02/04/2026 12:01:59 pm,2026-04-02 12:01:59,card,Store
+218718,3073.0,"Apple iPhone 13 (256GB) [Grade A] - (ID : 3605, Qty : 1, Type : Phone)",Device,1,A$499,A$404,A$95,499.0,404.0,95.0,02/04/2026 11:08:42 am,2026-04-02 11:08:42,card,Store
+218714,3073.0,"﻿Samsung Galaxy S22 5G (128GB) [Grade A] - (ID : 4081, Qty : 1, Type : Phone)",Device,1,A$359,A$326,A$33,359.0,326.0,33.0,02/04/2026 10:06:51 am,2026-04-02 10:06:51,afterpay,Store
+218682,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,01/04/2026 4:53:49 pm,2026-04-01 16:53:49,card,Store
+218679,3073.0,"Apple iPhone 14 Pro 5G (128GB) [Like New] - (ID : 4674, Qty : 1, Type : Phone)",Device,1,A$699,A$552,A$147,699.0,552.0,147.0,01/04/2026 4:22:37 pm,2026-04-01 16:22:37,card,Store
+218667,,"Apple iPhone 13 Pro Max (128GB) [Grade A] - (ID : 3713, Qty : 1, Type : Phone)",Device,1,A$570,A$570,A$0,570.0,570.0,0.0,01/04/2026 2:06:23 pm,2026-04-01 14:06:23,cash,Store
+218664,3429.0,"Apple iPhone 12 Pro Max 5G (256GB) [Like New] - (ID : 2458, Qty : 1, Type : Phone)",Device,1,A$549,A$349,A$200,549.0,349.0,200.0,01/04/2026 1:05:16 pm,2026-04-01 13:05:16,card,Store
+218661,3073.0,"Apple iPad Air 5th Gen (256GB) Wifi [Like New] - (ID : 5780, Qty : 1, Type : Tablet)",Device,1,A$659,A$409,A$250,659.0,409.0,250.0,01/04/2026 11:53:20 am,2026-04-01 11:53:20,pb_splitpay,Store
+218659,3073.0,"Apple iPhone 12 5G (64GB) [Like New] - (ID : 2151, Qty : 1, Type : Phone)",Device,1,A$349,A$218,A$131,349.0,218.0,131.0,01/04/2026 11:23:24 am,2026-04-01 11:23:24,card,Store
+218656,3073.0,"Apple iPhone 13 (128GB) [Grade A] - (ID : 3612, Qty : 1, Type : Phone)",Device,1,A$449,A$239,A$210,449.0,239.0,210.0,01/04/2026 10:13:53 am,2026-04-01 10:13:53,cash,Store
+218655,3523.0,"Samsung Galaxy Z Fold5 5G (512GB) [Grade A] - (ID : 6142, Qty : 1, Type : Phone)",Device,1,A$849,A$206,A$643,849.0,206.0,643.0,01/04/2026 10:08:51 am,2026-04-01 10:08:51,card,Store
+218654,3073.0,"Google Pixel 8 5G (128GB) [Grade A] - (ID : 5959, Qty : 1, Type : Phone)",Device,1,A$440,A$200,A$240,440.0,200.0,240.0,01/04/2026 9:53:34 am,2026-04-01 09:53:34,cash,Store
+218624,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,31/03/2026 5:08:43 pm,2026-03-31 17:08:43,card,Store
+218622,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$20,A$0,A$20,20.0,0.0,20.0,31/03/2026 4:33:02 pm,2026-03-31 16:33:02,card,Store
+218618,3073.0,"Apple iPhone 16 Pro Max 5G (256GB) [Like New] - (ID : 7188, Qty : 1, Type : Phone)",Device,1,"A$1,459","A$1,237",A$222,1459.0,1237.0,222.0,31/03/2026 3:29:25 pm,2026-03-31 15:29:25,pb_splitpay,Store
+218617,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )
+Google Pixel 6 5G (256GB) [Grade A] - (ID : 3898, Qty : 1, Type : Phone)",Device,2,A$289,A$137,A$152,289.0,137.0,152.0,31/03/2026 3:23:11 pm,2026-03-31 15:23:11,card,Store
+218616,3073.0,"Apple iPhone XS (64GB) [Grade A] - (ID : 1201, Qty : 1, Type : Phone)",Device,1,A$249,A$193,A$56,249.0,193.0,56.0,31/03/2026 2:59:24 pm,2026-03-31 14:59:24,card,Store
+218600,3073.0,"Apple iPad Pro 12.9-inch 1st Gen (256GB) WiFi Cellular [Grade B] - (ID : 3114, Qty : 1, Type : Tablet)
+car mount+tg - (ID : 0, Qty : 1, Type : )",Device,2,A$429,A$214,A$215,429.0,214.0,215.0,31/03/2026 12:50:41 pm,2026-03-31 12:50:41,card,Store
+218593,3073.0,"Apple iPhone 12 5G (64GB) [Like New] - (ID : 2151, Qty : 1, Type : Phone)",Device,1,A$340,A$234,A$106,340.0,234.0,106.0,31/03/2026 11:59:05 am,2026-03-31 11:59:05,afterpay,Store
+218588,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Like New] - (ID : 4548, Qty : 1, Type : Phone)",Device,1,A$200,A$151,A$49,200.0,151.0,49.0,31/03/2026 11:38:17 am,2026-03-31 11:38:17,cash,Store
+218586,3073.0,"Apple iPad 8th Gen (128GB) WiFi [Grade A] - (ID : 2712, Qty : 1, Type : Tablet)",Device,1,A$300,A$176,A$124,300.0,176.0,124.0,31/03/2026 10:56:01 am,2026-03-31 10:56:01,cash,Store
+218584,3073.0,"Apple iPhone 12 Pro Max 5G (128GB) [Grade A] - (ID : 2609, Qty : 1, Type : Phone)",Device,1,A$469,A$294,A$175,469.0,294.0,175.0,31/03/2026 10:17:42 am,2026-03-31 10:17:42,cash,Store
+218583,3073.0,"Google Pixel 9 Pro XL 5G (256GB) [Grade A] - (ID : 7076, Qty : 1, Type : Phone)",Device,1,A$850,A$694,A$157,850.0,694.0,157.0,31/03/2026 9:51:12 am,2026-03-31 09:51:12,card,Store
+218581,3073.0,"Apple iPad 8th Gen (128GB) WiFi Cellular [Grade A] - (ID : 2169, Qty : 1, Type : Tablet)
+tgx1 - (ID : 0, Qty : 1, Type : )",Device,2,A$339,A$183,A$156,339.0,183.0,156.0,31/03/2026 9:35:14 am,2026-03-31 09:35:14,card,Store
+218560,3073.0,"Apple iPhone 17 Pro Max 5G (512GB) [Brand New] - (ID : 8534, Qty : 1, Type : Phone)",Device,1,"A$2,300","A$1,800",A$500,2300.0,1800.0,500.0,30/03/2026 6:40:29 pm,2026-03-30 18:40:29,cash,Store
+218554,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$20,A$0,A$20,20.0,0.0,20.0,30/03/2026 4:33:21 pm,2026-03-30 16:33:21,cash,Store
+218553,3073.0,"cable - (ID : 0, Qty : 1, Type : )",Accessory,1,A$19,A$0,A$19,19.0,0.0,19.0,30/03/2026 4:32:20 pm,2026-03-30 16:32:20,cash,Store
+218550,3073.0,"phone cleaning - (ID : 0, Qty : 1, Type : )",Other,1,A$20,A$0,A$20,20.0,0.0,20.0,30/03/2026 3:28:32 pm,2026-03-30 15:28:32,card,Store
+218548,3073.0,"Apple iPhone 15 5G (128GB) [Grade A] - (ID : 6009, Qty : 1, Type : Phone)",Device,1,A$729,A$594,A$135,729.0,594.0,135.0,30/03/2026 3:15:36 pm,2026-03-30 15:15:36,card,Store
+218544,3073.0,"Apple iPhone SE 5G 3rd Gen (128GB) [Like New] - (ID : 4466, Qty : 1, Type : Phone)",Device,1,A$319,A$191,A$128,319.0,191.0,128.0,30/03/2026 2:34:28 pm,2026-03-30 14:34:28,card,Store
+218536,3073.0,"Samsung Galaxy S24 FE 5G (128GB) [Grade A] - (ID : 7377, Qty : 1, Type : Phone)",Device,1,A$519,A$414,A$105,519.0,414.0,105.0,30/03/2026 1:09:14 pm,2026-03-30 13:09:14,card,Store
+218530,3073.0,"14 pro screen replacement - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$180,A$0,A$180,180.0,0.0,180.0,30/03/2026 12:21:23 pm,2026-03-30 12:21:23,cash,Store
+218528,3073.0,"Samsung Galaxy S22 Plus 5G (256GB) [Like New] - (ID : 4239, Qty : 1, Type : Phone)",Device,1,A$449,A$224,A$225,449.0,224.0,225.0,30/03/2026 11:31:31 am,2026-03-30 11:31:31,card,Store
+218527,3073.0,"Apple iPhone 15 Plus 5G (128GB) [Grade A] - (ID : 5997, Qty : 1, Type : Phone)",Device,1,A$799,A$544,A$255,799.0,544.0,255.0,30/03/2026 11:25:43 am,2026-03-30 11:25:43,card,Store
+218489,3090.0,"Apple iPhone 13 (256GB) [Like New] - (ID : 3782, Qty : 1, Type : Phone)",Device,1,A$529,A$350,A$179,529.0,350.0,179.0,29/03/2026 12:45:01 pm,2026-03-29 12:45:01,card,Store
+218488,3073.0,"Samsung Galaxy A24 (128GB) [Like New] - (ID : 6343, Qty : 1, Type : Phone)",Device,1,A$239,A$137,A$102,239.0,137.0,102.0,29/03/2026 12:40:01 pm,2026-03-29 12:40:01,card,Store
+218485,3073.0,"Apple iPhone 14 Pro Max 5G (128GB) [Grade A] - (ID : 4931, Qty : 1, Type : Phone)",Device,1,A$739,A$581,A$158,739.0,581.0,158.0,29/03/2026 11:37:01 am,2026-03-29 11:37:01,afterpay,Store
+218453,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,28/03/2026 2:59:11 pm,2026-03-28 14:59:11,card,Store
+218451,3073.0,"glass protector - (ID : 0, Qty : 1, Type : )",Accessory,1,A$15,A$0,A$15,15.0,0.0,15.0,28/03/2026 2:54:27 pm,2026-03-28 14:54:27,card,Store
+218446,3073.0,"Samsung Galaxy S23 Ultra 5G (256GB) [Grade A] - (ID : 5149, Qty : 1, Type : Phone)",Device,1,A$719,A$359,A$360,719.0,359.0,360.0,28/03/2026 2:30:22 pm,2026-03-28 14:30:22,card,Store
+218443,3073.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Like New] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$259,A$154,A$105,259.0,154.0,105.0,28/03/2026 2:13:59 pm,2026-03-28 14:13:59,card,Store
+218441,3073.0,"Google Pixel 7 Pro 5G (128GB) [Like New] - (ID : 4971, Qty : 1, Type : Phone)",Device,1,A$409,A$332,A$77,409.0,332.0,77.0,28/03/2026 2:05:33 pm,2026-03-28 14:05:33,card,Store
+218440,3081.0,"Apple iPhone SE 5G 3rd Gen (64GB) [Grade A] - (ID : 4171, Qty : 1, Type : Phone)",Device,1,A$200,A$165,A$35,200.0,165.0,35.0,28/03/2026 2:00:11 pm,2026-03-28 14:00:11,card,Store
+218436,3073.0,"Apple iPhone 15 Pro 5G (512GB) [Like New] - (ID : 6051, Qty : 1, Type : Phone)",Device,1,"A$1,179",A$803,A$376,1179.0,803.0,376.0,28/03/2026 1:36:20 pm,2026-03-28 13:36:20,card,Store
+218434,3073.0,"adater - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,28/03/2026 1:23:36 pm,2026-03-28 13:23:36,card,Store
+218433,3073.0,"Apple iPhone 14 Pro Max 5G (512GB) [Grade A] - (ID : 5262, Qty : 1, Type : Phone)",Device,1,A$939,"A$1,043",A$-104,939.0,1043.0,-104.0,28/03/2026 1:19:17 pm,2026-03-28 13:19:17,card,Store
+218432,3073.0,"Refurbished iPhone 13 (128GB) [Like New] - (ID : 3498, Qty : 1, Type : Phone)",Device,1,A$450,A$363,A$88,450.0,363.0,88.0,28/03/2026 12:48:53 pm,2026-03-28 12:48:53,card,Store
+218430,3073.0,"Refurbished iPhone 13 (128GB) [Grade A] - (ID : 3612, Qty : 1, Type : Phone)",Device,1,A$430,A$363,A$67,430.0,363.0,67.0,28/03/2026 12:34:03 pm,2026-03-28 12:34:03,card,Store
+218425,3073.0,"Apple iPhone 14 Pro 5G (128GB) [Like New] - (ID : 4674, Qty : 1, Type : Phone)",Device,1,A$699,A$468,A$231,699.0,468.0,231.0,28/03/2026 11:11:56 am,2026-03-28 11:11:56,card,Store
+218403,3073.0,"tg+headphones - (ID : 0, Qty : 1, Type : )",Accessory,1,A$25,A$0,A$25,25.0,0.0,25.0,27/03/2026 5:32:17 pm,2026-03-27 17:32:17,pb_splitpay,Store
+218402,3072.0,"Apple iPhone 14 Pro 5G (128GB) [Like New] - (ID : 4674, Qty : 1, Type : Phone)",Device,1,A$649,A$578,A$71,649.0,578.0,71.0,27/03/2026 5:20:32 pm,2026-03-27 17:20:32,card,Store
+218401,3073.0,"Apple iPhone 17 Pro Max 5G (256GB) [Brand New] - (ID : 8194, Qty : 1, Type : Phone)
+Apple iPhone 14 Pro 5G (256GB) [Like New] - (ID : 4576, Qty : 1, Type : Phone)",Device,2,"A$2,799","A$2,256",A$543,2799.0,2256.0,543.0,27/03/2026 5:16:45 pm,2026-03-27 17:16:45,card,Store
+218396,3072.0,"Samsung Galaxy S23 Plus 5G (512GB) [Grade A] - (ID : 5723, Qty : 1, Type : Phone)",Device,1,A$629,A$397,A$232,629.0,397.0,232.0,27/03/2026 4:02:32 pm,2026-03-27 16:02:32,card,Store
+218393,3073.0,"Apple iPad Pro 10.5-inch (256GB) WiFi [Like New] - (ID : 4866, Qty : 1, Type : Tablet)",Device,1,A$289,A$180,A$109,289.0,180.0,109.0,27/03/2026 3:54:19 pm,2026-03-27 15:54:19,card,Store
+218390,3073.0,"Apple iPhone 15 5G (256GB) [Like New] - (ID : 6014, Qty : 1, Type : Phone)",Device,1,A$879,A$669,A$210,879.0,669.0,210.0,27/03/2026 3:19:24 pm,2026-03-27 15:19:24,card,Store
+218386,3073.0,"Apple iPhone 8 Plus (256GB) [Grade B] - (ID : 985, Qty : 1, Type : Phone)",Device,1,A$199,A$32,A$167,199.0,32.0,167.0,27/03/2026 2:15:45 pm,2026-03-27 14:15:45,card,Store
+218378,3073.0,"Samsung Galaxy A35 5G (128GB) [Grade A] - (ID : 8477, Qty : 1, Type : Phone)
+Samsung Galaxy A16 5G (128GB) [Brand New] - (ID : 7110, Qty : 1, Type : Phone)
+Samsung Galaxy S24 Ultra 5G (512GB) [Like New] - (ID : 6639, Qty : 1, Type : Phone)",Device,3,"A$1,649",A$430,"A$1,219",1649.0,430.0,1219.0,27/03/2026 1:22:03 pm,2026-03-27 13:22:03,cash,Store
+218376,3073.0,"covers+tg - (ID : 0, Qty : 1, Type : )",Accessory,1,A$100,A$0,A$100,100.0,0.0,100.0,27/03/2026 12:44:26 pm,2026-03-27 12:44:26,cash,Store
+218373,3073.0,"Google Pixel 9 Pro XL 5G (128GB) [Grade A] - (ID : 7071, Qty : 1, Type : Phone)",Device,1,A$750,A$627,A$123,750.0,627.0,123.0,27/03/2026 12:37:42 pm,2026-03-27 12:37:42,cash,Store
+218367,3073.0,"Google Pixel 9 Pro XL 5G (128GB) [Grade A] - (ID : 7071, Qty : 1, Type : Phone)",Device,1,A$750,A$627,A$123,750.0,627.0,123.0,27/03/2026 11:13:58 am,2026-03-27 11:13:58,cash,Store
+218311,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$15,A$0,A$15,15.0,0.0,15.0,26/03/2026 5:37:14 pm,2026-03-26 17:37:14,card,Store
+218310,3073.0,"mac mini repair - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$90,A$1,A$89,90.0,1.0,89.0,26/03/2026 5:34:55 pm,2026-03-26 17:34:55,card,Store
+218309,3073.0,"tgx1 - (ID : 0, Qty : 1, Type : )",Other,1,A$10,A$0,A$10,10.0,0.0,10.0,26/03/2026 5:34:33 pm,2026-03-26 17:34:33,cash,Store
+218308,3073.0,"cable - (ID : 0, Qty : 1, Type : )",Accessory,1,A$10,A$0,A$10,10.0,0.0,10.0,26/03/2026 5:32:50 pm,2026-03-26 17:32:50,card,Store
+218307,3073.0,"sim try fix - (ID : 0, Qty : 1, Type : )",Other,1,A$40,A$0,A$40,40.0,0.0,40.0,26/03/2026 5:32:27 pm,2026-03-26 17:32:27,card,Store
+218305,3073.0,"screen replacement for 14 prom max - (ID : 0, Qty : 1, Type : )",Repair Service,1,A$325,A$3,A$322,325.0,3.0,322.0,26/03/2026 5:31:52 pm,2026-03-26 17:31:52,card,Store
+218302,3073.0,"Apple iPhone 15 5G (256GB) [Grade A] - (ID : 6012, Qty : 1, Type : Phone)",Device,1,A$829,A$560,A$269,829.0,560.0,269.0,26/03/2026 5:13:41 pm,2026-03-26 17:13:41,card,Store
+218288,3073.0,"Apple iPhone 14 Pro Max 5G (1TB) [Grade A] - (ID : 5323, Qty : 1, Type : Phone)",Device,1,"A$1,030",A$600,A$430,1030.0,600.0,430.0,26/03/2026 4:12:12 pm,2026-03-26 16:12:12,cash,Store
+218282,3073.0,"Apple iPhone 17 5G (256GB) [Open Box] - (ID : 8397, Qty : 1, Type : Phone)",Device,1,"A$1,239","A$1,186",A$53,1239.0,1186.0,53.0,26/03/2026 3:39:20 pm,2026-03-26 15:39:20,cash,Store
+218269,3033.0,"Refurbished iPhone 13 (256GB) [Grade A] - (ID : 3605, Qty : 1, Type : Phone)",Device,1,A$499,A$364,A$135,499.0,364.0,135.0,26/03/2026 11:50:30 am,2026-03-26 11:50:30,card,Store
+218226,3073.0,"chagred for the device upgrade - (ID : 0, Qty : 1, Type : )",Other,1,A$150,A$2,A$149,150.0,2.0,149.0,25/03/2026 5:47:01 pm,2026-03-25 17:47:01,card,Store
+218225,3073.0,"Apple iPhone 15 Pro 5G (128GB) [Like New] - (ID : 5810, Qty : 1, Type : Phone)",Device,1,"A$1,008",A$733,A$275,1008.0,733.0,275.0,25/03/2026 5:43:54 pm,2026-03-25 17:43:54,card,Store

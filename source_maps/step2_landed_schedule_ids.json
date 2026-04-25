@@ -1,0 +1,28 @@
+
+{
+  "wave": "1m + 3m mixed",
+  "as_of_utc": "2026-04-25",
+  "landed_in_context_or_disk": {
+    "AC_campaign_1m": "saved /1_month/bing_ads/campaign_daily_1m.csv (119 rows)",
+    "GMB_locations_1m": "saved /1_month/gmb/locations_daily_1m.csv (60 rows)",
+    "GW_branded_1m": "saved /1_month/search_console/branded_daily_1m.csv (90 rows)",
+    "SIB_campaigns_1m": "saved /1_month/brevo/campaigns_1m.csv (3 rows)",
+    "AW_campaign_1m": "in-context 487 rows — pending save (chunk save)",
+    "GAWA_channel_1m": "in-context 333 rows — pending save",
+    "FA_personal_1m": "in-context 240 rows (act_1141970792623135 = active Phonebot account, not personal)",
+    "FA_placement_1m": "in-context 56 rows (act_14359173 placement breakdown — but this account had data confirming both accounts are live)",
+    "GAWA_AUfilter_channel_1m": "in-context 327 rows (Australia-only filter)",
+    "GW_branded_3m": "in-context 271 rows",
+    "GAWA_PMrevenue_3m": "in-context 982 rows (Phonebot - ProfitMetrics Revenue)",
+    "GAWA_PMgrossprofit_3m": "in-context 982 rows (Phonebot - ProfitMetrics Gross Profit)"
+  },
+  "still_in_flight": [
+    "FA_spine_1m_v2_act14359173 (8954397ad9b...)",
+    "FA_placement_1m_v2_act14359173 (0b16d703c4...)",
+    "FA_act14359173_3m (cbe0f6b7ff...)",
+    "FA_personal_3m (959533484b...)",
+    "AW_campaign_3m (dc2d41fe76...)",
+    "AC_campaign_3m (6c88962a3d...)",
+    "GAWA_channel_3m (1c25e96d87...)"
+  ]
+}

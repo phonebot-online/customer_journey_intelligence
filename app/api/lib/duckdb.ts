@@ -29,6 +29,22 @@ export async function getConnection(): Promise<duckdb.Connection> {
   return conn;
 }
 
+// DuckDB returns DATE/TIMESTAMP as JS Date and INTEGER aggregates as BigInt.
+// Both blow up on the client: tickFormatter `.slice` on Date throws, recharts can't do arithmetic on BigInt.
+// Normalise once at the boundary so every endpoint returns JSON-friendly primitives.
+function normaliseValue(v: any): any {
+  if (v === null || v === undefined) return v;
+  if (typeof v === 'bigint') return Number(v);
+  if (v instanceof Date) return v.toISOString().slice(0, 10);
+  if (Array.isArray(v)) return v.map(normaliseValue);
+  if (typeof v === 'object') {
+    const out: any = {};
+    for (const k in v) out[k] = normaliseValue(v[k]);
+    return out;
+  }
+  return v;
+}
+
 export function runQuery<T = any>(sql: string): Promise<T[]> {
   return new Promise((resolve, reject) => {
     if (!conn) {
@@ -37,7 +53,7 @@ export function runQuery<T = any>(sql: string): Promise<T[]> {
     }
     conn.all(sql, (err, rows) => {
       if (err) reject(err);
-      else resolve(rows as T[]);
+      else resolve(normaliseValue(rows) as T[]);
     });
   });
 }

@@ -9,12 +9,18 @@ import Email from './pages/Email';
 import CustomerJourney from './pages/CustomerJourney';
 import CrossChannel from './pages/CrossChannel';
 import DataTrust from './pages/DataTrust';
+import PlatformMix from './pages/PlatformMix';
+import Scenarios from './pages/Scenarios';
+import Holdout from './pages/Holdout';
 
 export default function App() {
   return (
     <AppLayout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/platform-mix" element={<PlatformMix />} />
+        <Route path="/scenarios" element={<Scenarios />} />
+        <Route path="/holdout" element={<Holdout />} />
         <Route path="/web" element={<WebOrders />} />
         <Route path="/store" element={<StoreSales />} />
         <Route path="/paid" element={<PaidSearch />} />

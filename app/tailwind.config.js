@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./api/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'lg:static',
+    'lg:translate-x-0',
+    'lg:hidden',
+    'lg:p-6',
+    'lg:grid-cols-4',
+    'lg:block',
+    'md:grid-cols-2',
+  ],
   theme: {
     extend: {
       colors: {
@@ -50,4 +59,4 @@ export default {
     },
   },
   plugins: [],
-};
+}

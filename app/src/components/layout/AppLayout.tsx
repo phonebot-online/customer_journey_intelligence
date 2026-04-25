@@ -1,18 +1,23 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X } from 'lucide-react';
+import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X, Network, FlaskConical, PauseCircle } from 'lucide-react';
 import TimeWindowSelector from './TimeWindowSelector';
 
-const navItems = [
+type NavItem = { to: string; label: string; icon: typeof BarChart3; section?: string };
+
+const navItems: NavItem[] = [
   { to: '/', label: 'CEO Overview', icon: BarChart3 },
-  { to: '/web', label: 'Web Orders', icon: ShoppingCart },
-  { to: '/store', label: 'Store Sales', icon: Store },
-  { to: '/paid', label: 'Paid Media', icon: Megaphone },
-  { to: '/organic', label: 'Organic', icon: Search },
-  { to: '/email', label: 'Email', icon: Mail },
-  { to: '/journey', label: 'Journey', icon: Route },
-  { to: '/cross-channel', label: 'Cross-Channel', icon: GitCompare },
-  { to: '/qa', label: 'Data Trust', icon: ShieldCheck },
+  { to: '/platform-mix', label: 'Platform Mix', icon: Network, section: 'Strategy' },
+  { to: '/scenarios', label: 'Scenarios', icon: FlaskConical, section: 'Strategy' },
+  { to: '/holdout', label: 'FB Holdout', icon: PauseCircle, section: 'Strategy' },
+  { to: '/web', label: 'Web Orders', icon: ShoppingCart, section: 'Channels' },
+  { to: '/store', label: 'Store Sales', icon: Store, section: 'Channels' },
+  { to: '/paid', label: 'Paid Media', icon: Megaphone, section: 'Channels' },
+  { to: '/organic', label: 'Organic', icon: Search, section: 'Channels' },
+  { to: '/email', label: 'Email', icon: Mail, section: 'Channels' },
+  { to: '/journey', label: 'Journey', icon: Route, section: 'Channels' },
+  { to: '/cross-channel', label: 'Cross-Channel', icon: GitCompare, section: 'Channels' },
+  { to: '/qa', label: 'Data Trust', icon: ShieldCheck, section: 'Meta' },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -34,23 +39,31 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           </button>
         </div>
         <nav className="p-2 space-y-1">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              onClick={() => setSidebarOpen(false)}
-              className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'bg-blue-50 text-blue-700'
-                    : 'text-gray-700 hover:bg-gray-100'
-                }`
-              }
-            >
-              <item.icon className="w-4 h-4" />
-              {item.label}
-            </NavLink>
-          ))}
+          {navItems.map((item, i) => {
+            const prevSection = i > 0 ? navItems[i - 1].section : undefined;
+            const showHeader = item.section && item.section !== prevSection;
+            return (
+              <div key={item.to}>
+                {showHeader && (
+                  <p className="px-3 pt-3 pb-1 text-[10px] font-semibold uppercase tracking-wider text-gray-400">{item.section}</p>
+                )}
+                <NavLink
+                  to={item.to}
+                  onClick={() => setSidebarOpen(false)}
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'bg-blue-50 text-blue-700'
+                        : 'text-gray-700 hover:bg-gray-100'
+                    }`
+                  }
+                >
+                  <item.icon className="w-4 h-4" />
+                  {item.label}
+                </NavLink>
+              </div>
+            );
+          })}
         </nav>
       </aside>
 

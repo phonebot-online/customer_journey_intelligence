@@ -375,14 +375,18 @@ Thanks
       LIMIT 30
     `);
 
-    // Wasteful SKUs: high spend, zero conversions
+    // Wasteful SKUs: meaningful spend, zero conversions, meaningful traffic.
+    // Threshold raised to >=A$60/30d (~A$2/day) per Google manager feedback that low-spend
+    // zero-conv SKUs are noise, not waste. Also requires ≥30 clicks so we exclude SKUs
+    // that simply weren't served (the "stock-out" zero-conv looks structurally different
+    // from "served-but-doesn't-convert" zero-conv).
     const wasteful = await runQuery<{
       title: string; brand: string; campaign_name: string;
       cost: number; clicks: number; impressions: number;
     }>(`
       SELECT title, brand, campaign_name, cost, clicks, impressions
       FROM fact_aw_shopping_sku
-      WHERE conversions = 0 AND cost >= 30
+      WHERE conversions = 0 AND cost >= 60 AND clicks >= 30
       ORDER BY cost DESC
       LIMIT 25
     `);

@@ -165,8 +165,17 @@ export default function Diagnostics() {
             </table>
           </div>
 
+          {/* Manager-validated insight callout */}
+          <div className="bg-blue-50 border border-blue-300 rounded p-3 mb-4 text-xs text-blue-900">
+            <p className="font-semibold mb-1">✅ Validated by Google Ads manager (2026-04-27)</p>
+            <p>Samsung Phones ad group April CPA spike = stock OOS. Manager: "a lot of models went OOS — newest shipment will lift CVR." Aligns with GMC in-stock data above (Samsung 28% in stock, top of OOS-impacted brands). The supply-first thesis is the right framing.</p>
+          </div>
+
           {/* Wasteful SKUs */}
-          <h4 className="text-sm font-semibold text-red-700 mb-2">⚠ High-spend SKUs with ZERO conversions (cut or fix)</h4>
+          <h4 className="text-sm font-semibold text-red-700 mb-2">⚠ Persistent zero-conversion SKUs (≥A$60/30d AND ≥30 clicks)</h4>
+          <p className="text-xs text-gray-600 mb-2">
+            Threshold raised per Google manager feedback: SKUs with A$5-A$15 zero-conv spend are normal noise, not waste. Filter now shows only SKUs that received real traffic (≥30 clicks) AND meaningful spend (≥A$60/30d) AND still didn't convert — these are listing/price/feed issues, not campaign issues.
+          </p>
           <div className="overflow-x-auto mb-5">
             <table className="min-w-full text-sm">
               <thead className="bg-red-50">

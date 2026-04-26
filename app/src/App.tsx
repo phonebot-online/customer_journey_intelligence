@@ -12,12 +12,22 @@ import DataTrust from './pages/DataTrust';
 import PlatformMix from './pages/PlatformMix';
 import Scenarios from './pages/Scenarios';
 import Holdout from './pages/Holdout';
+import Actions from './pages/Actions';
+import Diagnostics from './pages/Diagnostics';
+import Geography from './pages/Geography';
+import AIInsights from './pages/AIInsights';
+import Admin from './pages/Admin';
 
 export default function App() {
   return (
     <AppLayout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/actions" element={<Actions />} />
+        <Route path="/diagnostics" element={<Diagnostics />} />
+        <Route path="/geography" element={<Geography />} />
+        <Route path="/ai" element={<AIInsights />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/platform-mix" element={<PlatformMix />} />
         <Route path="/scenarios" element={<Scenarios />} />
         <Route path="/holdout" element={<Holdout />} />

@@ -19,6 +19,7 @@ export default function Scenarios() {
 
   const compare = trpc.strategy.comparePlanningModes.useQuery();
   const channelCurves = trpc.strategy.channelCurves.useQuery();
+  const multiWindow = trpc.diagnostics.multiWindowEfficiency.useQuery();
 
   const customForecast = trpc.strategy.forecastScenario.useQuery(custom, { enabled: activeMode === 'custom' });
   const activePreset = activeMode !== 'custom' ? compare.data?.find(m => m.mode === activeMode) : null;
@@ -230,6 +231,49 @@ export default function Scenarios() {
             caveat="Curves are log-linear fits. ±30% uncertainty band on inferred efficiency. Don't extrapolate past observed spend ranges."
             tier="inferred"
           />
+        </div>
+      )}
+
+      {/* Multi-window efficiency comparison */}
+      {multiWindow.data && (
+        <div className="bg-white rounded-lg border border-gray-200 p-5 shadow-sm">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Multi-window efficiency comparison (1m / 3m / 6m / 12m)</h3>
+          <p className="text-xs text-gray-500 mb-3">
+            How current paid spend levels compare across rolling windows. The shape (efficiency vs spend) tells you whether the saturating-returns story is stable across time. AW row across windows: efficiency rose 1.27→2.49× as spend was cut from A$1,299/day to A$637/day.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">Window</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">AW spend/d</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">AW eff (GP/$)</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">FB spend/d</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">FB eff</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Bing spend/d</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Bing eff</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">CMS orders/d</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">CMS rev/d</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {multiWindow.data.map((w) => (
+                  <tr key={w.window}>
+                    <td className="px-3 py-2 font-medium text-gray-900">{w.window}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(w.aw_spend)}</td>
+                    <td className={`px-3 py-2 text-right font-medium ${w.aw_efficiency >= 1.5 ? 'text-green-700' : w.aw_efficiency >= 1.0 ? 'text-blue-700' : 'text-red-700'}`}>{w.aw_efficiency.toFixed(2)}×</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(w.fb_spend)}</td>
+                    <td className="px-3 py-2 text-right font-medium text-red-700">{w.fb_efficiency.toFixed(2)}×</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(w.bing_spend)}</td>
+                    <td className={`px-3 py-2 text-right font-medium ${w.bing_efficiency >= 1.5 ? 'text-green-700' : 'text-blue-700'}`}>{w.bing_efficiency.toFixed(2)}×</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{w.cms_orders.toFixed(1)}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(w.cms_revenue)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <TrustBadge source="Per-window aggregates × saturating-curve fits" tier="reconciled" caveat="Efficiency = output of saturating curve at the window's avg daily spend." />
         </div>
       )}
 

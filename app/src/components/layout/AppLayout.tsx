@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X, Network, FlaskConical, PauseCircle } from 'lucide-react';
+import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X, Network, FlaskConical, PauseCircle, ListChecks, Stethoscope, MapPin, Brain, Settings } from 'lucide-react';
 import TimeWindowSelector from './TimeWindowSelector';
 
 type NavItem = { to: string; label: string; icon: typeof BarChart3; section?: string };
 
 const navItems: NavItem[] = [
   { to: '/', label: 'CEO Overview', icon: BarChart3 },
+  { to: '/actions', label: 'Action Center', icon: ListChecks, section: 'Strategy' },
   { to: '/platform-mix', label: 'Platform Mix', icon: Network, section: 'Strategy' },
   { to: '/scenarios', label: 'Scenarios', icon: FlaskConical, section: 'Strategy' },
   { to: '/holdout', label: 'FB Holdout', icon: PauseCircle, section: 'Strategy' },
+  { to: '/diagnostics', label: 'Diagnostics', icon: Stethoscope, section: 'Diagnostics' },
+  { to: '/geography', label: 'Geography', icon: MapPin, section: 'Diagnostics' },
+  { to: '/ai', label: 'AI Insights', icon: Brain, section: 'Diagnostics' },
   { to: '/web', label: 'Web Orders', icon: ShoppingCart, section: 'Channels' },
   { to: '/store', label: 'Store Sales', icon: Store, section: 'Channels' },
   { to: '/paid', label: 'Paid Media', icon: Megaphone, section: 'Channels' },
@@ -18,6 +22,7 @@ const navItems: NavItem[] = [
   { to: '/journey', label: 'Journey', icon: Route, section: 'Channels' },
   { to: '/cross-channel', label: 'Cross-Channel', icon: GitCompare, section: 'Channels' },
   { to: '/qa', label: 'Data Trust', icon: ShieldCheck, section: 'Meta' },
+  { to: '/admin', label: 'Admin & Refresh', icon: Settings, section: 'Meta' },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -38,7 +43,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             <X className="w-5 h-5 text-gray-500" />
           </button>
         </div>
-        <nav className="p-2 space-y-1">
+        <nav className="p-2 space-y-1 overflow-y-auto h-[calc(100vh-4rem)]">
           {navItems.map((item, i) => {
             const prevSection = i > 0 ? navItems[i - 1].section : undefined;
             const showHeader = item.section && item.section !== prevSection;

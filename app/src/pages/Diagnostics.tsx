@@ -12,6 +12,7 @@ export default function Diagnostics() {
   const refunds = trpc.diagnostics.refundByBrandTime.useQuery();
   const inventory = trpc.diagnostics.inventoryTracker.useQuery();
   const inventoryPulse = trpc.diagnostics.inventoryPulse.useQuery();
+  const skuPerf = trpc.diagnostics.shoppingSkuPerformance.useQuery();
   const unassigned = trpc.diagnostics.unassignedInvestigation.useQuery();
   const repeat = trpc.diagnostics.repeatByChannel.useQuery();
   const [showEmail, setShowEmail] = useState(false);
@@ -115,6 +116,115 @@ export default function Diagnostics() {
           <div className="mt-3 p-3 bg-purple-100 rounded text-xs text-purple-900">
             <strong>What to look at next:</strong> Apple 39% in-stock vs Xiaomi 5% / Huawei 5% — exactly explains why Apple PMax keeps spending and Xiaomi/Huawei went to zero. Microsoft 3% / Beats 0% / Nothing 0% / ZTE 0% / Jabra 0% — these SKUs cannot serve at all even if you funded them.
           </div>
+        </div>
+      )}
+
+      {/* SHOPPING SKU × STOCK CROSS-REFERENCE */}
+      {skuPerf.data && (
+        <div className="bg-white rounded-lg border border-red-300 p-5 shadow-sm bg-gradient-to-br from-red-50 to-orange-50">
+          <div className="flex items-center gap-2 mb-3">
+            <Package className="w-5 h-5 text-red-700" />
+            <h3 className="text-lg font-semibold text-gray-900">Shopping SKUs ↔ GMC stock cross-reference</h3>
+          </div>
+          <p className="text-sm text-gray-700 mb-3">
+            Joining AW Shopping per-SKU spend with GMC catalog availability. Confirms the supply hypothesis empirically: brands with more in-stock SKUs spend more in Shopping.
+          </p>
+
+          {/* Brand-level join */}
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">Brand-level: Shopping spend vs in-stock SKUs (joined)</h4>
+          <div className="overflow-x-auto mb-5">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">Brand</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Shopping SKUs (active)</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Spend /30d</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Platform ROAS</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">GMC total SKUs</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">GMC in-stock</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">% in-stock</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {skuPerf.data.brandJoin.slice(0, 15).map((b) => (
+                  <tr key={b.brand}>
+                    <td className="px-3 py-2 font-medium text-gray-900 capitalize">{b.brand}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{b.shopping_skus}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{b.shopping_spend > 0 ? formatCurrency(b.shopping_spend) : '—'}</td>
+                    <td className={`px-3 py-2 text-right font-medium ${b.shopping_roas >= 5 ? 'text-green-700' : b.shopping_roas >= 2 ? 'text-blue-700' : 'text-amber-700'}`}>
+                      {b.shopping_roas > 0 ? `${b.shopping_roas.toFixed(1)}×` : '—'}
+                    </td>
+                    <td className="px-3 py-2 text-right text-gray-700">{b.gmc_total_skus}</td>
+                    <td className="px-3 py-2 text-right text-green-700">{b.gmc_in_stock}</td>
+                    <td className={`px-3 py-2 text-right font-bold ${b.gmc_in_stock_pct >= 0.30 ? 'text-green-700' : b.gmc_in_stock_pct >= 0.15 ? 'text-amber-700' : 'text-red-700'}`}>
+                      {b.gmc_in_stock_pct > 0 ? formatPercent(b.gmc_in_stock_pct) : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Wasteful SKUs */}
+          <h4 className="text-sm font-semibold text-red-700 mb-2">⚠ High-spend SKUs with ZERO conversions (cut or fix)</h4>
+          <div className="overflow-x-auto mb-5">
+            <table className="min-w-full text-sm">
+              <thead className="bg-red-50">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-red-700">Brand</th>
+                  <th className="px-3 py-2 text-left font-medium text-red-700">Product</th>
+                  <th className="px-3 py-2 text-left font-medium text-red-700">Campaign</th>
+                  <th className="px-3 py-2 text-right font-medium text-red-700">Spend /30d</th>
+                  <th className="px-3 py-2 text-right font-medium text-red-700">Clicks</th>
+                  <th className="px-3 py-2 text-right font-medium text-red-700">Impressions</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {skuPerf.data.wasteful.map((s, i) => (
+                  <tr key={i}>
+                    <td className="px-3 py-2 font-medium text-gray-900 capitalize">{s.brand}</td>
+                    <td className="px-3 py-2 text-xs text-gray-700">{s.title}</td>
+                    <td className="px-3 py-2 text-xs text-gray-500">{s.campaign_name}</td>
+                    <td className="px-3 py-2 text-right font-bold text-red-700">{formatCurrency(s.cost)}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatNumber(s.clicks)}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatNumber(s.impressions)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Top spending SKUs */}
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">Top 30 SKUs by spend (last 30d)</h4>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">Product</th>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">Campaign</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Spend</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Conv</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Value</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Platform ROAS</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {skuPerf.data.topSpend.map((s, i) => (
+                  <tr key={i}>
+                    <td className="px-3 py-2 text-xs text-gray-700">{s.title}</td>
+                    <td className="px-3 py-2 text-xs text-gray-500">{s.campaign_name}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(s.cost)}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{s.conversions.toFixed(1)}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatCurrency(s.conversion_value)}</td>
+                    <td className={`px-3 py-2 text-right font-medium ${s.roas >= 5 ? 'text-green-700' : s.roas >= 1 ? 'text-blue-700' : 'text-red-700'}`}>
+                      {s.roas > 0 ? `${s.roas.toFixed(1)}×` : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <TrustBadge source="AW ShoppingPerformanceView (item-level) + GMC catalog snapshot, joined on brand" tier="reconciled" caveat="Platform ROAS shown — over-attributed by ~5× per locked triangulation. 0-conv high-spend SKUs are likely waste OR have lagged conversions; cut after 14 days of zero." />
         </div>
       )}
 

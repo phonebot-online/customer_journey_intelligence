@@ -226,6 +226,22 @@ export async function initSchema(): Promise<void> {
     FROM read_csv_auto('${getDataPath('12_month/brevo/campaigns_12m.csv')}', header=true, auto_detect=true)
   `);
 
+  // Google Ads Shopping — SKU-level performance (last 30d, all SKUs with cost > 0)
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_aw_shopping_sku AS
+    SELECT
+      "Campaign name" as campaign_name,
+      "OfferId" as offer_id,
+      "ProductTitle" as title,
+      "Brand" as brand,
+      TRY_CAST(Cost AS DOUBLE) as cost,
+      TRY_CAST(Clicks AS INTEGER) as clicks,
+      TRY_CAST(Impressions AS INTEGER) as impressions,
+      TRY_CAST(Conversions AS DOUBLE) as conversions,
+      TRY_CAST(ConversionValue AS DOUBLE) as conversion_value
+    FROM read_csv_auto('${getDataPath('1_month/google_ads/shopping_sku_30d.csv')}', header=true, auto_detect=true)
+  `);
+
   // Google Merchant Center — product catalog snapshot (1,494 SKUs Apr 2026)
   // Validates the "PMax spend follows stock availability" hypothesis.
   await runQuery(`

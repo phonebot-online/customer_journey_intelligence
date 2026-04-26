@@ -226,6 +226,19 @@ export async function initSchema(): Promise<void> {
     FROM read_csv_auto('${getDataPath('12_month/brevo/campaigns_12m.csv')}', header=true, auto_detect=true)
   `);
 
+  // Google Merchant Center — product catalog snapshot (1,494 SKUs Apr 2026)
+  // Validates the "PMax spend follows stock availability" hypothesis.
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_gmc_products AS
+    SELECT
+      snapshot_date::DATE as snapshot_date,
+      Brand as brand,
+      Availability as availability,
+      TRY_CAST(Price AS DOUBLE) as price,
+      Currency as currency
+    FROM read_csv_auto('${getDataPath('1_month/google_merchant_center/products_snapshot.csv')}', header=true, auto_detect=true)
+  `);
+
   // ProfitMetrics channel GP
   await runQuery(`
     CREATE OR REPLACE TABLE fact_pm_channel_gp AS

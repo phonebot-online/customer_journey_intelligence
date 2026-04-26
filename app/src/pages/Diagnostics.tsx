@@ -11,6 +11,7 @@ export default function Diagnostics() {
   const mix = trpc.diagnostics.brandConditionMixShift.useQuery();
   const refunds = trpc.diagnostics.refundByBrandTime.useQuery();
   const inventory = trpc.diagnostics.inventoryTracker.useQuery();
+  const inventoryPulse = trpc.diagnostics.inventoryPulse.useQuery();
   const unassigned = trpc.diagnostics.unassignedInvestigation.useQuery();
   const repeat = trpc.diagnostics.repeatByChannel.useQuery();
   const [showEmail, setShowEmail] = useState(false);
@@ -48,6 +49,72 @@ export default function Diagnostics() {
             </ResponsiveContainer>
           </div>
           <TrustBadge source="fact_web_orders grouped by month × Brand" tier="confirmed" caveat="Jul-Nov 2025 gap visible as missing months. Brand extracted from Products free-text via regex." />
+        </div>
+      )}
+
+      {/* GMC INVENTORY PULSE — confirms PMax-follows-stock hypothesis */}
+      {inventoryPulse.data && (
+        <div className="bg-white rounded-lg border border-purple-300 p-5 shadow-sm bg-gradient-to-br from-purple-50 to-blue-50">
+          <div className="flex items-center gap-2 mb-3">
+            <Package className="w-5 h-5 text-purple-700" />
+            <h3 className="text-lg font-semibold text-gray-900">Google Merchant Center inventory — RIGHT NOW</h3>
+          </div>
+          <p className="text-sm text-gray-700 mb-3">
+            <strong>This validates the "PMax spend follows stock" hypothesis.</strong> {formatNumber(inventoryPulse.data.summary.total_skus)} SKUs in feed,
+            <strong className="text-red-700"> only {formatPercent(inventoryPulse.data.summary.in_stock / inventoryPulse.data.summary.total_skus)} in stock</strong>
+            ({inventoryPulse.data.summary.in_stock} of {inventoryPulse.data.summary.total_skus}). Snapshot: {inventoryPulse.data.summary.snapshot_date}.
+          </p>
+          <div className="grid grid-cols-3 gap-3 mb-4">
+            <div className="p-3 bg-green-50 rounded">
+              <p className="text-xs text-green-600">In stock</p>
+              <p className="text-2xl font-bold text-green-900">{formatNumber(inventoryPulse.data.summary.in_stock)}</p>
+            </div>
+            <div className="p-3 bg-red-50 rounded">
+              <p className="text-xs text-red-600">Out of stock</p>
+              <p className="text-2xl font-bold text-red-900">{formatNumber(inventoryPulse.data.summary.out_of_stock)}</p>
+            </div>
+            <div className="p-3 bg-amber-50 rounded">
+              <p className="text-xs text-amber-600">Preorder</p>
+              <p className="text-2xl font-bold text-amber-900">{formatNumber(inventoryPulse.data.summary.preorder)}</p>
+            </div>
+          </div>
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">In-stock rate by brand (correlates with which PMax campaigns can spend)</h4>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">Brand</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Total SKUs</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">In stock</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Out</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">% In stock</th>
+                  <th className="px-3 py-2 text-right font-medium text-gray-500">Avg price (in-stock)</th>
+                  <th className="px-3 py-2 text-left font-medium text-gray-500">PMax serving signal</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {inventoryPulse.data.byBrand.slice(0, 20).map((b) => (
+                  <tr key={b.brand}>
+                    <td className="px-3 py-2 font-medium text-gray-900">{b.brand}</td>
+                    <td className="px-3 py-2 text-right text-gray-700">{formatNumber(b.total)}</td>
+                    <td className="px-3 py-2 text-right text-green-700">{formatNumber(b.in_stock)}</td>
+                    <td className="px-3 py-2 text-right text-red-700">{formatNumber(b.out_of_stock)}</td>
+                    <td className={`px-3 py-2 text-right font-bold ${b.in_stock_pct >= 0.30 ? 'text-green-700' : b.in_stock_pct >= 0.15 ? 'text-amber-700' : 'text-red-700'}`}>
+                      {formatPercent(b.in_stock_pct)}
+                    </td>
+                    <td className="px-3 py-2 text-right text-gray-700">{b.avg_price ? formatCurrency(b.avg_price) : '—'}</td>
+                    <td className="px-3 py-2 text-xs text-gray-600">
+                      {b.in_stock_pct >= 0.30 ? '✅ PMax can serve heavily' : b.in_stock_pct >= 0.15 ? '⚠ Limited serving' : '❌ Almost no serving'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <TrustBadge source="Google Merchant Center via Supermetrics (account 101150783)" tier="confirmed" caveat="Single-day snapshot. Daily snapshots over time would let you correlate PMax spend changes with feed availability changes." />
+          <div className="mt-3 p-3 bg-purple-100 rounded text-xs text-purple-900">
+            <strong>What to look at next:</strong> Apple 39% in-stock vs Xiaomi 5% / Huawei 5% — exactly explains why Apple PMax keeps spending and Xiaomi/Huawei went to zero. Microsoft 3% / Beats 0% / Nothing 0% / ZTE 0% / Jabra 0% — these SKUs cannot serve at all even if you funded them.
+          </div>
         </div>
       )}
 

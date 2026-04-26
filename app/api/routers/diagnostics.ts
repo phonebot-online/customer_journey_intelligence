@@ -359,6 +359,36 @@ Thanks
     };
   }),
 
+  // 8. GMC inventory pulse — what's in stock right now, by brand
+  inventoryPulse: publicProcedure.query(async () => {
+    const byBrand = await runQuery<{ brand: string; total: number; in_stock: number; out_of_stock: number; preorder: number; in_stock_pct: number; avg_price: number }>(`
+      SELECT
+        brand,
+        COUNT(*)::INTEGER as total,
+        COUNT(CASE WHEN availability = 'in stock' THEN 1 END)::INTEGER as in_stock,
+        COUNT(CASE WHEN availability = 'out of stock' THEN 1 END)::INTEGER as out_of_stock,
+        COUNT(CASE WHEN availability = 'preorder' THEN 1 END)::INTEGER as preorder,
+        (COUNT(CASE WHEN availability = 'in stock' THEN 1 END)::DOUBLE / COUNT(*))::DOUBLE as in_stock_pct,
+        AVG(CASE WHEN availability = 'in stock' THEN price END)::DOUBLE as avg_price
+      FROM fact_gmc_products
+      GROUP BY brand
+      HAVING total >= 5
+      ORDER BY total DESC
+    `);
+
+    const summary = await runQuery<{ total_skus: number; in_stock: number; out_of_stock: number; preorder: number; snapshot_date: string }>(`
+      SELECT
+        COUNT(*)::INTEGER as total_skus,
+        COUNT(CASE WHEN availability = 'in stock' THEN 1 END)::INTEGER as in_stock,
+        COUNT(CASE WHEN availability = 'out of stock' THEN 1 END)::INTEGER as out_of_stock,
+        COUNT(CASE WHEN availability = 'preorder' THEN 1 END)::INTEGER as preorder,
+        MAX(snapshot_date)::DATE as snapshot_date
+      FROM fact_gmc_products
+    `);
+
+    return { byBrand, summary: summary[0] };
+  }),
+
   // 7. Multi-window comparison — paid efficiency at 1m/3m/6m/12m.
   // Uses LOCKED data points from cross_checks/step7_LOCKED_multiwindow_triangulation.md because the
   // current on-disk daily tables only hold 1m of data. CMS truth is computed live from web orders.

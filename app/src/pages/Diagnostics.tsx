@@ -12,7 +12,8 @@ export default function Diagnostics() {
   const refunds = trpc.diagnostics.refundByBrandTime.useQuery();
   const inventory = trpc.diagnostics.inventoryTracker.useQuery();
   const inventoryPulse = trpc.diagnostics.inventoryPulse.useQuery();
-  const skuPerf = trpc.diagnostics.shoppingSkuPerformance.useQuery();
+  const [skuWindow, setSkuWindow] = useState<'7d' | '30d'>('7d');
+  const skuPerf = trpc.diagnostics.shoppingSkuPerformance.useQuery({ window: skuWindow });
   const unassigned = trpc.diagnostics.unassignedInvestigation.useQuery();
   const repeat = trpc.diagnostics.repeatByChannel.useQuery();
   const [showEmail, setShowEmail] = useState(false);
@@ -122,12 +123,25 @@ export default function Diagnostics() {
       {/* SHOPPING SKU × STOCK CROSS-REFERENCE */}
       {skuPerf.data && (
         <div className="bg-white rounded-lg border border-red-300 p-5 shadow-sm bg-gradient-to-br from-red-50 to-orange-50">
-          <div className="flex items-center gap-2 mb-3">
-            <Package className="w-5 h-5 text-red-700" />
-            <h3 className="text-lg font-semibold text-gray-900">Shopping SKUs ↔ GMC stock cross-reference</h3>
+          <div className="flex items-center justify-between gap-3 mb-3 flex-wrap">
+            <div className="flex items-center gap-2">
+              <Package className="w-5 h-5 text-red-700" />
+              <h3 className="text-lg font-semibold text-gray-900">Shopping SKUs ↔ GMC stock cross-reference</h3>
+            </div>
+            <div className="inline-flex bg-gray-100 rounded-lg p-1">
+              <button
+                onClick={() => setSkuWindow('7d')}
+                className={`px-3 py-1 text-xs font-medium rounded-md ${skuWindow === '7d' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
+              >7d (act now)</button>
+              <button
+                onClick={() => setSkuWindow('30d')}
+                className={`px-3 py-1 text-xs font-medium rounded-md ${skuWindow === '30d' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'}`}
+              >30d (strategic)</button>
+            </div>
           </div>
           <p className="text-sm text-gray-700 mb-3">
             Joining AW Shopping per-SKU spend with GMC catalog availability. Confirms the supply hypothesis empirically: brands with more in-stock SKUs spend more in Shopping.
+            <strong className="text-blue-700"> {skuWindow === '7d' ? 'Showing last 7 days — best for "do this today" decisions (excludes long-paused SKUs).' : 'Showing last 30 days — best for trend / strategic view (includes pre-pause spend).'}</strong>
           </p>
 
           {/* Brand-level join */}
@@ -172,9 +186,11 @@ export default function Diagnostics() {
           </div>
 
           {/* Wasteful SKUs */}
-          <h4 className="text-sm font-semibold text-red-700 mb-2">⚠ Persistent zero-conversion SKUs (≥A$60/30d AND ≥30 clicks)</h4>
+          <h4 className="text-sm font-semibold text-red-700 mb-2">⚠ Zero-conversion SKUs ({skuWindow === '7d' ? '≥A$15 spend AND ≥10 clicks in last 7d' : '≥A$60 spend AND ≥30 clicks in last 30d'})</h4>
           <p className="text-xs text-gray-600 mb-2">
-            Threshold raised per Google manager feedback: SKUs with A$5-A$15 zero-conv spend are normal noise, not waste. Filter now shows only SKUs that received real traffic (≥30 clicks) AND meaningful spend (≥A$60/30d) AND still didn't convert — these are listing/price/feed issues, not campaign issues.
+            {skuWindow === '7d'
+              ? 'Last 7 days = recent waste only. Excludes SKUs that were paused 1-3 weeks ago. Confirmed manager already actioned several 30d-flagged SKUs (iPhone 17 Pro Max variants, Razr 40 Ultra Grade A all stopped Apr 24-25).'
+              : 'Last 30 days threshold raised per Google manager feedback: $5-15 zero-conv noise is normal. The 30d cumulative includes spend from SKUs that may already be paused — switch to 7d for current-state decisions.'}
           </p>
           <div className="overflow-x-auto mb-5">
             <table className="min-w-full text-sm">

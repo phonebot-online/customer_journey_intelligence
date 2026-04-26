@@ -1,3 +1,4 @@
+import { z } from 'zod';
 import { router, publicProcedure } from '../middleware';
 import { runQuery } from '../lib/duckdb';
 
@@ -359,81 +360,84 @@ Thanks
     };
   }),
 
-  // 9. SKU-level shopping performance (joined to GMC stock)
-  shoppingSkuPerformance: publicProcedure.query(async () => {
-    // Top spending SKUs
-    const topSpend = await runQuery<{
-      title: string; brand: string; campaign_name: string;
-      cost: number; clicks: number; conversions: number; conversion_value: number; roas: number;
-    }>(`
-      SELECT
-        title, brand, campaign_name,
-        cost, clicks, conversions, conversion_value,
-        CASE WHEN cost > 0 THEN conversion_value / cost ELSE 0 END as roas
-      FROM fact_aw_shopping_sku
-      ORDER BY cost DESC
-      LIMIT 30
-    `);
+  // 9. SKU-level shopping performance (joined to GMC stock).
+  // window=7d: last-7-days for "act now" decisions (lower thresholds, higher signal)
+  // window=30d: last-30-days for strategic / trend view (higher thresholds, lower noise)
+  shoppingSkuPerformance: publicProcedure
+    .input(z.object({ window: z.enum(['7d', '30d']) }).optional())
+    .query(async ({ input }) => {
+      const win = input?.window || '7d';
+      const table = win === '7d' ? 'fact_aw_shopping_sku_7d' : 'fact_aw_shopping_sku';
+      // For 7d use lower thresholds (less time to accumulate spend/clicks)
+      const minCost = win === '7d' ? 15 : 60;
+      const minClicks = win === '7d' ? 10 : 30;
 
-    // Wasteful SKUs: meaningful spend, zero conversions, meaningful traffic.
-    // Threshold raised to >=A$60/30d (~A$2/day) per Google manager feedback that low-spend
-    // zero-conv SKUs are noise, not waste. Also requires ≥30 clicks so we exclude SKUs
-    // that simply weren't served (the "stock-out" zero-conv looks structurally different
-    // from "served-but-doesn't-convert" zero-conv).
-    const wasteful = await runQuery<{
-      title: string; brand: string; campaign_name: string;
-      cost: number; clicks: number; impressions: number;
-    }>(`
-      SELECT title, brand, campaign_name, cost, clicks, impressions
-      FROM fact_aw_shopping_sku
-      WHERE conversions = 0 AND cost >= 60 AND clicks >= 30
-      ORDER BY cost DESC
-      LIMIT 25
-    `);
+      const topSpend = await runQuery<{
+        title: string; brand: string; campaign_name: string;
+        cost: number; clicks: number; conversions: number; conversion_value: number; roas: number;
+      }>(`
+        SELECT
+          title, brand, campaign_name,
+          cost, clicks, conversions, conversion_value,
+          CASE WHEN cost > 0 THEN conversion_value / cost ELSE 0 END as roas
+        FROM ${table}
+        ORDER BY cost DESC
+        LIMIT 30
+      `);
 
-    // Brand-level Shopping × Stock cross-reference
-    const brandJoin = await runQuery<{
-      brand: string;
-      shopping_skus: number;
-      shopping_spend: number;
-      shopping_conv: number;
-      shopping_value: number;
-      shopping_roas: number;
-      gmc_total_skus: number;
-      gmc_in_stock: number;
-      gmc_in_stock_pct: number;
-    }>(`
-      WITH aw AS (
-        SELECT LOWER(brand) as brand,
-               COUNT(*)::INTEGER as shopping_skus,
-               SUM(cost)::DOUBLE as shopping_spend,
-               SUM(conversions)::DOUBLE as shopping_conv,
-               SUM(conversion_value)::DOUBLE as shopping_value
-        FROM fact_aw_shopping_sku GROUP BY LOWER(brand)
-      ),
-      gmc AS (
-        SELECT LOWER(brand) as brand,
-               COUNT(*)::INTEGER as total_skus,
-               COUNT(CASE WHEN availability = 'in stock' THEN 1 END)::INTEGER as in_stock
-        FROM fact_gmc_products GROUP BY LOWER(brand)
-      )
-      SELECT
-        COALESCE(aw.brand, gmc.brand) as brand,
-        COALESCE(aw.shopping_skus, 0) as shopping_skus,
-        COALESCE(aw.shopping_spend, 0) as shopping_spend,
-        COALESCE(aw.shopping_conv, 0) as shopping_conv,
-        COALESCE(aw.shopping_value, 0) as shopping_value,
-        CASE WHEN COALESCE(aw.shopping_spend, 0) > 0 THEN aw.shopping_value / aw.shopping_spend ELSE 0 END as shopping_roas,
-        COALESCE(gmc.total_skus, 0) as gmc_total_skus,
-        COALESCE(gmc.in_stock, 0) as gmc_in_stock,
-        CASE WHEN gmc.total_skus > 0 THEN gmc.in_stock::DOUBLE / gmc.total_skus ELSE 0 END as gmc_in_stock_pct
-      FROM aw FULL OUTER JOIN gmc ON aw.brand = gmc.brand
-      WHERE COALESCE(aw.shopping_spend, 0) > 0 OR COALESCE(gmc.total_skus, 0) >= 5
-      ORDER BY COALESCE(aw.shopping_spend, 0) DESC
-    `);
+      const wasteful = await runQuery<{
+        title: string; brand: string; campaign_name: string;
+        cost: number; clicks: number; impressions: number;
+      }>(`
+        SELECT title, brand, campaign_name, cost, clicks, impressions
+        FROM ${table}
+        WHERE conversions = 0 AND cost >= ${minCost} AND clicks >= ${minClicks}
+        ORDER BY cost DESC
+        LIMIT 25
+      `);
 
-    return { topSpend, wasteful, brandJoin };
-  }),
+      const brandJoin = await runQuery<{
+        brand: string;
+        shopping_skus: number;
+        shopping_spend: number;
+        shopping_conv: number;
+        shopping_value: number;
+        shopping_roas: number;
+        gmc_total_skus: number;
+        gmc_in_stock: number;
+        gmc_in_stock_pct: number;
+      }>(`
+        WITH aw AS (
+          SELECT LOWER(brand) as brand,
+                 COUNT(*)::INTEGER as shopping_skus,
+                 SUM(cost)::DOUBLE as shopping_spend,
+                 SUM(conversions)::DOUBLE as shopping_conv,
+                 SUM(conversion_value)::DOUBLE as shopping_value
+          FROM ${table} GROUP BY LOWER(brand)
+        ),
+        gmc AS (
+          SELECT LOWER(brand) as brand,
+                 COUNT(*)::INTEGER as total_skus,
+                 COUNT(CASE WHEN availability = 'in stock' THEN 1 END)::INTEGER as in_stock
+          FROM fact_gmc_products GROUP BY LOWER(brand)
+        )
+        SELECT
+          COALESCE(aw.brand, gmc.brand) as brand,
+          COALESCE(aw.shopping_skus, 0) as shopping_skus,
+          COALESCE(aw.shopping_spend, 0) as shopping_spend,
+          COALESCE(aw.shopping_conv, 0) as shopping_conv,
+          COALESCE(aw.shopping_value, 0) as shopping_value,
+          CASE WHEN COALESCE(aw.shopping_spend, 0) > 0 THEN aw.shopping_value / aw.shopping_spend ELSE 0 END as shopping_roas,
+          COALESCE(gmc.total_skus, 0) as gmc_total_skus,
+          COALESCE(gmc.in_stock, 0) as gmc_in_stock,
+          CASE WHEN gmc.total_skus > 0 THEN gmc.in_stock::DOUBLE / gmc.total_skus ELSE 0 END as gmc_in_stock_pct
+        FROM aw FULL OUTER JOIN gmc ON aw.brand = gmc.brand
+        WHERE COALESCE(aw.shopping_spend, 0) > 0 OR COALESCE(gmc.total_skus, 0) >= 5
+        ORDER BY COALESCE(aw.shopping_spend, 0) DESC
+      `);
+
+      return { topSpend, wasteful, brandJoin, window: win };
+    }),
 
   // 8. GMC inventory pulse — what's in stock right now, by brand
   inventoryPulse: publicProcedure.query(async () => {

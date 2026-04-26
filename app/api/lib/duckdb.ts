@@ -68,7 +68,7 @@ export async function initSchema(): Promise<void> {
       "Order ID"::INTEGER as order_id,
       Email,
       City,
-      "Postcode"::VARCHAR as postcode,
+      TRY_CAST("Postcode" AS INTEGER)::VARCHAR as postcode,
       State,
       Products,
       Brand,
@@ -91,7 +91,7 @@ export async function initSchema(): Promise<void> {
     CREATE OR REPLACE TABLE fact_store_orders AS
     SELECT
       "Order ID"::INTEGER as order_id,
-      "Postcode"::VARCHAR as postcode,
+      TRY_CAST("Postcode" AS INTEGER)::VARCHAR as postcode,
       Products,
       Category,
       "Total Quantity"::INTEGER as total_quantity,

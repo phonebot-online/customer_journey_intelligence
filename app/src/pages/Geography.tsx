@@ -12,6 +12,7 @@ export default function Geography() {
   const totalWebRev = geo.data.webByState.reduce((s, r) => s + r.revenue, 0);
   const localStore = geo.data.storeSplit.find(s => s.is_local);
   const tourist = geo.data.storeSplit.find(s => !s.is_local);
+  const totalStoreRev = (localStore?.revenue || 0) + (tourist?.revenue || 0);
 
   return (
     <div className="space-y-6">
@@ -102,27 +103,23 @@ export default function Geography() {
         <p className="text-xs text-gray-500 mb-3">
           "Local" defined as Reservoir VIC postcodes (3073, 3083, 3087, 3072). Everything else is broader-catchment / tourist / phone-in.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          {localStore && (
-            <div className="p-4 bg-green-50 rounded border border-green-200">
-              <p className="text-xs text-green-600">Local (3073 + nearby suburbs)</p>
-              <p className="text-2xl font-bold text-green-900">{formatNumber(localStore.orders)} orders</p>
-              <p className="text-sm text-green-800 mt-1">{formatCurrency(localStore.revenue)} revenue</p>
-              <p className="text-xs text-green-700 mt-2">
-                {formatPercent(localStore.revenue / (localStore.revenue + (tourist?.revenue || 0)))} of store revenue
-              </p>
-            </div>
-          )}
-          {tourist && (
-            <div className="p-4 bg-blue-50 rounded border border-blue-200">
-              <p className="text-xs text-blue-600">Broader catchment (everywhere else)</p>
-              <p className="text-2xl font-bold text-blue-900">{formatNumber(tourist.orders)} orders</p>
-              <p className="text-sm text-blue-800 mt-1">{formatCurrency(tourist.revenue)} revenue</p>
-              <p className="text-xs text-blue-700 mt-2">
-                {formatPercent(tourist.revenue / (localStore!.revenue + tourist.revenue))} of store revenue
-              </p>
-            </div>
-          )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="p-4 bg-green-50 rounded border border-green-200">
+            <p className="text-xs text-green-600">Local (Reservoir VIC: 3073 + 3072/3083/3087)</p>
+            <p className="text-2xl font-bold text-green-900">{formatNumber(localStore?.orders || 0)} orders</p>
+            <p className="text-sm text-green-800 mt-1">{formatCurrency(localStore?.revenue || 0)} revenue</p>
+            <p className="text-xs text-green-700 mt-2">
+              {totalStoreRev > 0 ? formatPercent((localStore?.revenue || 0) / totalStoreRev) : '—'} of store revenue
+            </p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded border border-blue-200">
+            <p className="text-xs text-blue-600">Broader catchment (everywhere else)</p>
+            <p className="text-2xl font-bold text-blue-900">{formatNumber(tourist?.orders || 0)} orders</p>
+            <p className="text-sm text-blue-800 mt-1">{formatCurrency(tourist?.revenue || 0)} revenue</p>
+            <p className="text-xs text-blue-700 mt-2">
+              {totalStoreRev > 0 ? formatPercent((tourist?.revenue || 0) / totalStoreRev) : '—'} of store revenue
+            </p>
+          </div>
         </div>
 
         <h4 className="text-sm font-semibold text-gray-700 mb-2">Top 30 postcodes (store)</h4>

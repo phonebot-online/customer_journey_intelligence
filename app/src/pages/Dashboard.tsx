@@ -43,6 +43,64 @@ export default function Dashboard() {
 
       <TrustBadge source="CMS web orders v4 + Store POS + Paid daily" caveat="Jul–Nov 2025 CMS gap affects 6m/12m windows" freshness="Updated 2026-04-25" />
 
+      {/* TODAY: 5 things to do, backed by data */}
+      <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-300 rounded-lg p-5 shadow-sm">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-2xl">⚡</span>
+          <h3 className="text-lg font-bold text-gray-900">5 things you can do today, backed by this data</h3>
+        </div>
+        <div className="space-y-3">
+          {[
+            {
+              n: 1, time: '15 min', title: 'Pause 4 broken Google + Bing campaigns',
+              data: 'Standard Shopping iPhone 17 (A$343/30d), PMax iPhone 17 (A$104), CJ-DSA All Pages (A$96), Bing Standard Shopping iPads (A$25). All 0 ProfitMetrics purchases in 30d.',
+              impact: '+A$568/mo locked, zero opportunity cost (these produced 0 PM conversions).',
+              where: 'Google Ads + Bing Ads UI — full step list on /actions',
+            },
+            {
+              n: 2, time: '30 min', title: 'Enable UTM auto-tagging on Brevo email links',
+              data: 'Concurrency lift panel: Brevo send-day → CMS revenue +13.6%. Email contribution to revenue is currently INVISIBLE (Brevo has no $ attribution to GA4 or CMS).',
+              impact: 'Unlocks measurement of A$XXk/mo email-driven revenue — a probable big chunk of the 35% PM Unassigned bucket.',
+              where: 'Brevo settings → Tracking → enable auto-UTM. Fields: source=brevo, medium=email, campaign={name}.',
+            },
+            {
+              n: 3, time: '30 min', title: 'iPhone Like New pricing audit vs Reebelo + Mobileciti',
+              data: 'Step 8 product-cliff: iPhone Like New is the ONLY segment with real competitive price pressure (AOV -15% on flat volume). Reebelo appeared in GW data 19 clicks/24d in Apr 2026.',
+              impact: 'If 5-10% above market, match → +A$1-2k/mo recovered. If at-market, leave alone.',
+              where: 'Spot-check 5 top SKUs at reebelo.com.au + mobileciti.com.au.',
+            },
+            {
+              n: 4, time: '5 min', title: 'Email ProfitMetrics support re: Unassigned bucket',
+              data: '35% of PM-attributed GP (~A$38k/mo) sits in "Unassigned" with no channel source. Composition unknown — could be email completions, server-side checkouts, or iOS ITP.',
+              impact: 'Could shift channel attribution shares by ±10% once explained.',
+              where: '/diagnostics page → PM Unassigned panel → click "Show draft email" → copy + send.',
+            },
+            {
+              n: 5, time: '5 min start, then ongoing', title: 'Add "How did you find us?" dropdown to POS',
+              data: 'Reservoir store grew +5/+10/+20% YoY. GMB views correlate ~0 with web orders (separate funnel). NO walk-in attribution exists today.',
+              impact: 'Closes the store-walk-in attribution gap. After 30 days you can route A$XXXk/yr of store revenue to the right channels (Google Maps / GMB / referral / ad / walked past).',
+              where: 'Add custom field to POS checkout. Train cashiers to ask. 5 min config + ongoing.',
+            },
+          ].map(t => (
+            <div key={t.n} className="bg-white rounded p-3 border border-blue-200">
+              <div className="flex items-baseline gap-3">
+                <span className="text-2xl font-bold text-blue-700 w-8 text-right">{t.n}.</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-baseline justify-between gap-2 flex-wrap">
+                    <p className="font-semibold text-gray-900">{t.title}</p>
+                    <span className="text-xs px-2 py-0.5 bg-purple-100 text-purple-800 rounded font-medium">{t.time}</span>
+                  </div>
+                  <p className="text-xs text-gray-700 mt-1"><strong>Data:</strong> {t.data}</p>
+                  <p className="text-xs text-green-700 mt-1"><strong>Impact:</strong> {t.impact}</p>
+                  <p className="text-xs text-blue-700 mt-1"><strong>Where:</strong> {t.where}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-gray-500 italic mt-3">Total time: ~1h 30m active + 24h Brevo UTM warmup. Combined annualised impact estimate: +A$15-30k/yr if all five land.</p>
+      </div>
+
       {/* Weekly Trend */}
       <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Weekly Revenue Trend</h3>

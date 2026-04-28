@@ -1,13 +1,14 @@
 Channel,Sessions,Purchases,GP
-Organic Search,18377,68,8084.15
-Cross-network,9912,171,18792.34
-Direct,9760,50,8767.89
-Organic Social,6621,12,1012.31
-Paid Search,5432,134,21862.11
-Paid Shopping,3095,27,6917.05
-Unassigned,2628,315,38219.8
-Referral,1543,25,3803.44
-Paid Social,1091,3,595.24
-Organic Shopping,544,8,405.24
-Paid Other,53,0,0
-Organic Video,6,0,0
+Organic Search,19229,61,7225.81
+Cross-network,9954,156,17563.63
+Direct,9951,49,7953.3
+Organic Social,6537,16,1491.59
+Paid Search,5327,140,20889.43
+Unassigned,3592,290,34412.68
+Paid Shopping,2703,26,6515.84
+Referral,1543,24,3423.96
+Paid Social,965,0,0
+Organic Shopping,504,10,624.26
+Paid Other,52,0,0
+Organic Video,8,0,0
+Email,4,0,0

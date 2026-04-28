@@ -34,7 +34,7 @@ export default function WebOrders() {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <TrustBadge source="CMS orders v4_with_refunds" caveat="709 orders have imputed GP (4.0%). Jul–Nov 2025 gap affects longer windows." freshness="Updated 2026-04-25" />
+        <TrustBadge source="CMS orders v4_with_refunds" caveat="709 orders have imputed GP (4.0%)." freshness="Updated 2026-04-28" />
       </div>
     </div>
   );

@@ -83,14 +83,6 @@ export const qaRouter = router({
       detail: 'Severe double-counting expected. Use ProfitMetrics or CMS-derived ROAS for decisions.',
     });
 
-    // Missing months
-    flags.push({
-      category: 'Coverage Gap',
-      status: 'warn',
-      message: 'CMS web history missing Jul–Nov 2025',
-      detail: '5 months missing in 14-month span. 6m/12m comparisons are partial.',
-    });
-
     // Accessory/repair GP caveat
     flags.push({
       category: 'Store Margin',

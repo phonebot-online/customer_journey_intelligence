@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X, Network, FlaskConical, PauseCircle, ListChecks, Stethoscope, MapPin, Brain, Settings } from 'lucide-react';
+import { BarChart3, ShoppingCart, Store, Megaphone, Search, Mail, Route, GitCompare, ShieldCheck, Menu, X, Network, FlaskConical, PauseCircle, ListChecks, Stethoscope, MapPin, Brain, Settings, Banknote } from 'lucide-react';
 import TimeWindowSelector from './TimeWindowSelector';
 
 type NavItem = { to: string; label: string; icon: typeof BarChart3; section?: string };
@@ -8,6 +8,7 @@ type NavItem = { to: string; label: string; icon: typeof BarChart3; section?: st
 const navItems: NavItem[] = [
   { to: '/', label: 'CEO Overview', icon: BarChart3 },
   { to: '/actions', label: 'Action Center', icon: ListChecks, section: 'Strategy' },
+  { to: '/profit-ops', label: 'Profit Ops', icon: Banknote, section: 'Strategy' },
   { to: '/platform-mix', label: 'Platform Mix', icon: Network, section: 'Strategy' },
   { to: '/scenarios', label: 'Scenarios', icon: FlaskConical, section: 'Strategy' },
   { to: '/holdout', label: 'FB Holdout', icon: PauseCircle, section: 'Strategy' },

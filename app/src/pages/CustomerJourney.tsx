@@ -183,7 +183,7 @@ export default function CustomerJourney() {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <TrustBadge source="CMS web orders (Email join)" tier="reconciled" caveat="Jul–Nov 2025 gap means some repeats may be misclassified as new." />
+        <TrustBadge source="CMS web orders (Email join)" tier="reconciled" />
       </div>
 
       {/* Journey insights */}

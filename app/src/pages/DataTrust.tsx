@@ -85,10 +85,6 @@ export default function DataTrust() {
         <ul className="space-y-2 text-sm text-gray-700">
           <li className="flex gap-2">
             <span className="text-amber-500 font-bold">·</span>
-            <span><strong>CMS Jul–Nov 2025 gap:</strong> 5 months missing from web order history. 6m/12m comparisons are partial.</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-amber-500 font-bold">·</span>
             <span><strong>GP imputation:</strong> 709 orders (4.0%) have imputed GP using brand×condition median margin. Actual GP may differ.</span>
           </li>
           <li className="flex gap-2">

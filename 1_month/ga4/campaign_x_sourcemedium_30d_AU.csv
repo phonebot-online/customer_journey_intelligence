@@ -1,26 +1,92 @@
 Source_medium,Campaign,Sessions,Purchases,Revenue
-google / cpc,CJ - Phonebot (B),3776,108,67725
-google / cpc,CJ - PMax (Apple) iPad,3449,58,22263
-google / cpc,CJ - PMax (Samsung),2756,46,24274
-google / cpc,CJ - PMax (Everything Else),1552,8,5273
-google / cpc,SS - All Products >$1000,1438,7,7855
-google / cpc,CJ - PMax (Apple),1265,18,10270
-bing / cpc,CJ - Bing Shopping (All Products),1156,12,4927
-bing / cpc,CJ - Refurbished Phones,1151,10,5637
-google / cpc,PMax - Apple Watches,1055,15,5122
-google / cpc,CJ - PMax (Google),741,17,8970
-google / cpc,CJ - Refurbished Phones,648,14,7040
-google / cpc,CJ - Phonebot (B) - Lower ROAS,490,10,4336
-google / cpc,SS - Excluded Products - >$100,436,5,4282
-google / cpc,Standard Shopping - iPhone 17,384,0,0
-google / cpc,CJ - PMax (< $100 / Accessories) (PB),323,29,964
-google / cpc,CJ - Sell Phone For Cash (Australia),301,0,0
-bing / cpc,CJ - Phonebot (B),268,11,7101
-google / cpc,Phonebot (B) Standard Shopping,232,13,12389
-google / cpc,PMax - Covers - Excl.Products,224,9,1889
-google / cpc,(not set),106,0,0
-google / cpc,(organic),90,0,0
-google / cpc,CJ - DSA (All Pages),62,2,708
-google / cpc,PMax - iPhone 17,49,0,0
-getprice / cpc,(referral),28,1,600
-bing / cpc,Standard Shopping (Apple) - iPads,19,0,0
+google / organic,(organic),21626,56,24779
+(direct) / (none),(direct),12912,68,40556
+fb / add2cart 180d minus who purchased - Copy,Retargeting new cost cap $40,5339,13,6504
+(not set),(not set),4571,17,11305.18
+google / cpc,CJ - Phonebot (B),3856,104,66073
+google / cpc,CJ - PMax (Apple) iPad,3182,45,17771
+google / cpc,CJ - PMax (Samsung),2711,42,22663
+google / cpc,CJ - PMax (Everything Else),1554,7,4279
+google / cpc,SS - All Products >$1000,1351,9,10706
+google / cpc,CJ - PMax (Apple),1237,14,8748
+bing / cpc,CJ - Bing Shopping (All Products),1191,11,3953
+google / cpc,PMax - Apple Watches,1143,18,5728
+phonebot.com.au / referral,(referral),1100,0,0
+bing / cpc,CJ - Refurbished Phones,958,8,4919
+fb / paid,6606326220004,723,3,1218
+google / cpc,CJ - PMax (Google),721,17,8444
+google / cpc,CJ - Refurbished Phones,707,17,8796
+google / organic,Shopping Free Listings,605,14,2371
+(data not available),(cross-network),583,8,3098
+m.facebook.com / referral,(referral),573,1,907
+google / cpc,CJ - Phonebot (B) - Lower ROAS,517,9,4013
+lf484.r.ag.d.sendibm3.com / referral,(referral),499,2,938
+fb / Broad 18-65+ (excl PUR 180d),AT | TOF,474,0,0
+bing / organic,(organic),445,4,2514.91
+google / cpc,SS - Excluded Products - >$100,415,5,4091
+fb / paid,6327128998004,405,0,0
+accounts.google.com / referral,(referral),353,14,8912.1
+facebook.com / referral,(referral),344,0,0
+google / cpc,CJ - PMax (< $100 / Accessories) (PB),320,27,906
+google / cpc,PMax - Covers - Excl.Products,288,8,1590
+bing / cpc,CJ - Phonebot (B),277,12,7928
+chatgpt.com / (not set),(not set),277,7,4574
+google / cpc,CJ - Sell Phone For Cash (Australia),257,0,0
+google / cpc,Phonebot (B) Standard Shopping,214,13,12099
+duckduckgo / organic,(organic),206,2,1815
+chatgpt.com / referral,(referral),195,6,4352
+l.facebook.com / referral,(referral),179,2,748
+ig / add2cart 180d minus who purchased - Copy,Retargeting new cost cap $40,173,1,447
+fb / DPA carousel adset,Retargeting new cost cap $45,142,0,0
+au.search.yahoo.com / referral,(referral),140,2,2075
+google / cpc,(not set),128,0,0
+ozbargain.com.au / referral,(referral),125,0,0
+ig / Broad 18-65+ (excl PUR 180d),AT | TOF,101,0,0
+appleid.apple.com / referral,(referral),92,5,3578
+ecosia.org / organic,(organic),90,1,344
+google / cpc,(organic),78,0,0
+ig / paid,6606326220004,63,0,0
+ig / social,(referral),61,0,0
+google / cpc,CJ - DSA (All Pages),60,2,708
+tiktok.com / referral,(referral),55,0,0
+google / cpc,Standard Shopping - iPhone 17,48,0,0
+ntp.msn.com / referral,(referral),46,0,0
+"fb / Retargeting website visitors with video,image,carousels",Retargeting new cost cap $45,45,0,0
+ig / paid,6327128998004,45,0,0
+getprice / cpc,(referral),37,1,600
+copilot.com / referral,(referral),34,1,89
+track.priceme.com.au / referral,(referral),32,0,0
+perplexity / (not set),(not set),31,0,0
+claude.ai / referral,(referral),30,1,549
+ig / social,(not set),26,0,0
+bing / cpc,Standard Shopping (Apple) - iPads,25,0,0
+lmctplus.com / referral,(referral),24,0,0
+yahoo / organic,(organic),24,0,0
+perplexity.ai / referral,(referral),22,1,729
+shoptastic.io / referral,(referral),19,0,0
+uhrs.ai / referral,(referral),19,0,0
+au.phonebot.co.uk / referral,(referral),18,1,1.1
+google / cpc,PMax Active (0-30),17,0,0
+cf / affiliate,shopforward,16,0,0
+th / add2cart 180d minus who purchased - Copy,Retargeting new cost cap $40,15,0,0
+app.brevo.com / referral,(referral),13,0,0
+gemini.google.com / referral,(referral),13,0,0
+mail.google.com / referral,(referral),13,0,0
+getprice / cpc,(not set),11,0,0
+localhost / referral,(referral),11,1,19
+productreview.com.au / referral,(referral),11,0,0
+studentbeans.com / referral,(referral),11,0,0
+technology.org / referral,(referral),11,0,0
+google / cpc,PMax - iPhone 17,10,0,0
+ig / Broad 18-65 (excl PUR 180d),AT | TOF,10,0,0
+l.wl.co / referral,(referral),10,0,0
+youtube.com / referral,(referral),10,0,0
+copilot.com / (not set),(not set),9,0,0
+"ig / Retargeting website visitors with video,image,carousels",Retargeting new cost cap $45,9,0,0
+rebatesme.com / referral,(referral),9,0,0
+zip.co / referral,(referral),9,0,0
+livepositively.com / referral,(referral),8,0,0
+search.brave.com / referral,(referral),8,0,0
+staging.phonebot.co.uk / referral,(referral),8,0,0
+thenewdaily.com.au / referral,(referral),8,2,1158
+brevo / email,UTM Testing,4,0,0

@@ -50,7 +50,7 @@ export default function Diagnostics() {
               </BarChart>
             </ResponsiveContainer>
           </div>
-          <TrustBadge source="fact_web_orders grouped by month × Brand" tier="confirmed" caveat="Jul-Nov 2025 gap visible as missing months. Brand extracted from Products free-text via regex." />
+          <TrustBadge source="fact_web_orders grouped by month × Brand" tier="confirmed" caveat="Brand extracted from Products free-text via regex." />
         </div>
       )}
 

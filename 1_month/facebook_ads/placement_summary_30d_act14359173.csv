@@ -1,58 +1,66 @@
 Publisher_platform,Platform_position,Campaign,Cost,Impressions,Clicks_all,Link_clicks,Purchases,Purchase_value
-facebook,feed,Retargeting new cost cap $45,2546.24,95792,7082,5716,90,50201.85
-facebook,feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,969.28,73905,1055,830,24,12368.98
-facebook,search,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,552.87,300235,577,560,21,10494
-facebook,feed,UAE - Burjuman Store - Walk-in Traffic,523.72,253512,8965,3103,,
-facebook,search,Retargeting new cost cap $45,349.08,98022,2236,2250,26,14846.98
-facebook,marketplace,Retargeting new cost cap $45,326.46,71140,1488,1497,13,5337.99
-facebook,marketplace,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,233.77,90250,154,148,8,4618
-instagram,feed,Retargeting new cost cap $45,183.35,8218,232,217,7,2957.97
-facebook,facebook_reels_overlay,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,177.45,72717,233,233,8,5746
-instagram,feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,166.52,15746,106,96,1,307
-facebook,facebook_reels,Retargeting new cost cap $45,156.43,9155,363,310,5,2740
-instagram,instagram_reels,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,140.98,20182,118,105,2,1558
-instagram,instagram_stories,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,120.46,13174,80,72,1,399
-facebook,facebook_reels,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,116.58,15126,59,53,5,4865
-facebook,feed,Engagement store +10km radius (videos+ images),106.50,7722,319,121,,
-instagram,instagram_stories,Retargeting new cost cap $45,73.75,3793,88,73,6,3900
-facebook,feed,whatsapp buyback,65.50,4284,165,49,,
-facebook,instream_video,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,60.66,14389,55,54,2,266
-instagram,instagram_reels,Retargeting new cost cap $45,60.43,5155,88,68,8,3911
-instagram,feed,UAE - Burjuman Store - Walk-in Traffic,57.23,17490,518,286,,
-facebook,facebook_stories,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,54.20,3280,28,27,,
-instagram,instagram_reels,whatsapp buyback,36.59,2496,68,40,,
-facebook,facebook_reels_overlay,Retargeting new cost cap $45,34.64,11712,89,89,9,5641
-facebook,instream_video,Retargeting new cost cap $45,26.89,3992,63,61,9,5681.98
-facebook,facebook_stories,Retargeting new cost cap $45,25.15,677,19,16,6,5728
-facebook,search,whatsapp buyback,21.34,7549,78,79,,
-facebook,facebook_notification,Retargeting new cost cap $45,12.40,256,23,23,,
-instagram,feed,whatsapp buyback,11.90,673,8,1,,
-facebook,marketplace,Engagement store +10km radius (videos+ images),11.67,1335,24,23,,
-instagram,instagram_reels,Engagement store +10km radius (videos+ images),11.31,848,20,11,,
-facebook,search,UAE - Burjuman Store - Walk-in Traffic,9.80,12340,134,135,,
-instagram,instagram_stories,whatsapp buyback,8.28,584,7,7,,
-facebook,facebook_notification,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,7.70,521,9,9,,
-facebook,facebook_reels,Engagement store +10km radius (videos+ images),7.02,453,15,11,,
-facebook,marketplace,UAE - Burjuman Store - Walk-in Traffic,6.50,4305,61,60,,
-threads,threads_feed,Retargeting new cost cap $45,6.17,660,21,19,,
-facebook,marketplace,whatsapp buyback,3.84,500,12,12,,
-facebook,facebook_profile_feed,Retargeting new cost cap $45,3.16,205,9,7,,
-instagram,feed,Engagement store +10km radius (videos+ images),3.07,163,2,2,,
-instagram,instagram_stories,Engagement store +10km radius (videos+ images),2.61,155,2,1,,
-facebook,facebook_profile_feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,2.41,350,3,1,,
-facebook,facebook_stories,Engagement store +10km radius (videos+ images),1.98,85,6,5,,
-facebook,search,Engagement store +10km radius (videos+ images),1.58,610,6,6,,
-facebook,facebook_reels_overlay,Engagement store +10km radius (videos+ images),1.24,198,3,3,,
-threads,threads_feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,1.22,371,1,1,,
-facebook,instream_video,Engagement store +10km radius (videos+ images),0.50,81,1,1,,
-instagram,instagram_explore_grid_home,Retargeting new cost cap $45,0.28,177,0,,,
-instagram,instagram_explore,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0.16,44,0,,,
-facebook,facebook_profile_feed,Engagement store +10km radius (videos+ images),0.03,4,0,,,
-instagram,instagram_explore,Retargeting new cost cap $45,0.02,3,0,,,
-instagram,instagram_explore_grid_home,Engagement store +10km radius (videos+ images),0.01,1,0,,,
-facebook,facebook_profile_feed,whatsapp buyback,0.01,1,0,,,
-facebook,biz_disco_feed,Retargeting new cost cap $45,0,2,0,,,
-instagram,instagram_search,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0,1,0,,,
-unknown,unknown,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0,0,0,,,
-unknown,unknown,Retargeting new cost cap $45,0,0,0,,,
-whatsapp,status,Engagement store +10km radius (videos+ images),0,1,0,,,
+facebook,feed,Retargeting new cost cap $45,2344.701,91413,6693,5482,81,40967.89
+facebook,feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,689.1173,54475,878,689,20,9541.98
+facebook,feed,UAE - Burjuman Store - Walk-in Traffic,505.2018,235171,8309,2910,0,0
+facebook,search,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,437.3324,247326,496,481,17,9552
+facebook,search,Retargeting new cost cap $45,327.5134,97266,2114,2136,27,15993.98
+facebook,marketplace,Retargeting new cost cap $45,313.949,71211,1521,1530,12,4540.99
+facebook,marketplace,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,183.0545,73262,125,120,6,3362
+instagram,feed,Retargeting new cost cap $45,169.0815,7748,225,210,9,3843.97
+facebook,facebook_reels_overlay,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,147.4541,61270,212,212,6,4600
+facebook,facebook_reels,Retargeting new cost cap $45,143.3728,8648,344,298,6,3229
+instagram,feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,116.6928,11139,79,70,1,307
+instagram,instagram_reels,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,109.5031,15820,101,91,2,1558
+facebook,feed,Engagement store +10km radius (videos+ images),102.9338,7581,312,123,0,0
+instagram,instagram_stories,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,80.9819,8997,57,52,1,399
+facebook,facebook_reels,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,75.0513,10010,50,46,5,4865
+instagram,instagram_stories,Retargeting new cost cap $45,71.5502,3516,86,68,7,4474
+facebook,feed,whatsapp buyback,63.0042,4192,168,48,0,0
+instagram,instagram_reels,Retargeting new cost cap $45,59.4372,5039,90,73,10,5269
+instagram,feed,UAE - Burjuman Store - Walk-in Traffic,57.4853,17062,506,283,0,0
+facebook,instream_video,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,48.5512,11761,47,46,2,266
+facebook,facebook_stories,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,41.6212,2404,24,23,0,0
+instagram,instagram_reels,whatsapp buyback,38.6327,2627,66,39,0,0
+facebook,facebook_reels_overlay,Retargeting new cost cap $45,33.7449,11664,84,84,5,3589
+facebook,instream_video,Retargeting new cost cap $45,24.9513,3896,63,58,8,4274.98
+facebook,facebook_stories,Retargeting new cost cap $45,23.9902,675,19,17,6,5728
+facebook,search,whatsapp buyback,22.2914,8501,77,78,0,0
+instagram,instagram_reels,Engagement store +10km radius (videos+ images),13.1145,988,25,14,0,0
+instagram,feed,whatsapp buyback,12.0108,692,10,3,0,0
+facebook,marketplace,Engagement store +10km radius (videos+ images),11.9941,1388,25,24,0,0
+facebook,facebook_notification,Retargeting new cost cap $45,11.5038,237,20,20,0,0
+facebook,search,UAE - Burjuman Store - Walk-in Traffic,9.764,12041,130,131,0,0
+instagram,instagram_stories,whatsapp buyback,8.7406,606,8,7,0,0
+facebook,facebook_reels,Engagement store +10km radius (videos+ images),7.5326,496,18,12,0,0
+instagram,instagram_reels,UAE - Burjuman Store - Walk-in Traffic,7.4434,2151,45,31,0,0
+facebook,marketplace,UAE - Burjuman Store - Walk-in Traffic,6.3127,4139,59,58,0,0
+facebook,facebook_notification,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,6.0002,400,8,8,0,0
+threads,threads_feed,Retargeting new cost cap $45,5.8427,598,26,25,0,0
+facebook,facebook_reels,UAE - Burjuman Store - Walk-in Traffic,5.7426,2047,64,30,0,0
+instagram,feed,Engagement store +10km radius (videos+ images),4.2915,242,2,2,0,0
+facebook,marketplace,whatsapp buyback,4.2003,540,14,14,0,0
+instagram,instagram_stories,Engagement store +10km radius (videos+ images),3.5913,218,4,2,0,0
+facebook,facebook_profile_feed,Retargeting new cost cap $45,2.8614,187,10,8,0,0
+facebook,facebook_stories,Engagement store +10km radius (videos+ images),2.2908,101,6,5,0,0
+facebook,search,Engagement store +10km radius (videos+ images),2.1507,708,5,5,0,0
+facebook,facebook_profile_feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,1.89,267,3,1,0,0
+facebook,facebook_reels_overlay,Engagement store +10km radius (videos+ images),1.1504,192,3,3,0,0
+threads,threads_feed,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0.75,214,0,0,0,0
+facebook,instream_video,Engagement store +10km radius (videos+ images),0.6002,90,1,1,0,0
+instagram,instagram_stories,UAE - Burjuman Store - Walk-in Traffic,0.5803,124,4,4,0,0
+instagram,instagram_explore_grid_home,Retargeting new cost cap $45,0.2501,152,0,0,0,0
+instagram,instagram_explore,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0.07,16,0,0,0,0
+facebook,facebook_profile_feed,UAE - Burjuman Store - Walk-in Traffic,0.03,24,2,1,0,0
+facebook,instream_video,UAE - Burjuman Store - Walk-in Traffic,0.03,5,0,0,0,0
+facebook,facebook_profile_feed,Engagement store +10km radius (videos+ images),0.03,4,0,0,0,0
+facebook,biz_disco_feed,Retargeting new cost cap $45,0.01,3,0,0,0,0
+facebook,facebook_reels_overlay,UAE - Burjuman Store - Walk-in Traffic,0.01,5,0,0,0,0
+instagram,instagram_explore,Retargeting new cost cap $45,0.01,2,0,0,0,0
+instagram,instagram_search,Retargeting new cost cap $45,0.01,1,0,0,0,0
+instagram,instagram_explore_grid_home,Engagement store +10km radius (videos+ images),0.01,1,0,0,0,0
+facebook,facebook_profile_feed,whatsapp buyback,0.01,1,0,0,0,0
+instagram,instagram_explore_grid_home,UAE - Burjuman Store - Walk-in Traffic,0,2,0,0,0,0
+instagram,instagram_search,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0,1,0,0,0,0
+unknown,unknown,Cold | TOF | 2 ad sets | DPA+Vids+image | Must creatives,0,0,0,0,0,0
+unknown,unknown,Retargeting new cost cap $45,0,0,0,0,0,0
+whatsapp,status,Engagement store +10km radius (videos+ images),0,1,0,0,0,0

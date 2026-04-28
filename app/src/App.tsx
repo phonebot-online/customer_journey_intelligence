@@ -17,6 +17,7 @@ import Diagnostics from './pages/Diagnostics';
 import Geography from './pages/Geography';
 import AIInsights from './pages/AIInsights';
 import Admin from './pages/Admin';
+import ProfitOps from './pages/ProfitOps';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/actions" element={<Actions />} />
+        <Route path="/profit-ops" element={<ProfitOps />} />
         <Route path="/diagnostics" element={<Diagnostics />} />
         <Route path="/geography" element={<Geography />} />
         <Route path="/ai" element={<AIInsights />} />

@@ -1,34 +1,34 @@
 Date,Campaign name,Subject,Recipients,Delivered,Opens_unique,Clicks_unique,Unsubscribes,Hard_bounces,Soft_bounces
-2025-10-27,halloween,Test,4,4,1,1,0,0,0
-2025-10-30,Trade-in Email,Turn Old Tech into Black Friday Cash,191,188,64,1,9,3,0
-2025-11-02,31 oct,This email could save you up to $500,3129,3026,878,32,98,88,19
+2025-11-01,31 oct,This email could save you up to $500,3129,3026,878,32,98,88,19
 2025-11-03,Accessory Retarget Device Stock 2022/2023,This email could save you up to $500,3287,3233,327,17,12,32,31
 2025-11-03,Boss,This email could save you up to $500,4,4,0,0,0,0,0
 2025-11-04,Trade-in Email,Turn Old Tech into Black Friday Cash,111,109,18,1,3,2,0
+2025-11-10,Click Frenzy Retartgeting (2024 - 2025 MY) $1000+),Click Frenzy Starts—Early Access Inside!,6465,6270,917,83,71,154,44
 2025-11-11,Click Frenzy Retargeting (2019 - 2020 MY) $1000+,Early Access to Click Frenzy Tech Deals,2345,2302,244,25,9,27,25
-2025-11-11,Click Frenzy Retartgeting (2024 - 2025 MY) $1000+,Click Frenzy Starts Early Access Inside,6465,6270,917,83,71,154,44
 2025-11-11,PB Customers (2022 - 2023 MY) $1000+,Click Frenzy Starts. This One's Big,4464,4377,568,61,10,42,60
-2025-11-11,PB Customers (2022 - 2023) Version 2 $1000+,Biggest tech event of the year is live,6932,6817,862,80,34,57,67
-2025-11-18,Trade in email Nov,Turn Old Tech into Black Friday Cash,379,367,69,3,10,10,2
+2025-11-11,PB Customers (2022 - 2023) Version 2 $1000+,Biggest tech event of the year is live!,6932,6817,863,80,34,57,67
+2025-11-18,"Trade in email Nov (1,2,3,4,5)",Turn Old Tech into Black Friday Cash,379,367,69,3,10,10,2
 2025-11-26,BLACK FRIDAY live Campaign #1,Your Black Friday iPad & Watch Upgrade,5168,5006,982,43,56,130,42
-2025-11-27,Black Friday Campaign #2,Biggest Black Friday Tech Event Is Live,1156,1117,230,14,15,32,7
-2025-11-27,Black Friday sale extended campaign,Today Only Black Friday Deals Are Live,9713,9589,1112,77,29,40,106
+2025-11-26,Black Friday Campaign #2,Biggest Black Friday Tech Event Is Live!,1156,1117,230,14,15,32,7
+2025-11-27,Black Friday DAY 1,Biggest Black Friday Sale Is LIVE,8056,7927,897,71,39,42,113
+2025-11-27,Black Friday Day #3,Black Friday Just Dropped—Don't Miss,6954,6796,898,50,34,86,95
+2025-11-27,Black Friday sale extended campaign,Today Only Black Friday Deals Are Live,9713,9589,1113,77,29,40,106
 2025-11-28,Black Friday DAY #5,Black Friday: 4 hours left. Last chance,12409,11745,1797,122,97,151,522
-2025-11-28,Black Friday DAY #6,Black Friday Dropped Youll Want This,1832,1822,177,14,14,6,9
-2025-11-28,Black Friday DAY 1,Biggest Black Friday Sale Is LIVE,8056,7927,897,71,39,42,113
+2025-11-28,Black Friday DAY #6,Black Friday Dropped You'll Want This,1832,1822,177,14,14,6,9
 2025-11-28,Black Friday Day #2,Today Only Black Friday Deals Are Live,8953,8770,1062,75,37,93,107
-2025-11-28,Black Friday Day #3,Black Friday Just Dropped Dont Miss,6954,6796,898,50,34,86,95
-2025-12-12,XMAS Campaign 1 & 2,A quick Christmas gift from us to you,12234,12122,1578,71,65,8,132
+2025-12-11,XMAS Campaign 1 & 2,A quick Christmas gift from us to you,12234,12122,1578,71,65,8,132
 2025-12-15,XMAS Campaign 1 & 2_copy,Your Christmas upgrade just got cheaper,21761,21564,2545,188,107,22,203
 2025-12-23,Boxing Day Evening Campaign,Phones at These Prices Are Selling Fast,24309,24050,3109,195,141,24,296
-2026-01-10,TRADE IN EMAILS 2026,Your old phone could be worth cash today,1176,1130,150,6,17,42,4
-2026-01-17,back to school 2026,Back to School Sale is live,12377,12269,1469,80,82,6,136
-2026-02-04,Trade In/Buy (Valentines 2026),Your old device has value,16647,16435,1945,125,46,20,193
-2026-03-04,Review Us (Trustpilot Campaing),Hows Your Recent Order from Phonebot,181,178,28,6,2,2,1
-2026-03-10,Trustpilot Campaign 2,Hows Your Recent Order from Phonebot,39,39,11,1,0,0,0
-2026-03-14,Marketing Email March,Youre going to like these prices,16964,16798,4034,261,218,19,205
-2026-03-18,TrustPilot Reviews Shipped Order Status (6th March - 15th march),Hows Your Recent Order from Phonebot,280,268,134,26,3,10,2
-2026-03-25,TrustPilot Shipped Status (16th march - 24th march) excluded negative cxs,Hows Your Recent Order from Phonebot,186,183,82,16,1,3,0
-2026-04-04,Easter Sale,Youre going to like these prices,25687,25450,6746,438,509,60,199
-2026-04-15,TrustPilot Campaign,Hows Your Recent Order from Phonebot,373,362,133,14,4,9,2
-2026-04-22,TrustPilot Campaign (8th April - 15th april),Hows Your Recent Order from Phonebot,165,160,67,8,1,3,2
+2026-01-09,TRADE IN EMAILS 2026,Your old phone could be worth cash today,1176,1130,150,6,17,42,4
+2026-01-16,back to school 2026,Back to School Sale is live,12377,12269,1469,80,82,6,136
+2026-02-03,Trade In/Buy (Valentine's 2026)),Your old device has value,16647,16435,1946,125,46,20,193
+2026-03-03,Review Us (Trustpilot Campaing)),How's Your Recent Order from Phonebot?,181,178,28,6,2,2,1
+2026-03-09,Trustpilot Campaign 2,How's Your Recent Order from Phonebot?,39,39,11,1,0,0,0
+2026-03-14,Marketing Email March,You're going to like these prices,16964,16798,4035,261,220,19,205
+2026-03-18,TrustPilot Reviews Shipped Order Status (6th March - 15th march),How's Your Recent Order from Phonebot?,280,268,134,26,3,10,2
+2026-03-25,TrustPilot Shipped Status (16th march - 24th march) excluded negative cxs,How's Your Recent Order from Phonebot?,186,183,82,16,1,3,0
+2026-04-04,Easter Sale,You're going to like these prices,25687,25450,6758,438,518,60,199
+2026-04-15,TrustPilot Campaign,How's Your Recent Order from Phonebot?,373,362,135,14,4,9,2
+2026-04-22,TrustPilot Campaign (8th April - 15th april),How's Your Recent Order from Phonebot?,165,160,68,8,1,3,2
+2026-04-25,Apple Watch Retargeting,Your iPhone needs an Apple Watch,1328,1301,372,19,23,23,4
+2026-04-28,UTM Testing,Test UTMs Adnan,4,4,2,1,0,0,0

@@ -1,20 +1,34 @@
 Source_medium,Campaign,Sessions,Purchases,GP
-google / cpc,CJ - PMax (Apple) iPad,3175,52,6278.05
-google / cpc,CJ - Phonebot (B),3145,87,14832.92
-google / cpc,CJ - PMax (Samsung),2517,38,5721.88
-google / cpc,CJ - PMax (Everything Else),1403,4,785.58
-google / cpc,SS - All Products >$1000,1283,5,1921.86
-bing / cpc,CJ - Bing Shopping (All Products),1087,9,2050.41
-google / cpc,CJ - PMax (Apple),1079,16,1874.03
-bing / cpc,CJ - Refurbished Phones,1078,12,2426.27
-google / cpc,PMax - Apple Watches,973,10,884.17
-google / cpc,CJ - PMax (Google),660,11,1545.45
-google / cpc,CJ - Refurbished Phones,581,12,1644.3
-google / cpc,CJ - Phonebot (B) - Lower ROAS,421,9,1085.81
-google / cpc,SS - Excluded Products - >$100,384,4,798.52
-google / cpc,Standard Shopping - iPhone 17,364,0,0
-google / cpc,CJ - Sell Phone For Cash (Australia),295,0,0
-google / cpc,CJ - PMax (< $100 / Accessories) (PB),285,26,495.71
-bing / cpc,CJ - Phonebot (B),234,12,1666.69
-google / cpc,PMax - Covers - Excl.Products,230,7,514.25
-google / cpc,Phonebot (B) Standard Shopping,184,9,2146.26
+google / cpc,CJ - Phonebot (B),3173,91,14502.97
+google / cpc,CJ - PMax (Apple) iPad,2902,43,5474.51
+google / cpc,CJ - PMax (Samsung),2474,34,4984.62
+google / cpc,CJ - PMax (Everything Else),1378,6,1239.52
+google / cpc,SS - All Products >$1000,1207,7,2600.46
+bing / cpc,CJ - Bing Shopping (All Products),1101,7,1318.42
+google / cpc,CJ - PMax (Apple),1056,12,1646.25
+google / cpc,PMax - Apple Watches,1038,12,1113.16
+bing / cpc,CJ - Refurbished Phones,890,10,1569.2
+google / cpc,CJ - PMax (Google),631,10,1345.53
+google / cpc,CJ - Refurbished Phones,615,14,1822.2
+google / cpc,CJ - Phonebot (B) - Lower ROAS,432,10,1265.75
+google / cpc,SS - Excluded Products - >$100,363,3,450.7
+google / cpc,CJ - PMax (< $100 / Accessories) (PB),279,25,475.43
+google / cpc,CJ - Sell Phone For Cash (Australia),250,0,0
+google / cpc,PMax - Covers - Excl.Products,243,7,514.25
+bing / cpc,CJ - Phonebot (B),238,13,1523.19
+google / cpc,Phonebot (B) Standard Shopping,171,9,2146.26
+google / cpc,(not set),117,0,0
+google / cpc,CJ - DSA (All Pages),55,2,206.12
+google / cpc,Standard Shopping - iPhone 17,38,0,0
+google / cpc,(organic),37,0,0
+getprice / cpc,(referral),34,0,0
+bing / cpc,Standard Shopping (Apple) - iPads,24,0,0
+getprice / cpc,(not set),11,0,0
+google / cpc,PMax - iPhone 17,10,0,0
+google / cpc,PMax Active (0-30),6,0,0
+finder / cpc,(not set),6,0,0
+bing / cpc,PMax - Feed Only,5,0,0
+brevo / email,UTM Testing,4,0,0
+google / cpc,PMax Aging (71+),2,0,0
+bing / cpc,Shopping Campaign,1,0,0
+google / cpc,PMax Maturing (30-70),1,0,0

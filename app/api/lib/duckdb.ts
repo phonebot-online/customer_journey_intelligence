@@ -327,5 +327,146 @@ export async function initSchema(): Promise<void> {
     FROM read_csv_auto('${getDataPath('12_month/cms_manual/combined_web_store_monthly.csv')}', header=true, auto_detect=true)
   `);
 
+  // === Profit Ops tables (added 2026-04 for branded cannibalization, MMM, anomaly detection) ===
+
+  // 3m daily ad spend per platform — needed for MMM and anomaly detection trend baselines
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_google_ads_daily_3m AS
+    SELECT
+      Date::DATE as date,
+      TRY_CAST(Cost AS DOUBLE) as cost,
+      TRY_CAST(Conversions AS DOUBLE) as conversions,
+      TRY_CAST(Conversionsvalue AS DOUBLE) as conversions_value
+    FROM read_csv_auto('${getDataPath('3_month/google_ads/account_daily_3m.csv')}', header=true, auto_detect=true)
+  `);
+
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_facebook_ads_daily_3m AS
+    SELECT
+      Date::DATE as date,
+      TRY_CAST(Cost AS DOUBLE) as cost,
+      TRY_CAST(Website_purchases AS INTEGER) as purchases,
+      TRY_CAST(Purchase_value AS DOUBLE) as purchase_value
+    FROM read_csv_auto('${getDataPath('3_month/facebook_ads/account_daily_3m.csv')}', header=true, auto_detect=true)
+  `);
+
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_bing_ads_daily_3m AS
+    SELECT
+      Date::DATE as date,
+      TRY_CAST(Spend AS DOUBLE) as cost,
+      TRY_CAST(Conversions AS DOUBLE) as conversions,
+      TRY_CAST(Revenue AS DOUBLE) as revenue
+    FROM read_csv_auto('${getDataPath('3_month/bing_ads/account_daily_3m.csv')}', header=true, auto_detect=true)
+  `);
+
+  // ProfitMetrics campaign × source/medium GP (for branded vs non-branded paid attribution)
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_pm_campaign_gp AS
+    SELECT
+      Source_medium as source_medium,
+      Campaign as campaign,
+      Sessions::INTEGER as sessions,
+      Purchases::INTEGER as purchases,
+      TRY_CAST(GP AS DOUBLE) as gp
+    FROM read_csv_auto('${getDataPath('1_month/profit_metrics/campaign_x_sourcemedium_gp_30d.csv')}', header=true, auto_detect=true)
+  `);
+
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_pm_campaign_revenue AS
+    SELECT
+      Source_medium as source_medium,
+      Campaign as campaign,
+      Sessions::INTEGER as sessions,
+      Purchases::INTEGER as purchases,
+      TRY_CAST(Revenue AS DOUBLE) as revenue
+    FROM read_csv_auto('${getDataPath('1_month/profit_metrics/campaign_x_sourcemedium_revenue_30d.csv')}', header=true, auto_detect=true)
+  `);
+
+  // GA4 campaign × source/medium 30d
+  // Explicit delim/quote because some campaign names contain quoted commas which auto-detect mishandles.
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_ga4_campaign AS
+    SELECT
+      Source_medium as source_medium,
+      Campaign as campaign,
+      TRY_CAST(Sessions AS INTEGER) as sessions,
+      TRY_CAST(Purchases AS INTEGER) as purchases,
+      TRY_CAST(Revenue AS DOUBLE) as revenue
+    FROM read_csv('${getDataPath('1_month/ga4/campaign_x_sourcemedium_30d_AU.csv')}', header=true, delim=',', quote='"', escape='"', columns={'Source_medium':'VARCHAR','Campaign':'VARCHAR','Sessions':'VARCHAR','Purchases':'VARCHAR','Revenue':'VARCHAR'})
+  `);
+
+  // Search Console top queries (24d window) — for branded query-level analysis
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_sc_top_queries AS
+    SELECT
+      query,
+      branded,
+      clicks_24d::INTEGER as clicks,
+      impressions::INTEGER as impressions,
+      TRY_CAST(position AS DOUBLE) as position
+    FROM read_csv_auto('${getDataPath('12_month/search_console/gw_top_queries_apr2026.csv')}', header=true, auto_detect=true)
+  `);
+
+  // GMC product catalog with offer_id (Item ID) — fetched via Supermetrics MCP 2026-04-29.
+  // Each product has 2 rows in the source CSV (online + local channel); dedupe on item_id.
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_gmc_products_full AS
+    SELECT
+      "Item ID"::VARCHAR as offer_id,
+      "Title" as title,
+      LOWER("Brand") as brand,
+      "Condition" as condition,
+      "Availability" as availability,
+      TRY_CAST("Price" AS DOUBLE) as price,
+      "Currency" as currency,
+      "Product type" as product_type,
+      "Custom label 0" as custom_label_0,
+      "Custom label 1" as custom_label_1,
+      "Channel" as channel,
+      "Product link" as product_link,
+      ROW_NUMBER() OVER (PARTITION BY "Item ID" ORDER BY CASE WHEN "Channel" = 'online' THEN 0 ELSE 1 END) as rn
+    FROM read_csv_auto('${getDataPath('1_month/google_merchant_center/products_full_with_offer_id.csv')}', header=true, auto_detect=true)
+  `);
+  // Pick one row per offer_id (prefer online channel, since that's what Shopping ads serve from)
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_gmc_products_unique AS
+    SELECT * EXCLUDE rn FROM fact_gmc_products_full WHERE rn = 1
+  `);
+
+  // Google Ads search terms 30d — fetched via Supermetrics MCP 2026-04-29.
+  // Branded vs non-branded classification using brand_keywords = "phonebot|phone bot|phonebot.com.au"
+  await runQuery(`
+    CREATE OR REPLACE TABLE fact_aw_search_terms AS
+    SELECT
+      "Matched search term" as search_term,
+      "Campaign name" as campaign_name,
+      "Ad group name" as ad_group_name,
+      "Branded vs. non-branded search queries" as branded,
+      TRY_CAST(Cost AS DOUBLE) as cost,
+      TRY_CAST(Clicks AS INTEGER) as clicks,
+      TRY_CAST(Impressions AS INTEGER) as impressions,
+      TRY_CAST(Conversions AS DOUBLE) as conversions,
+      TRY_CAST("Total conversion value" AS DOUBLE) as conversion_value
+    FROM read_csv_auto('${getDataPath('1_month/google_ads/search_terms_30d.csv')}', header=true, auto_detect=true)
+  `);
+
+  // Per-brand margin% from web orders — used to estimate SKU GP from Shopping conversion_value
+  await runQuery(`
+    CREATE OR REPLACE TABLE agg_brand_margin AS
+    SELECT
+      LOWER(COALESCE(Brand, 'unknown')) as brand,
+      COUNT(*)::INTEGER as orders,
+      SUM(total)::DOUBLE as revenue,
+      SUM(gp_imputed)::DOUBLE as gp,
+      CASE WHEN SUM(total) > 0 THEN SUM(gp_imputed) / SUM(total) ELSE NULL END as margin_pct
+    FROM fact_web_orders
+    WHERE order_date >= CURRENT_DATE - INTERVAL '180 days'
+      AND total > 0
+      AND NOT was_refunded
+    GROUP BY brand
+    HAVING orders >= 10
+  `);
+
   console.log('DuckDB schema initialized successfully');
 }

@@ -6,6 +6,7 @@ import { strategyRouter } from './routers/strategy';
 import { actionsRouter } from './routers/actions';
 import { diagnosticsRouter } from './routers/diagnostics';
 import { adminRouter } from './routers/admin';
+import { profitOpsRouter } from './routers/profit_ops';
 
 export const appRouter = router({
   dashboard: dashboardRouter,
@@ -15,6 +16,7 @@ export const appRouter = router({
   actions: actionsRouter,
   diagnostics: diagnosticsRouter,
   admin: adminRouter,
+  profitOps: profitOpsRouter,
 });
 
 export type AppRouter = typeof appRouter;

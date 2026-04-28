@@ -41,7 +41,7 @@ export default function Dashboard() {
         <KPICard title="Blended Margin" value={ceo.data?.blendedMargin || 0} format="percent" />
       </div>
 
-      <TrustBadge source="CMS web orders v4 + Store POS + Paid daily" caveat="Jul–Nov 2025 CMS gap affects 6m/12m windows" freshness="Updated 2026-04-25" />
+      <TrustBadge source="CMS web orders v4 + Store POS + Paid daily" freshness="Updated 2026-04-28" />
 
       {/* TODAY: 5 things to do, backed by data */}
       <div className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-300 rounded-lg p-5 shadow-sm">

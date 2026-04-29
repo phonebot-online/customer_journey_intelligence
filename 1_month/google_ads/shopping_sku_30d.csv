@@ -1,36 +1,36 @@
 Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,ConversionValue
-"CJ - PMax (Apple) iPad","1447","Apple iPad Pro 10.5-inch (64GB) WiFi [Grade A]","apple",185.37,204,14329,3.98,924.48
+"CJ - PMax (Apple) iPad","1447","Apple iPad Pro 10.5-inch (64GB) WiFi [Grade A]","apple",185.37,204,14330,3.98,924.48
 "CJ - PMax (Apple) iPad","1425","Apple iPad Pro 10.5-inch (256GB) WiFi Cellular [Grade A]","apple",179.498,238,18247,2.75,1716.9
 "SS - Excluded Products - >$100","7424","Apple iPhone 16 Pro 5G (256GB) [Like New]","apple",150.06,76,7178,1.98,2684.21
-"CJ - PMax (Samsung)","7183","Samsung Galaxy S24 FE 5G (128GB) [Open Box]","samsung",132.8128,164,7805,2.7,1651.08
+"CJ - PMax (Samsung)","7183","Samsung Galaxy S24 FE 5G (128GB) [Open Box]","samsung",132.8128,164,7807,2.7,1651.08
 "SS - Excluded Products - >$100","7729","Motorola Razr 40 Ultra Dual Sim 5G (256GB) [Grade A]","motorola",125.14,219,14567,0,0
-"CJ - PMax (Samsung)","7031","Samsung Galaxy A55 5G Dual Sim (128GB) [Grade A]","samsung",119.978,156,9795,1.56,631.72
-"CJ - PMax (Apple) iPad","5957","Apple iPad Mini 6 (64GB) WiFi Cellular [Grade A]","apple",118.15,122,6379,2,1015
-"CJ - PMax (Samsung)","7377","Samsung Galaxy S24 FE 5G (128GB) [Grade A]","samsung",116.6699,160,9790,1.08,618.82
-"CJ - PMax (Samsung)","5765","Samsung Galaxy A54 5G Dual Sim (128GB) [Grade A]","samsung",103.2128,132,8177,4.72,1335.32
-"CJ - PMax (Google)","5959","Google Pixel 8 5G (128GB) [Grade A]","google",103.15,66,5477,2.33,1010.68
+"CJ - PMax (Samsung)","7031","Samsung Galaxy A55 5G Dual Sim (128GB) [Grade A]","samsung",120.008,157,9802,1.56,631.72
+"CJ - PMax (Apple) iPad","5957","Apple iPad Mini 6 (64GB) WiFi Cellular [Grade A]","apple",118.29,123,6379,3,1922
+"CJ - PMax (Samsung)","7377","Samsung Galaxy S24 FE 5G (128GB) [Grade A]","samsung",116.6699,160,9799,1.08,618.82
+"CJ - PMax (Samsung)","5765","Samsung Galaxy A54 5G Dual Sim (128GB) [Grade A]","samsung",103.2128,132,8182,4.72,1335.32
+"CJ - PMax (Google)","5959","Google Pixel 8 5G (128GB) [Grade A]","google",103.15,66,5479,2.33,1010.68
 "SS - All Products >$1000","6018","Apple iPhone 15 Pro 5G (1TB) [Grade A]","apple",101.28,32,2126,1,1208.35
-"CJ - PMax (Everything Else)","7944","Motorola Razr 40 Ultra Dual Sim 5G (256GB) [Grade B]","motorola",100.8854,302,17106,0,0
+"CJ - PMax (Everything Else)","7944","Motorola Razr 40 Ultra Dual Sim 5G (256GB) [Grade B]","motorola",100.8854,302,17107,0,0
 "CJ - PMax (Apple) iPad","6301","Apple iPad Air 5th Gen (256GB) Wifi Cellular [Grade A]","apple",97.14,128,8516,0.97,627.26
 "SS - All Products >$1000","8541","Motorola Razr 60 Ultra 5G (512GB) [Like New]","motorola",93.8,144,4289,1,1172
 "CJ - PMax (Samsung)","8469","Samsung Galaxy S25 FE 5G (256GB) [Like New]","samsung",92.5936,131,7692,0,0
 "SS - All Products >$1000","8194","Apple iPhone 17 Pro Max 5G (256GB) [Brand New]","apple",90.41,104,8526,0,0
-"SS - Excluded Products - >$100","6026","Apple iPhone 15 Pro Max 5G (256GB) [Grade B]","apple",85.36,55,6671,0,0
+"SS - Excluded Products - >$100","6026","Apple iPhone 15 Pro Max 5G (256GB) [Grade B]","apple",85.36,55,6671,1,1149
 "CJ - PMax (Google)","7070","Google Pixel 9 Pro XL 5G (256GB) [Like New]","google",84.9437,58,5592,0.63,583.51
 "CJ - PMax (Apple) iPad","3258","Apple iPad Pro 12.9-inch 4th Gen (256GB) WiFi [Grade A]","apple",82.75,71,5681,1,799
-"CJ - PMax (Samsung)","8307","Samsung Galaxy Watch 8 Classic 46mm Bluetooth [Like New]","samsung",81.797,137,4865,1.8,1216.46
+"CJ - PMax (Samsung)","8307","Samsung Galaxy Watch 8 Classic 46mm Bluetooth [Like New]","samsung",82.4094,138,4877,1.8,1216.46
 "CJ - PMax (Apple) iPad","880","Apple iPad Air 2 (128GB) WiFi [Grade A]","apple",80.86,121,8638,2.02,316.47
 "SS - All Products >$1000","8396","Apple iPhone 17 5G (256GB) [Like New]","apple",80.61,76,5365,0,0
 "CJ - PMax (Google)","8445","Google Pixel 9 Pro XL 5G (512GB) [Grade A]","google",80.16,33,3040,1.61,2165.59
 "CJ - PMax (Google)","6599","Google Pixel 8a 5G (128GB) [Like New]","google",79.16,70,4939,3.74,1768.61
-"CJ - PMax (Samsung)","6395","Samsung Galaxy S24 Plus 5G (256GB) [Like New]","samsung",74.8787,51,4810,1.17,931.33
+"CJ - PMax (Samsung)","6395","Samsung Galaxy S24 Plus 5G (256GB) [Like New]","samsung",74.8787,51,4811,1.17,931.33
 "SS - All Products >$1000","8256","Samsung Galaxy Z Fold6 5G (512GB) [Grade B]","samsung",74.78,76,5029,1,1114
-"PMax - Apple Watches","6373","Apple Watch Ultra 2 49mm Titanium Case GPS Cellular [Like New]","apple",73.78,124,6682,1,283.92
+"PMax - Apple Watches","6373","Apple Watch Ultra 2 49mm Titanium Case GPS Cellular [Like New]","apple",74.33,125,6687,1,283.92
 "CJ - PMax (Apple) iPad","3968","Apple iPad Pro 10.5-inch (256GB) WiFi [Grade B]","apple",72.44,131,8381,0,0
 "CJ - PMax (Everything Else)","7247","OnePlus 12 5G (1TB) [Like New]","oneplus",71.6515,113,10834,0.49,456.08
 "CJ - PMax (Samsung)","4080","﻿Samsung Galaxy S22 5G (128GB) [Like New]","samsung",71.5876,55,4495,1.78,636.27
 "CJ - PMax (Apple)","3614","Apple iPhone 13 Pro (256GB) [Grade A]","apple",71.1035,23,1267,1.13,681.84
-"CJ - PMax (Apple) iPad","4172","Apple iPad Air 4th Gen (64GB) WiFi [Grade B]","apple",70.2863,112,5769,1,399
+"CJ - PMax (Apple) iPad","4172","Apple iPad Air 4th Gen (64GB) WiFi [Grade B]","apple",70.2863,112,5770,1,399
 "SS - All Products >$1000","8427","Apple iPhone 17 5G (256GB) [Brand New]","apple",68.89,168,9040,0,0
 "CJ - PMax (Apple) iPad","4204","Apple iPad Mini 6 (64GB) WiFi [Like New]","apple",68.7841,81,4522,0.34,89.68
 "CJ - PMax (Apple)","4675","Apple iPhone 14 Pro 5G (128GB) [Grade A]","apple",67.713,74,6700,0.22,127.91
@@ -47,7 +47,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Apple) iPad","6356","Apple iPad Mini 6 (64GB) WiFi Cellular [Grade B]","apple",60.5095,72,3022,1,2353
 "CJ - PMax (Apple) iPad","2762","Apple iPad Mini 5 (64GB) WiFi Cellular [Grade A]","apple",60.09,56,4548,0,0
 "PMax - Apple Watches","7042","Apple Watch Series 9 41mm GPS Cellular Stainless Steel Case [Grade A]","apple",59.63,129,5383,0,0
-"CJ - PMax (Samsung)","7939","Samsung Galaxy S24 Plus 5G (256GB) [Grade B]","samsung",59.5808,45,3166,1.12,766.79
+"CJ - PMax (Samsung)","7939","Samsung Galaxy S24 Plus 5G (256GB) [Grade B]","samsung",59.5808,45,3170,1.12,766.79
 "CJ - PMax (Google)","5956","Google Pixel 8 Pro 5G (128GB) [Grade A]","google",59.4657,40,2551,0.67,65.34
 "CJ - PMax (Apple) iPad","1032","Apple iPad 5th Gen (128GB) WiFi Cellular [Grade A]","apple",58.8076,64,5859,2.03,429.74
 "CJ - PMax (Samsung)","6764","Samsung Galaxy S24 Ultra 5G (512GB) [Grade A]","samsung",58.7808,34,4271,0,0
@@ -55,7 +55,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","5581","Samsung Galaxy A54 5G Dual Sim (128GB) [Like New]","samsung",57.1708,68,4378,2.65,785.9
 "CJ - PMax (Samsung)","5044","﻿Samsung Galaxy S22 5G (128GB) [Grade B]","samsung",56.0045,53,2623,1.03,341.69
 "CJ - PMax (Apple) iPad","2088","Apple iPad Mini 5 (64GB) WiFi [Grade A]","apple",54.89,48,3293,1.69,434.72
-"CJ - PMax (Apple)","4548","Apple iPhone SE 5G 3rd Gen (64GB) [Like New]","apple",54.6677,61,5521,1,259
+"CJ - PMax (Apple)","4548","Apple iPhone SE 5G 3rd Gen (64GB) [Like New]","apple",54.6677,61,5524,1,259
 "CJ - PMax (Apple) iPad","8559","Apple iPad Air 13-inch M2 Wifi (256GB) [Grade B]","apple",54.2747,32,2221,0,0
 "CJ - PMax (Apple) iPad","1274","Apple iPad Mini 4 (128GB) WiFi Cellular [Grade A]","apple",53.41,107,7351,2.01,447.35
 "PMax - Apple Watches","4658","Apple Watch Series 7 41mm GPS Cellular Aluminium Case [Grade A]","apple",52.58,86,6657,3.47,863.8
@@ -68,7 +68,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","8016","Samsung Galaxy Watch Ultra Cellular 47mm [Grade A]","samsung",48.6491,86,2679,0,0
 "SS - All Products >$1000","6764","Samsung Galaxy S24 Ultra 5G (512GB) [Grade A]","samsung",48.53,47,3143,0.65,652.06
 "SS - All Products >$1000","6913","Samsung Galaxy S24 Ultra 5G (1TB) [Grade A]","samsung",47.68,27,1722,0,0
-"CJ - PMax (Everything Else)","8539","Oppo Find X3 Pro 5G (256GB) [Brand New]","oppo",46.9506,175,12386,1,419
+"CJ - PMax (Everything Else)","8539","Oppo Find X3 Pro 5G (256GB) [Brand New]","oppo",46.9506,175,12395,1,419
 "CJ - PMax (Samsung)","5152","Samsung Galaxy S23 Ultra 5G (256GB) [Grade B]","samsung",46.7457,43,3305,0,0
 "SS - All Products >$1000","6052","Apple iPhone 15 Pro 5G (512GB) [Grade A]","apple",45.84,18,1167,0,0
 "CJ - PMax (Everything Else)","5841","Motorola Moto Razr 40 Ultra 5G (256GB) [Like New]","motorola",45.8049,98,5640,0,0
@@ -79,131 +79,131 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Google)","7071","Google Pixel 9 Pro XL 5G (128GB) [Grade A]","google",44.59,44,3262,0,0
 "Phonebot (B) Standard Shopping","6009","Apple iPhone 15 5G (128GB) [Grade A]","apple",43.07,14,1314,1.62,1491.1
 "CJ - PMax (Apple) iPad","3195","Apple iPad Pro 12.9-inch 4th Gen (512GB) WiFi Cellular [Grade A]","apple",42.94,43,4007,0.29,164.37
-"CJ - PMax (Apple) iPad","2461","Apple iPad Pro 12.9-inch 4th Gen (128GB) WiFi Cellular [Like New]","apple",42.761,42,3015,0,0
+"CJ - PMax (Apple) iPad","2461","Apple iPad Pro 12.9-inch 4th Gen (128GB) WiFi Cellular [Like New]","apple",42.761,42,3015,1,1449
 "CJ - PMax (Apple) iPad","2494","Apple iPad Pro 10.5-inch (256GB) WiFi [Grade A]","apple",42.69,56,2964,1,269
 "CJ - PMax (Samsung)","7033","Samsung Galaxy Z Flip6 5G (256GB) [Open Box]","samsung",41.2782,41,5858,1.19,940.8
 "CJ - PMax (Apple) iPad","5623","Apple iPad Air 5th Gen (64GB) Wifi [Grade A]","apple",40.7,45,2448,1,527
+"CJ - PMax (Apple)","8650","Apple iPhone 17e 5G (256GB) [Open Box]","apple",40.68,92,2286,0,0
 "CJ - PMax (Apple)","3835","Apple iPhone 13 Pro (1TB) [Like New]","apple",40.6572,19,1386,0,0
-"CJ - PMax (Apple)","8650","Apple iPhone 17e 5G (256GB) [Open Box]","apple",40.39,91,2282,0,0
 "CJ - PMax (Samsung)","5766","Samsung Galaxy A54 5G Dual Sim (128GB) [Grade B]","samsung",39.9636,67,4715,1,249
 "CJ - PMax (Apple) iPad","3513","Apple iPad Air 4th Gen (64GB) WiFi [Grade A]","apple",39.6828,37,1772,0,0
-"CJ - PMax (Everything Else)","8565","OnePlus 10 Pro 5G NE2213 Global Ver (128GB) [Like New]","oneplus",39.4159,72,4681,0,0
-"CJ - PMax (Apple)","6011","Apple iPhone 15 5G (128GB) [Like New]","apple",39.36,21,2479,1,879
+"CJ - PMax (Everything Else)","8565","OnePlus 10 Pro 5G NE2213 Global Ver (128GB) [Like New]","oneplus",39.4159,72,4686,0,0
+"CJ - PMax (Apple)","6011","Apple iPhone 15 5G (128GB) [Like New]","apple",39.36,21,2480,1,879
 "CJ - PMax (Apple) iPad","1114","Apple iPad Air 2 (64GB) WiFi [Grade A]","apple",38.58,52,6129,4.98,2398.86
 "CJ - PMax (Apple) iPad","3582","Apple iPad Pro 12.9-inch 2nd Gen (256GB) WiFi [Grade B]","apple",38.36,57,3888,0,0
-"CJ - PMax (Everything Else)","8271","Motorola Razr 50S 5G (256GB) [Like New]","motorola",38.11,45,4441,1,664
+"CJ - PMax (Everything Else)","8271","Motorola Razr 50S 5G (256GB) [Like New]","motorola",38.11,45,4439,1,664
 "CJ - PMax (Apple) iPad","4996","Apple iPad 9th Gen (256GB) Wifi Cellular [Like New]","apple",37.97,10,887,0,0
-"CJ - PMax (Apple)","6016","Apple iPhone 15 Pro 5G (256GB) [Grade A]","apple",37.88,21,2224,0.14,141.85
+"CJ - PMax (Apple)","6016","Apple iPhone 15 Pro 5G (256GB) [Grade A]","apple",37.88,21,2223,0.14,141.85
 "CJ - PMax (Samsung)","4359","Samsung Galaxy S22 Ultra 5G (512GB) [Like New]","samsung",37.4555,19,1937,0,0
-"CJ - PMax (Samsung)","6352","Samsung Galaxy S24 5G (512GB) [Like New]","samsung",37.28,22,3148,0,0
-"CJ - PMax (Apple) iPad","5257","Apple iPad 9th Gen (256GB) Wifi [Grade A]","apple",37.26,28,3143,1,399
-"CJ - PMax (Apple) iPad","858","Apple iPad 6th Gen (128GB) Wifi Cellular [Like New]","apple",36.91,31,3294,0,0
-"CJ - PMax (Apple)","3761","Apple iPhone 13 (512GB) [Like New]","apple",36.8063,26,3296,0,0
-"CJ - PMax (Samsung)","6973","Samsung Galaxy S24 Ultra 5G (256GB) [Grade B]","samsung",36.7367,36,4380,0,0
+"CJ - PMax (Samsung)","6352","Samsung Galaxy S24 5G (512GB) [Like New]","samsung",37.28,22,3155,0,0
+"CJ - PMax (Apple) iPad","5257","Apple iPad 9th Gen (256GB) Wifi [Grade A]","apple",37.26,28,3144,1,399
+"CJ - PMax (Apple) iPad","858","Apple iPad 6th Gen (128GB) Wifi Cellular [Like New]","apple",36.91,31,3295,0,0
+"CJ - PMax (Apple)","3761","Apple iPhone 13 (512GB) [Like New]","apple",36.8063,26,3298,0,0
+"CJ - PMax (Samsung)","6973","Samsung Galaxy S24 Ultra 5G (256GB) [Grade B]","samsung",36.7367,36,4381,0,0
 "SS - All Products >$1000","8381","Apple iPhone 16 Pro 5G (512GB) [Grade A]","apple",36.58,22,1513,0.45,464.5
 "CJ - PMax (Apple)","4078","Apple iPhone 13 Mini (256GB) [Grade A]","apple",36.0832,18,2720,2,961
 "CJ - PMax (Everything Else)","4778","Nothing Phone 1 5G Dual Sim (256GB) [Like New]","nothing",36.0526,75,9047,0.55,219.55
-"CJ - PMax (Apple) iPad","2713","Apple iPad 8th Gen (32GB) WiFi [Grade A]","apple",36.04,24,2875,0.61,377.45
+"CJ - PMax (Apple) iPad","2713","Apple iPad 8th Gen (32GB) WiFi [Grade A]","apple",36.04,24,2876,0.61,377.45
 "CJ - PMax (Samsung)","8047","Samsung Galaxy Tab S9 Ultra Wifi (1TB) [Grade A]","samsung",35.83,59,3442,0.5,495.16
 "CJ - PMax (Apple) iPad","2386","Apple iPad Pro 12.9-inch 2nd Gen (256GB) WiFi Cellular [Grade B]","apple",35.59,40,3538,0,0
 "SS - Excluded Products - >$100","4576","Apple iPhone 14 Pro 5G (256GB) [Like New]","apple",35.55,65,3219,0.5,642
 "SS - All Products >$1000","7626","Apple iPhone 16 Pro Max 5G (1TB) [Grade A]","apple",35.54,17,1050,0,0
 "CJ - PMax (Samsung)","7961","Samsung Galaxy A25 5G (128GB) [Grade A]","samsung",34.84,49,2065,0.03,7.35
 "SS - All Products >$1000","8417","Apple iPhone 17 Pro Max 5G (256GB) [Open Box]","apple",34.83,19,1729,1,2174
-"CJ - PMax (Samsung)","8639","Samsung Galaxy A26 5G Dual Sim (128GB) [Grade A]","samsung",34.7702,60,3487,0,0
-"SS - All Products >$1000","8078","Samsung Galaxy Z Fold6 5G (512GB) [Like New]","samsung",34.7,40,3094,0,0
+"CJ - PMax (Samsung)","8639","Samsung Galaxy A26 5G Dual Sim (128GB) [Grade A]","samsung",34.7702,60,3493,0,0
+"SS - All Products >$1000","8078","Samsung Galaxy Z Fold6 5G (512GB) [Like New]","samsung",34.7,40,3096,0,0
 "PMax - Apple Watches","2232","Apple Watch Series 6 40mm GPS + Cellular Aluminium Case [Grade A]","apple",34.49,62,4307,1.67,485
 "CJ - PMax (Google)","6623","Google Pixel 8a 5G (128GB) [Grade A]","google",34.33,31,1980,0,0
-"SS - All Products >$1000","8600","Google Pixel 10 Pro Fold 5G (256GB) [Grade A]","google",34.26,32,2435,0,0
-"SS - All Products >$1000","7511","Apple iPhone 16 Pro 5G (128GB) [Grade A]","apple",34.2,31,3644,1,1181.7
+"SS - All Products >$1000","8600","Google Pixel 10 Pro Fold 5G (256GB) [Grade A]","google",34.26,32,2441,0,0
+"SS - All Products >$1000","7511","Apple iPhone 16 Pro 5G (128GB) [Grade A]","apple",34.2,31,3645,1,1181.7
 "SS - All Products >$1000","8587","Samsung Galaxy S26 Ultra 5G (512GB) [Open Box]","samsung",33.96,20,1514,0,0
-"CJ - PMax (Samsung)","6084","Samsung Galaxy Z Flip 5 5G (512GB) [Grade A]","samsung",33.7409,25,2128,0,0
-"CJ - PMax (Apple)","6656","Apple iPhone 15 Plus 5G (128GB) [Grade B]","apple",33.5136,31,3379,0,0
-"CJ - PMax (Apple)","4171","Apple iPhone SE 5G 3rd Gen (64GB) [Grade A]","apple",33.5,31,2238,1,259
+"CJ - PMax (Samsung)","6084","Samsung Galaxy Z Flip 5 5G (512GB) [Grade A]","samsung",33.7409,25,2129,0,0
+"CJ - PMax (Apple)","6656","Apple iPhone 15 Plus 5G (128GB) [Grade B]","apple",33.5136,31,3380,0,0
+"CJ - PMax (Apple)","4171","Apple iPhone SE 5G 3rd Gen (64GB) [Grade A]","apple",33.5,31,2239,1,259
 "CJ - PMax (Samsung)","8415","Samsung Galaxy Tab S10 FE Plus 5G (128GB) [Open Box]","samsung",33.4025,69,3500,0,0
 "CJ - PMax (Google)","6304","Google Pixel 8 Pro 5G (512GB) [Grade A]","google",32.83,19,2036,0.33,198
 "SS - All Products >$1000","8604","Apple iPhone Air (512GB) [Brand New]","apple",32.63,42,1840,0.27,417.02
 "CJ - PMax (Apple) iPad","1271","Apple iPad Mini 4 (64GB) WiFi [Grade A]","apple",32.45,41,2667,1,149
 "PMax - Apple Watches","7193","Apple Watch SE 2022 44mm GPS Cellular [Grade B]","apple",32.37,45,2386,0,0
-"CJ - PMax (Apple) iPad","960","Apple iPad Air 2 (128GB) WiFi Cellular [Grade A]","apple",32.3,45,4118,2.01,417.69
+"CJ - PMax (Apple) iPad","960","Apple iPad Air 2 (128GB) WiFi Cellular [Grade A]","apple",32.3,45,4119,2.01,417.69
 "CJ - PMax (Apple) iPad","4053","Apple iPad 5th Gen (128GB) WiFi [Like New]","apple",32.1,18,1687,0.99,186.55
 "CJ - PMax (Apple) iPad","8088","Apple iPad Mini A17 Pro Chip (128GB) Wifi [Like New]","apple",31.8025,83,2996,0,0
 "SS - All Products >$1000","6639","Samsung Galaxy S24 Ultra 5G (512GB) [Like New]","samsung",31.48,27,1805,1.33,1328.1
-"CJ - PMax (Samsung)","6391","Samsung Galaxy S23 FE 5G (128GB) [Grade A]","samsung",31.1836,21,3708,0,0
+"CJ - PMax (Samsung)","6391","Samsung Galaxy S23 FE 5G (128GB) [Grade A]","samsung",31.1836,21,3709,0,0
 "SS - All Products >$1000","7569","Apple iPhone 16 Pro Max 5G (256GB) [Grade A]","apple",31.11,39,3338,0.05,57.01
 "CJ - PMax (Apple) iPad","2668","Apple iPad 6th Gen (128GB) Wifi Cellular [Grade A]","apple",31.0812,21,1681,1,199
 "CJ - PMax (Apple) iPad","5243","Apple iPad 10th Gen (64GB) Wifi Cellular [Grade A]","apple",30.6,14,2480,1,469
-"CJ - PMax (Samsung)","5622","Samsung Galaxy S23 Plus 5G (512GB) [Like New]","samsung",30.5935,21,2418,0,0
+"CJ - PMax (Samsung)","5622","Samsung Galaxy S23 Plus 5G (512GB) [Like New]","samsung",30.5935,21,2419,0,0
 "CJ - PMax (Apple)","3711","Apple iPhone 13 Mini (128GB) [Grade A]","apple",30.3979,39,3961,0,0
 "SS - All Products >$1000","8590","Samsung Galaxy Z Fold6 5G (1TB) [Grade B]","samsung",30.33,23,1070,1,1107
 "CJ - PMax (Google)","8598","Google Pixel 10a 5G (128GB) [Open Box]","google",30.07,53,1567,0,0
 "CJ - PMax (Apple) iPad","4528","Apple iPad 9th Gen (256GB) Wifi Cellular [Grade A]","apple",30.05,14,1941,1.75,864.6
-"CJ - PMax (Samsung)","6393","Samsung Galaxy S24 5G (256GB) [Like New]","samsung",29.5023,23,3437,0,0
+"CJ - PMax (Samsung)","6393","Samsung Galaxy S24 5G (256GB) [Like New]","samsung",29.5023,23,3439,0,0
 "SS - All Products >$1000","8589","Samsung Galaxy Z Flip7 5G (512GB) [Grade A]","samsung",29.35,37,2295,0,0
 "CJ - PMax (Apple) iPad","5265","Apple iPad 10th Gen (64GB) Wifi Cellular [Like New]","apple",28.7954,25,2770,0,0
 "CJ - PMax (Apple) iPad","2333","Apple iPad Pro 11-inch 2nd Gen (128GB) WiFi [Grade A]","apple",28.71,45,2331,1,1349
 "CJ - PMax (Apple) iPad","708","Apple iPad Air 2 (64GB) WiFi Cellular [Grade A]","apple",28.57,26,2497,1,149
-"CJ - PMax (Samsung)","7738","Samsung Galaxy S25 5G (256GB) [Grade A]","samsung",28.5643,27,2609,1,839
+"CJ - PMax (Samsung)","7738","Samsung Galaxy S25 5G (256GB) [Grade A]","samsung",28.5643,27,2608,2,1708
 "CJ - PMax (Apple) iPad","3786","Apple iPad Pro 11-inch 2nd Gen (512GB) WiFi Cellular [Grade A]","apple",28.1097,26,3657,0,0
 "CJ - PMax (Samsung)","8563","Samsung Galaxy Watch Ultra Cellular 47mm [Open Box]","samsung",28.0659,33,1656,0,0
 "CJ - PMax (Apple) iPad","6202","Apple iPad 10th Gen (64GB) Wifi [Like New]","apple",27.95,24,2161,0,0
-"SS - All Products >$1000","8615","Apple iPhone 16 5G (512GB) [Grade A]","apple",27.91,26,1178,0,0
+"SS - All Products >$1000","8615","Apple iPhone 16 5G (512GB) [Grade A]","apple",27.91,26,1179,0,0
 "CJ - PMax (Apple)","4751","Apple iPhone 13 Pro (1TB) [Grade A]","apple",27.5869,18,1626,0,0
 "CJ - PMax (Google)","8614","Google Pixel 8 5G (128GB) [Brand New]","google",27.5769,24,2638,0,0
 "CJ - PMax (Samsung)","3578","Samsung Galaxy Z Fold 3 5G (256GB) [Grade A]","samsung",27.56,18,1869,0.6,347.4
 "CJ - PMax (Everything Else)","3599","Oppo Find X3 Pro 5G (256GB) [Open Box]","oppo",27.3,41,3554,1.56,604.98
-"CJ - PMax (Apple)","4808","Apple iPhone 14 Plus 5G (256GB) [Like New]","apple",27.2,3,983,0,0
-"SS - All Products >$1000","8326","Apple iPad Pro 13-inch M5 (512GB) Wifi Cellular [Open Box]","apple",26.66,30,2511,0,0
+"CJ - PMax (Apple)","4808","Apple iPhone 14 Plus 5G (256GB) [Like New]","apple",27.2,3,984,0,0
+"CJ - PMax (Samsung)","4081","﻿Samsung Galaxy S22 5G (128GB) [Grade A]","samsung",26.6649,16,1518,0,0
+"SS - All Products >$1000","8326","Apple iPad Pro 13-inch M5 (512GB) Wifi Cellular [Open Box]","apple",26.66,30,2514,0,0
 "CJ - PMax (Everything Else)","8588","Nokia XR21 5G (128GB) [Grade B]","nokia",26.59,47,3142,2,376
-"CJ - PMax (Samsung)","8289","Samsung Galaxy Z Flip7 FE 5G (256GB) [Like New]","samsung",26.41,27,1541,1.5,1191
+"CJ - PMax (Samsung)","8289","Samsung Galaxy Z Flip7 FE 5G (256GB) [Like New]","samsung",26.41,27,1543,1.5,1191
 "CJ - PMax (Samsung)","6003","Samsung Galaxy Z Flip 5 5G (256GB) [Like New]","samsung",26.12,18,1750,0,0
 "SS - All Products >$1000","7207","Apple iPhone 16 5G (256GB) [Grade A]","apple",26.04,13,1291,0,0
 "SS - All Products >$1000","8633","Apple Mac Mini M4 Chip 2024 (24GB 512GB) [Like New]","apple",25.62,20,455,2,1406
-"CJ - PMax (Samsung)","4081","﻿Samsung Galaxy S22 5G (128GB) [Grade A]","samsung",25.5949,15,1518,0,0
 "CJ - PMax (Samsung)","5633","Samsung Galaxy Z Flip 5 5G (512GB) [Like New]","samsung",25.51,20,1389,1,617
-"CJ - PMax (Apple)","2146","Apple iPhone 12 5G (128GB) [Grade A]","apple",25.5097,11,1362,0,0
+"CJ - PMax (Apple)","2146","Apple iPhone 12 5G (128GB) [Grade A]","apple",25.5097,11,1361,0,0
 "CJ - PMax (Google)","8435","Google Pixel 9a 5G (256GB) [Like new]","google",25.39,24,1591,0,0
-"CJ - PMax (Apple) iPad","6203","Apple iPad 10th Gen (256GB) Wifi [Like New]","apple",25.14,16,859,0,0
+"CJ - PMax (Apple) iPad","6203","Apple iPad 10th Gen (256GB) Wifi [Like New]","apple",25.14,16,860,0,0
 "CJ - PMax (Apple)","7203","Apple iPhone 16 5G (128GB) [Like New]","apple",24.7531,16,1724,0,0
 "CJ - PMax (Apple) iPad","4651","Apple iPad Mini 6 (256GB) WiFi Cellular [Like New]","apple",24.7,22,1665,0,0
-"CJ - PMax (Apple) iPad","4743","Apple iPad Air 5th Gen (64GB) Wifi Cellular [Grade A]","apple",24.62,19,2200,0,0
+"CJ - PMax (Apple) iPad","4743","Apple iPad Air 5th Gen (64GB) Wifi Cellular [Grade A]","apple",24.62,19,2201,0,0
 "CJ - PMax (Apple) iPad","7717","Apple iPad Air 11-inch M2 Wifi (256GB) [Like New]","apple",24.62,16,1233,1,857
 "CJ - PMax (Google)","7957","Google Pixel 9a 5G (128GB) [Like New]","google",24.62,34,3617,0,0
-"CJ - PMax (Google)","5955","Google Pixel 8 Pro 5G (256GB) [Grade A]","google",24.56,15,719,1.67,1015.02
-"CJ - PMax (Samsung)","7873","Samsung Galaxy A56 5G Dual Sim (256GB) [Like New]","samsung",24.31,25,1478,1,507
+"CJ - PMax (Google)","5955","Google Pixel 8 Pro 5G (256GB) [Grade A]","google",24.56,15,720,1.67,1015.02
+"CJ - PMax (Samsung)","7873","Samsung Galaxy A56 5G Dual Sim (256GB) [Like New]","samsung",24.31,25,1478,1.28,642.2
 "CJ - PMax (Apple) iPad","3658","Apple iPad Air 4th Gen (256GB) Wifi Cellular [Grade A]","apple",23.96,16,887,0.43,225.38
 "CJ - PMax (Apple)","6009","Apple iPhone 15 5G (128GB) [Grade A]","apple",23.76,22,3750,0,0
-"SS - All Products >$1000","8231","Honor Magic V3 5G Dual Sim (512GB) [Grade A]","honor",23.69,40,1471,0,0
+"SS - All Products >$1000","8231","Honor Magic V3 5G Dual Sim (512GB) [Grade A]","honor",23.69,40,1470,0,0
+"CJ - PMax (Apple) iPad","2303","Apple iPad Mini 5 (64GB) WiFi Cellular [Like New]","apple",23.58,28,2909,0,0
 "CJ - PMax (Apple)","4576","Apple iPhone 14 Pro 5G (256GB) [Like New]","apple",23.57,11,916,0.54,304.07
-"CJ - PMax (Apple) iPad","2303","Apple iPad Mini 5 (64GB) WiFi Cellular [Like New]","apple",23.51,27,2908,0,0
 "CJ - PMax (Apple)","3713","Apple iPhone 13 Pro Max (128GB) [Grade A]","apple",23.34,16,1586,0.79,486.9
-"PMax - Apple Watches","6602","Apple Watch Series 7 41mm GPS Cellular Stainless Steel Case [Grade B]","apple",23.33,31,2253,0.5,114.5
+"PMax - Apple Watches","6602","Apple Watch Series 7 41mm GPS Cellular Stainless Steel Case [Grade B]","apple",23.33,31,2255,0.5,114.5
 "CJ - PMax (Apple) iPad","3544","Apple iPad 9th Gen (64GB) Wifi Cellular [Like New]","apple",23.29,4,591,0,0
 "CJ - PMax (Samsung)","8583","Samsung Galaxy A36 5G (128GB) [Open Box]","samsung",22.7618,38,2718,1.01,400.67
 "PMax - Apple Watches","7043","Apple Watch Series 9 45mm GPS Cellular Stainless Steel Case [Grade A]","apple",22.74,14,746,0,0
 "CJ - PMax (Apple) iPad","3892","Apple iPad Air 2 (64GB) WiFi [Grade B]","apple",22.7,41,3055,0,0
-"CJ - PMax (Google)","5940","Google Pixel 8 5G (128GB) [Like New]","google",22.55,15,2086,0,0
-"CJ - PMax (Apple) iPad","5834","Apple iPad Pro 11-inch 4th Gen M2 (128GB) Wifi [Like New]","apple",22.54,19,1130,0,0
-"CJ - PMax (Samsung)","8635","Samsung Galaxy A36 5G (128GB) [Like New]","samsung",22.54,49,2602,0,0
+"CJ - PMax (Google)","5940","Google Pixel 8 5G (128GB) [Like New]","google",22.55,15,2088,0,0
+"CJ - PMax (Apple) iPad","5834","Apple iPad Pro 11-inch 4th Gen M2 (128GB) Wifi [Like New]","apple",22.54,19,1131,0,0
+"CJ - PMax (Samsung)","8635","Samsung Galaxy A36 5G (128GB) [Like New]","samsung",22.54,49,2604,0,0
 "CJ - PMax (Apple)","5323","Apple iPhone 14 Pro Max 5G (1TB) [Grade A]","apple",22.532,11,586,0,0
 "CJ - PMax (Apple)","4809","Apple iPhone 14 Plus 5G (256GB) [Grade A]","apple",22.0228,14,1503,1,619
 "CJ - PMax (Apple) iPad","5784","Apple iPad Air 5th Gen (256GB) Wifi [Grade A]","apple",21.94,26,1528,0,0
 "CJ - PMax (Samsung)","8617","Samsung Galaxy S25 Edge 5G (256GB) [Grade A]","samsung",21.8003,29,1386,0,0
-"CJ - PMax (Apple)","5805","Apple iPhone 14 Pro 5G (1TB) [Grade A]","apple",21.8,7,473,0,0
-"CJ - PMax (Apple)","4673","Apple iPhone 14 Pro 5G (256GB) [Grade A]","apple",21.63,15,2215,1,779
+"CJ - PMax (Apple)","5805","Apple iPhone 14 Pro 5G (1TB) [Grade A]","apple",21.8,7,472,0,0
+"CJ - PMax (Apple)","4673","Apple iPhone 14 Pro 5G (256GB) [Grade A]","apple",21.63,15,2216,1,779
 "CJ - PMax (Apple)","6392","Apple iPhone 15 5G (512GB) [Like New]","apple",21.6005,11,954,0,0
-"CJ - PMax (Everything Else)","8389","OnePlus 12 5G Dual Sim CPH2581 Global Ver (512GB) [Like New]","oneplus",21.5689,34,2240,0.49,456.08
+"CJ - PMax (Everything Else)","8389","OnePlus 12 5G Dual Sim CPH2581 Global Ver (512GB) [Like New]","oneplus",21.5689,34,2241,0.49,456.08
 "CJ - PMax (Samsung)","5149","Samsung Galaxy S23 Ultra 5G (256GB) [Grade A]","samsung",21.5681,21,3274,0,0
 "SS - All Products >$1000","8618","Samsung Galaxy S25 Ultra 5G (1TB) [Grade A]","samsung",21.54,14,1430,0,0
 "CJ - PMax (Apple)","5790","Apple iPhone 14 Pro 5G (1TB) [Like New]","apple",21.4579,11,1594,0,0
 "CJ - PMax (Google)","7200","Google Pixel Watch 3 45mm LTE [Like New]","google",21.45,44,1835,0.98,302.43
 "CJ - PMax (Everything Else)","5049","Oppo Reno8 Pro 5G (256GB) [Grade B]","oppo",21.4092,38,4636,0,0
 "PMax - Apple Watches","8504","Apple Watch Series 10 42mm GPS Cellular Aluminium Case [Grade A]","apple",21.29,27,1427,0,0
-"CJ - PMax (Apple) iPad","873","Apple iPad Air (16GB) WiFi [Grade A]","apple",21.15,40,2823,0,0
+"CJ - PMax (Apple) iPad","873","Apple iPad Air (16GB) WiFi [Grade A]","apple",21.15,40,2822,0,0
 "CJ - PMax (Apple)","2152","Apple iPhone 12 5G (256GB) [Like New]","apple",21.13,15,1798,0,0
 "SS - All Products >$1000","7968","Apple iPhone 16 Pro Max 5G (1TB) [Like New]","apple",21.13,8,219,0,0
 "CJ - PMax (Everything Else)","8612","SPACETALK Adventurer 2 Kids 4G Smartwatch [Open Box]","spacetalk",20.98,46,1284,0,0
-"CJ - PMax (Samsung)","4213","Samsung Galaxy A53 5G Dual Sim (128GB) [Grade A]","samsung",20.9443,36,4974,0.33,88
+"CJ - PMax (Samsung)","4213","Samsung Galaxy A53 5G Dual Sim (128GB) [Grade A]","samsung",20.9443,36,4977,0.33,88
 "PMax - Apple Watches","6685","Apple Watch Series 9 41mm GPS Cellular Aluminium Case [Grade A]","apple",20.9,21,3162,1,359
 "CJ - PMax (Samsung)","5163","Samsung Galaxy S23 Ultra 5G (1TB) [Like New]","samsung",20.89,15,1267,1,879
 "CJ - PMax (Apple)","5763","Apple iPhone SE 5G 3rd Gen (256GB) [Grade A]","apple",20.7541,25,1203,1,349
@@ -212,22 +212,22 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","4995","﻿Samsung Galaxy S22 5G (256GB) [Grade B]","samsung",20.5808,22,1191,0,0
 "PMax - Apple Watches","6684","Apple Watch Ultra 2 49mm Titanium Case GPS Cellular [Grade A]","apple",20.53,42,2356,1,729
 "CJ - PMax (< $100 / Accessories) (PB)","7634","Samsung Galaxy S23 Smart View Wallet Cover","samsung",20.49,47,1051,2.98,86.56
-"CJ - PMax (Apple)","4867","Apple iPhone 14 5G (128GB) [Grade A]","apple",20.23,10,2437,0,0
+"CJ - PMax (Apple)","4867","Apple iPhone 14 5G (128GB) [Grade A]","apple",20.23,10,2439,0,0
 "CJ - PMax (Apple) iPad","673","Apple iPad Air (16GB) WiFi Cellular [Grade A]","apple",20.21,35,4172,0,0
 "CJ - PMax (Samsung)","2702","Samsung Galaxy Note 20 Ultra (256GB) [Grade A]","samsung",20.1171,20,1440,0,0
 "CJ - PMax (Google)","8495","Google Pixel 9 Pro 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",19.89,14,2667,0,0
-"CJ - PMax (Apple) iPad","2186","Apple iPad Pro 12.9-inch 3rd Gen (256GB) WiFi Cellular [Grade A]","apple",19.79,13,1185,0,0
-"CJ - PMax (Samsung)","6344","Samsung Galaxy S24 Plus 5G (512GB) [Like New]","samsung",19.6014,16,1479,0,0
-"CJ - PMax (Samsung)","6859","Samsung Galaxy S24 Plus 5G (512GB) [Grade A]","samsung",19.4906,23,1944,0,0
-"CJ - PMax (Apple) iPad","4524","Apple iPad Air 5th Gen (64GB) Wifi Cellular [Like New]","apple",19.3712,13,1233,0,0
+"CJ - PMax (Apple) iPad","2186","Apple iPad Pro 12.9-inch 3rd Gen (256GB) WiFi Cellular [Grade A]","apple",19.79,13,1186,0,0
+"CJ - PMax (Samsung)","6344","Samsung Galaxy S24 Plus 5G (512GB) [Like New]","samsung",19.6014,16,1485,0,0
+"CJ - PMax (Samsung)","6859","Samsung Galaxy S24 Plus 5G (512GB) [Grade A]","samsung",19.4906,23,1943,0,0
+"CJ - PMax (Apple) iPad","4524","Apple iPad Air 5th Gen (64GB) Wifi Cellular [Like New]","apple",19.3712,13,1235,0,0
 "CJ - PMax (Samsung)","4874","Samsung Galaxy S22 Ultra 5G (256GB) [Grade B]","samsung",19.17,17,1300,0,0
-"SS - All Products >$1000","7970","Apple iPhone 16 Pro Max 5G (512GB) [Like New]","apple",18.99,11,694,0,0
+"SS - All Products >$1000","7970","Apple iPhone 16 Pro Max 5G (512GB) [Like New]","apple",18.99,11,695,0,0
 "PMax - Apple Watches","8586","Apple Watch Series 10 Edition Titanium 42mm GPS Cellular [Grade B]","apple",18.83,39,1743,0,0
 "CJ - PMax (Apple) iPad","3539","Apple iPad Mini 5 (64GB) WiFi [Grade B]","apple",18.62,15,745,1.67,413.01
 "SS - All Products >$1000","8197","Apple iPhone 16 Pro Max 5G (1TB) [Grade B]","apple",18.56,14,640,0.01,8.66
 "CJ - PMax (Apple)","2329","Apple iPhone 12 Mini 5G (64GB) [Like New]","apple",18.4584,18,3134,0,0
 "PMax - Apple Watches","8585","Apple Watch Series 10 46mm GPS Cellular Aluminium Case [Grade A]","apple",18.28,26,1356,0,0
-"PMax - Apple Watches","6300","Apple Watch SE 2022 44mm GPS [Grade A]","apple",18.13,28,3050,1,234
+"PMax - Apple Watches","6300","Apple Watch SE 2022 44mm GPS [Grade A]","apple",18.13,28,3054,1,234
 "SS - All Products >$1000","8638","Google Pixel 10 Pro 5G (1TB) [Like New]","google",18.01,17,1193,1,1329
 "PMax - Apple Watches","8581","Apple Watch Series 11 42mm GPS Aluminium Case [Grade A]","apple",17.96,50,2270,0,0
 "CJ - PMax (Samsung)","4512","Samsung Galaxy S22 Ultra 5G (512GB) [Grade A]","samsung",17.7686,14,1169,0,0
@@ -236,15 +236,15 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","6142","Samsung Galaxy Z Fold5 5G (512GB) [Grade A]","samsung",17.57,10,936,0.65,534.38
 "PMax - Apple Watches","8283","Apple Watch Series 10 42mm GPS Cellular Aluminium Case [Like New]","apple",17.54,21,1027,0,0
 "CJ - PMax (Google)","8250","Google Pixel Buds Pro 2 [Brand New]","google",17.42,37,396,1,219.01
-"CJ - PMax (Everything Else)","8353","Oppo Find X5 Pro 5G - Chinese Version (256GB) [Like New]","oppo",17.2793,18,3593,0,0
+"CJ - PMax (Everything Else)","8353","Oppo Find X5 Pro 5G - Chinese Version (256GB) [Like New]","oppo",17.2793,18,3594,0,0
 "CJ - PMax (Apple) iPad","2177","Apple iPad Pro 11-inch 1st Gen (256GB) WiFi [Grade B]","apple",17.21,44,4871,0,0
 "CJ - PMax (Apple) iPad","6959","Apple iPad Pro 11-inch 1st Gen (1TB) WiFi Cellular [Grade B]","apple",17.1868,12,757,0,0
 "CJ - PMax (Everything Else)","8607","Lenovo Idea Tab 11-inch (128GB) Wifi [Open Box]","lenovo",17.15,29,2043,0.57,160.34
 "CJ - PMax (Everything Else)","8393","OnePlus 9 Pro 5G Dual Sim LE2123 Global Ver (128GB) [Grade B]","oneplus",17.0257,54,5713,0,0
 "CJ - PMax (Apple)","2155","Apple iPhone 12 Pro 5G (128GB) [Like New]","apple",16.8,7,894,0,0
 "PMax - Apple Watches","2351","Apple Watch Series 5 GPS 44mm Aluminum Case [Grade A]","apple",16.34,49,3724,0,0
-"SS - All Products >$1000","7872","Samsung Galaxy S25 Ultra 5G (512GB) [Like New]","samsung",16.34,19,1490,0,0
-"PMax - Apple Watches","8611","Apple Watch Hermès Series 9 45mm GPS Cellular Stainless Steel Case [Like New]","apple",16.13,35,1603,0,0
+"SS - All Products >$1000","7872","Samsung Galaxy S25 Ultra 5G (512GB) [Like New]","samsung",16.34,19,1492,0,0
+"PMax - Apple Watches","8611","Apple Watch Hermès Series 9 45mm GPS Cellular Stainless Steel Case [Like New]","apple",16.13,35,1605,0,0
 "CJ - PMax (Apple) iPad","1116","Apple iPad 5th Gen (32GB) WiFi Cellular [Grade A]","apple",16.02,23,2906,0.01,2.45
 "CJ - PMax (Samsung)","6085","Samsung Galaxy Z Flip 5 5G (512GB) [Grade B]","samsung",15.9326,11,749,0,0
 "SS - All Products >$1000","8519","Google Pixel 9 Pro XL 5G | DeGoogled Graphene OS Secure (256GB) [Grade B]","google",15.91,2,119,0,0
@@ -259,91 +259,92 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Apple) iPad","8610","Apple iPad Air 11-inch M2 Wifi Cellular (512GB) [Grade A]","apple",15.13,14,786,0,0
 "SS - All Products >$1000","5226","Apple iPhone 14 Pro Max 5G (1TB) [Like New]","apple",15.13,13,540,0,0
 "CJ - PMax (Apple) iPad","2759","Apple iPad 7th Gen (128GB) WiFi [Grade A]","apple",15.09,26,2611,0,0
-"CJ - PMax (Everything Else)","8299","Lenovo Tab M9 LTE (64GB) [Grade A]","lenovo",15.0571,33,3294,0,0
+"CJ - PMax (Everything Else)","8299","Lenovo Tab M9 LTE (64GB) [Grade A]","lenovo",15.0571,33,3293,0,0
 "PMax - Apple Watches","8505","Apple Watch Series 10 Edition Titanium 46mm GPS Cellular [Like New]","apple",14.97,25,1003,0,0
 "CJ - PMax (Samsung)","5159","Samsung Galaxy S23 Ultra 5G (512GB) [Grade A]","samsung",14.9378,11,1374,0,0
 "CJ - PMax (Samsung)","8022","Samsung Galaxy Watch 7 Bluetooth 40mm [Like New]","samsung",14.64,24,1463,0.63,213.5
 "CJ - PMax (Apple) iPad","1098","Apple iPad Pro 10.5-inch (64GB) Wifi Cellular [Grade A]","apple",14.6,10,1582,0,0
+"SS - All Products >$1000","8660","Google Pixel 10 Pro XL 5G (256GB) [Grade A]","google",14.59,16,691,0,0
 "CJ - PMax (Apple) iPad","4645","Apple iPad Pro 11-inch 1st Gen (512GB) WiFi Cellular [Grade B]","apple",14.5388,12,1450,0,0
 "CJ - PMax (Apple)","3665","Apple iPhone 13 Pro Max 5G (256GB) [Grade A]","apple",14.53,7,573,0,0
-"CJ - PMax (Apple) iPad","2462","Apple iPad Pro 12.9-inch 4th Gen (128GB) WiFi Cellular [Grade A]","apple",14.5,25,1158,0,0
+"CJ - PMax (Apple) iPad","2462","Apple iPad Pro 12.9-inch 4th Gen (128GB) WiFi Cellular [Grade A]","apple",14.5,25,1160,0,0
 "CJ - PMax (Google)","8408","Google Pixel 9 Pro XL 5G (256GB) [Grade B]","google",14.49,11,581,0,0
-"SS - All Products >$1000","8660","Google Pixel 10 Pro XL 5G (256GB) [Grade A]","google",14.48,15,683,0,0
 "CJ - PMax (Apple) iPad","3927","Apple iPad Mini 6 (256GB) WiFi Cellular [Grade A]","apple",14.44,17,954,0,0
-"CJ - PMax (Google)","4969","Google Pixel 7 Pro 5G (128GB) [Grade A]","google",14.34,10,1013,1,394.01
+"CJ - PMax (Google)","4969","Google Pixel 7 Pro 5G (128GB) [Grade A]","google",14.34,10,1015,1,394.01
 "CJ - PMax (Everything Else)","8463","Xiaomi 13 Ultra 5G - Chinese Version (1TB) [Open Box]","xiaomi",14.2911,28,2687,0,0
 "CJ - PMax (Samsung)","4079","Samsung Galaxy S22 Ultra 5G (256GB) [Grade A]","samsung",14.221,6,491,1,599
 "SS - All Products >$1000","8397","Apple iPhone 17 5G (256GB) [Open Box]","apple",14.17,23,1685,0,0
-"CJ - PMax (Everything Else)","8015","Oppo Reno10 Pro 5G Chinese Version (256GB) [Like New]","oppo",14.143,11,2818,0,0
-"SS - All Products >$1000","7844","Apple iPad Air 13-inch M2 Wifi Cellular (128GB) [Like New]","apple",14.09,15,1258,0,0
+"CJ - PMax (Everything Else)","8015","Oppo Reno10 Pro 5G Chinese Version (256GB) [Like New]","oppo",14.143,11,2827,0,0
+"SS - All Products >$1000","7844","Apple iPad Air 13-inch M2 Wifi Cellular (128GB) [Like New]","apple",14.09,15,1259,0,0
 "Phonebot (B) Standard Shopping","5149","Samsung Galaxy S23 Ultra 5G (256GB) [Grade A]","samsung",14.06,4,297,0,0
-"CJ - PMax (Google)","7069","Google Pixel 9 5G (128GB) [Like New]","google",13.99,5,1627,0,0
+"CJ - PMax (Google)","7069","Google Pixel 9 5G (128GB) [Like New]","google",13.99,5,1626,0,0
 "CJ - PMax (Apple)","5590","Apple iPhone 14 Pro 5G (128GB) [Grade B]","apple",13.8,28,1698,0,0
 "CJ - PMax (Apple) iPad","958","Apple iPad 6th Gen (32GB) WiFi [Grade A]","apple",13.68,6,1277,1,724
 "CJ - PMax (Apple)","4466","Apple iPhone SE 5G 3rd Gen (128GB) [Like New]","apple",13.6269,14,1361,0,0
 "CJ - PMax (Samsung)","7869","Samsung Galaxy Tab A9 Plus 5G (64GB) [Grade A]","samsung",13.59,21,1044,0,0
 "Phonebot (B) Standard Shopping","3761","Apple iPhone 13 (512GB) [Like New]","apple",13.57,4,553,0,0
-"CJ - PMax (Samsung)","3957","Samsung Galaxy S22 Ultra 5G (128GB) [Grade A]","samsung",13.56,7,493,0,0
+"CJ - PMax (Samsung)","3957","Samsung Galaxy S22 Ultra 5G (128GB) [Grade A]","samsung",13.56,7,492,0,0
 "CJ - PMax (Apple) iPad","3221","Apple iPad Pro 12.9-inch 2nd Gen (512GB) WiFi Cellular [Grade A]","apple",13.53,4,313,0,0
 "SS - All Products >$1000","7053","Google Pixel 9 Pro XL 5G (512GB) [Like New]","google",13.53,13,1561,1,1028
 "CJ - PMax (Apple) iPad","4425","Apple iPad Mini 6 (256GB) WiFi [Like New]","apple",13.52,19,719,1,559
 "CJ - PMax (Everything Else)","8544","Sony PlayStation 4 Slim (500GB) [Grade A]","sony",13.5,22,3752,0,0
 "CJ - PMax (Apple)","4793","Apple iPhone 14 Pro 5G (512GB) [Like New]","apple",13.25,9,494,0,0
-"CJ - PMax (Samsung)","6343","Samsung Galaxy A24 (128GB) [Like New]","samsung",13.2272,10,1384,0.56,120.8
+"CJ - PMax (Samsung)","6343","Samsung Galaxy A24 (128GB) [Like New]","samsung",13.2272,10,1387,0.56,120.8
 "CJ - PMax (Apple)","5791","Apple iPhone 14 Plus 5G (512GB) [Grade A]","apple",13.1369,6,808,0,0
 "CJ - PMax (Apple) iPad","2711","Apple iPad 6th Gen (128GB) WiFi [Grade A]","apple",13.08,18,1914,2,543
 "CJ - PMax (Apple) iPad","3327","Apple iPad Air 4th Gen (64GB) Wifi Cellular [Grade A]","apple",13.0106,7,1742,0,0
 "CJ - PMax (Samsung)","8309","Samsung Galaxy S25 Edge 5G (256GB) [Like New]","samsung",12.88,15,891,0,0
 "Phonebot (B) Standard Shopping","6656","Apple iPhone 15 Plus 5G (128GB) [Grade B]","apple",12.84,5,723,0,0
-"CJ - PMax (Samsung)","6858","Samsung Galaxy S24 5G (512GB) [Grade A]","samsung",12.77,9,1122,0,0
+"CJ - PMax (Samsung)","6858","Samsung Galaxy S24 5G (512GB) [Grade A]","samsung",12.77,9,1125,0.28,135.2
 "CJ - PMax (< $100 / Accessories) (PB)","6198","Otterbox Symmetry Case for Samsung Galaxy S22","otterbox",12.74,27,502,1,29
 "CJ - PMax (Apple)","7202","Apple iPhone 15 Plus 5G (512GB) [Grade A]","apple",12.74,9,612,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","7678","Samsung Galaxy S24 Smart View Wallet Cover","samsung",12.57,28,927,3.5,101.5
 "PMax - Apple Watches","7005","Apple Watch Series 9 41mm GPS Cellular Aluminium Case [Grade B]","apple",12.55,10,1402,0,0
 "CJ - PMax (Samsung)","6569","Samsung Galaxy S24 5G (256GB) [Grade A]","samsung",12.4789,15,1713,0,0
 "PMax - Apple Watches","5195","Apple Watch Series 8 41mm GPS Cellular Aluminium Case [Grade A]","apple",12.38,5,310,0,0
-"CJ - PMax (Everything Else)","8634","Motorola Razr 50S 5G (256GB) [Grade A]","motorola",12.35,22,1878,0,0
+"CJ - PMax (Everything Else)","8634","Motorola Razr 50S 5G (256GB) [Grade A]","motorola",12.35,22,1879,0,0
 "CJ - PMax (Apple) iPad","4385","Apple iPad 9th Gen (64GB) Wifi [Like New]","apple",12.33,4,614,0,0
 "CJ - PMax (Everything Else)","8613","Sony ULT WEAR Noise Cancelling Over-Ear Headphones [Grade A]","sony",12.28,39,1202,0,0
-"PMax - Apple Watches","8550","Apple Watch Series 10 42mm GPS Aluminium Case [Grade B]","apple",12.28,22,1039,1,437
+"PMax - Apple Watches","8550","Apple Watch Series 10 42mm GPS Aluminium Case [Grade B]","apple",12.28,22,1040,1,437
 "CJ - PMax (Samsung)","6452","Samsung Galaxy Tab A9 LTE (64GB) [Like New]","samsung",12.27,24,851,1,197
 "CJ - PMax (Apple)","6008","Apple iPhone 15 Plus 5G (256GB) [Grade A]","apple",12.22,7,1008,0,0
 "CJ - PMax (Apple) iPad","5954","Apple iPad 10th Gen (256GB) Wifi Cellular [Grade A]","apple",12.1,11,747,0,0
 "CJ - PMax (Google)","7049","Google Pixel 8a 5G (256GB) [Like New]","google",12.01,4,44,1,499.01
 "CJ - PMax (Apple)","1203","Apple iPhone XS Max (64GB) [Grade A]","apple",11.94,9,540,0.84,273.69
 "CJ - PMax (Apple)","3605","Apple iPhone 13 (256GB) [Grade A]","apple",11.82,8,950,0,0
-"CJ - PMax (Everything Else)","3314","Huawei P40 5G Dual Sim (128GB) [Like New]","huawei",11.764,13,2589,0,0
-"CJ - PMax (Apple)","3942","Apple iPhone 13 Pro Max (1TB) [Like New]","apple",11.7236,10,937,0,0
+"CJ - PMax (Everything Else)","3314","Huawei P40 5G Dual Sim (128GB) [Like New]","huawei",11.764,13,2593,0,0
+"CJ - PMax (Apple)","3942","Apple iPhone 13 Pro Max (1TB) [Like New]","apple",11.7236,10,938,0,0
 "CJ - PMax (Samsung)","6082","Samsung Galaxy Z Flip 5 5G (256GB) [Grade A]","samsung",11.67,11,795,1,529
 "Phonebot (B) Standard Shopping","4798","Apple iPhone 14 5G (128GB) [Like New]","apple",11.52,6,244,1,657
 "CJ - PMax (Apple)","2336","Apple iPhone 12 Mini 5G (128GB) [Like New]","apple",11.4422,8,865,0,0
 "SS - All Products >$1000","6024","Apple iPhone 15 Pro Max 5G (256GB) [Grade A]","apple",11.44,7,490,0,0
-"CJ - PMax (Apple)","3613","Apple iPhone 13 Pro (128GB) [Grade A]","apple",11.38,7,2054,0,0
+"CJ - PMax (Apple)","3613","Apple iPhone 13 Pro (128GB) [Grade A]","apple",11.38,7,2055,0,0
 "CJ - PMax (Everything Else)","4243","Oppo Find X5 Pro 5G (256GB) [Grade A]","oppo",11.23,26,1340,0,0
 "CJ - PMax (Samsung)","7423","Samsung Galaxy A25 5G (128GB) [Like New]","samsung",11.2239,26,2000,1.96,546.93
 "CJ - PMax (Apple) iPad","3538","Apple iPad Pro 12.9-inch 5th Gen M1 (128GB) Wifi Cellular [Grade A]","apple",11.21,1,218,0,0
 "CJ - PMax (Apple)","4630","Apple iPhone SE 5G 3rd Gen (128GB) [Grade A]","apple",11.1,16,1302,1,297
 "Phonebot (B) Standard Shopping","6288","Apple iPhone 15 Pro 5G (256GB) [Grade B]","apple",11.08,2,115,0.51,477.46
-"PMax - Apple Watches","5196","Apple Watch Series 8 41mm GPS Cellular Aluminium Case [Grade B]","apple",11,16,804,1.02,343.33
+"SS - All Products >$1000","7512","Apple iPhone 16 Pro 5G (512GB) [Like New]","apple",11.03,7,64,0,0
+"PMax - Apple Watches","5196","Apple Watch Series 8 41mm GPS Cellular Aluminium Case [Grade B]","apple",11,16,805,1.02,343.33
 "CJ - PMax (Samsung)","5464","Samsung Galaxy S23 Plus 5G (256GB) [Like New]","samsung",10.99,1,519,0,0
 "CJ - PMax (Apple)","4933","Apple iPhone 14 Pro Max 5G (256GB) [Grade A]","apple",10.9,7,1099,0,0
 "CJ - PMax (Apple)","4677","Apple iPhone 14 Pro Max 5G (128GB) [Like New]","apple",10.8407,11,930,0.25,228.51
 "PMax - Apple Watches","5185","Apple Watch Series 8 45mm GPS Aluminium Case [Grade B]","apple",10.84,5,185,0,0
-"CJ - PMax (Apple)","4795","Apple iPhone 14 Pro Max 5G (512GB) [Like New]","apple",10.7212,6,2468,0,0
+"CJ - PMax (Apple)","4795","Apple iPhone 14 Pro Max 5G (512GB) [Like New]","apple",10.7212,6,2470,0,0
 "Phonebot (B) Standard Shopping","2153","Apple iPhone 12 5G (256GB) [Grade A]","apple",10.72,2,212,0,0
 "PMax - Apple Watches","3600","Apple Watch Series 5 GPS Cellular 44mm Stainless Steel Case [Grade A]","apple",10.57,24,3931,0,0
 "PMax - Apple Watches","5197","Apple Watch Series 8 41mm GPS Cellular Aluminium Case [Like New]","apple",10.48,12,887,0,0
 "CJ - PMax (Google)","7877","Google Pixel 9a 5G (128GB) [Brand New]","google",10.41,15,3424,0,0
 "CJ - PMax (Apple) iPad","4616","Apple iPad Mini 2 (32GB) WiFi [Grade B]","apple",10.3671,22,3474,0,0
 "CJ - PMax (Samsung)","7945","Samsung Galaxy S25 5G (128GB) [Grade A]","samsung",10.3,13,518,0,0
-"CJ - PMax (Google)","5377","Google Pixel 7a 5G (128GB) [Grade A]","google",10.29,6,648,0,0
+"CJ - PMax (Google)","5377","Google Pixel 7a 5G (128GB) [Grade A]","google",10.29,6,652,0,0
 "CJ - PMax (Google)","6840","Google Pixel 7 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",10.27,8,408,0,0
 "CJ - PMax (Apple)","4575","Apple iPhone 13 Pro Max (512GB) [Grade A]","apple",10.23,5,369,0,0
 "CJ - PMax (Everything Else)","7192","Honor Magic6 Lite 5G (256GB) [Grade A]","honor",10.1226,26,3076,0,0
 "Standard Shopping - iPhone 17","8417","Apple iPhone 17 Pro Max 5G (256GB) [Open Box]","apple",10.11,12,733,0,0
-"CJ - PMax (Samsung)","7739","Samsung Galaxy S25 5G (256GB) [Like New]","samsung",10.0949,12,1110,1,869
+"CJ - PMax (Samsung)","7739","Samsung Galaxy S25 5G (256GB) [Like New]","samsung",10.0949,12,1111,1,869
 "CJ - PMax (Samsung)","6478","Samsung Galaxy S24 Ultra 5G (256GB) [Like New]","samsung",10.0737,11,949,0,0
-"CJ - PMax (Apple) iPad","2380","Apple iPad 7th Gen (32GB) WiFi Cellular [Grade B]","apple",10.04,2,56,0.5,133
+"CJ - PMax (Apple) iPad","2380","Apple iPad 7th Gen (32GB) WiFi Cellular [Grade B]","apple",10.04,2,57,0.5,133
 "PMax - Covers - Excl.Products","6156","Apple iPhone 14 Silicone Case with MagSafe","apple",10,23,584,1,58
 "Phonebot (B) Standard Shopping","4080","﻿Samsung Galaxy S22 5G (128GB) [Like New]","samsung",9.99,8,351,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","7647","Samsung Galaxy Z Flip5 Silicone Cover with Ring","samsung",9.98,18,430,3,87
@@ -355,8 +356,8 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (< $100 / Accessories) (PB)","8605","Twelve South AirFly 2 Pro Bluetooth Audio Transmitter","twelve south",9.82,11,230,1,49
 "PMax - Apple Watches","7407","Apple Watch Series 9 41mm GPS Aluminium Case [Grade B]","apple",9.81,16,1111,0,0
 "CJ - PMax (Apple)","3841","Apple iPhone 13 Pro 5G (512GB) [Like New]","apple",9.77,6,396,0,0
-"CJ - PMax (Everything Else)","7992","Oppo Reno8 Pro Plus 5G (256GB) [Grade A]","oppo",9.7498,14,2581,0,0
-"PMax - Apple Watches","4700","Apple Watch Series 6 Nike 44mm GPS Aluminium Case [Grade A]","apple",9.74,24,2894,0.51,125.01
+"CJ - PMax (Everything Else)","7992","Oppo Reno8 Pro Plus 5G (256GB) [Grade A]","oppo",9.7498,14,2584,0,0
+"PMax - Apple Watches","4700","Apple Watch Series 6 Nike 44mm GPS Aluminium Case [Grade A]","apple",9.74,24,2897,0.51,125.01
 "PMax - Apple Watches","6955","Apple Watch Series 9 45mm GPS Cellular Aluminium Case [Grade A]","apple",9.74,13,1615,0,0
 "CJ - PMax (Apple) iPad","5780","Apple iPad Air 5th Gen (256GB) Wifi [Like New]","apple",9.71,10,549,0,0
 "SS - All Products >$1000","6214","Apple iPad Pro 12.9-inch 6th Gen M2 (128GB) Wifi Cellular [Grade A]","apple",9.7,4,405,0,0
@@ -364,26 +365,26 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "Phonebot (B) Standard Shopping","6011","Apple iPhone 15 5G (128GB) [Like New]","apple",9.68,2,128,1,1223
 "CJ - PMax (Apple)","3612","Apple iPhone 13 5G (128GB) [Grade A]","apple",9.59,10,971,0,0
 "SS - Excluded Products - >$100","8271","Motorola Razr 50S 5G (256GB) [Like New]","motorola",9.52,14,1460,0,0
-"SS - All Products >$1000","5258","Apple iPad Pro 12.9-inch 5th Gen M1 (512GB) Wifi [Grade A]","apple",9.48,7,629,0,0
+"SS - All Products >$1000","5258","Apple iPad Pro 12.9-inch 5th Gen M1 (512GB) Wifi [Grade A]","apple",9.48,7,630,0,0
 "SS - All Products >$1000","6016","Apple iPhone 15 Pro 5G (256GB) [Grade A]","apple",9.43,9,817,0.5,642
-"CJ - PMax (Google)","7908","Google Pixel 9 Pro 5G (256GB) [Grade A]","google",9.36,8,245,0,0
+"CJ - PMax (Google)","7908","Google Pixel 9 Pro 5G (256GB) [Grade A]","google",9.36,8,248,0,0
 "CJ - PMax (Apple) iPad","7174","Apple iPad Air (16GB) WiFi Cellular [Like New]","apple",9.25,12,1593,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","5237","Samsung Galaxy Z Fold 4 Standing Cover with Pen","samsung",9.22,21,482,3,87
 "Phonebot (B) Standard Shopping","8589","Samsung Galaxy Z Flip7 5G (512GB) [Grade A]","samsung",9.18,3,37,0,0
 "CJ - PMax (Samsung)","7082","Samsung Galaxy Watch Ultra Cellular 47mm [Like New]","samsung",9.17,21,886,1,434
 "CJ - PMax (Everything Else)","4211","Oppo Find X5 5G (256GB) [Grade A]","oppo",9.15,22,1810,0,0
-"CJ - PMax (Everything Else)","4488","Asus Zenfone 8 Flip 5G (256GB) [Grade A]","asus",9.11,13,1609,0,0
+"CJ - PMax (Everything Else)","4488","Asus Zenfone 8 Flip 5G (256GB) [Grade A]","asus",9.11,13,1610,0,0
 "CJ - PMax (Samsung)","7035","Samsung Galaxy Z Flip6 5G (512GB) [Grade A]","samsung",9.09,7,231,0,0
 "CJ - PMax (Apple) iPad","1331","Apple iPad Mini 4 (128GB) WiFi Cellular [Grade B]","apple",9.01,14,1021,0,0
 "CJ - PMax (Apple)","5996","Apple iPhone 15 Plus 5G (128GB) [Like New]","apple",8.9798,5,935,0,0
 "CJ - PMax (Apple)","3498","Apple iPhone 13 (128GB) [Like New]","apple",8.9153,9,1131,0,0
 "CJ - PMax (Samsung)","6708","Samsung Galaxy Tab S9 Ultra Wifi (512GB) [Grade A]","samsung",8.8911,16,1336,0,0
-"CJ - PMax (Apple)","5811","Apple iPhone 15 Pro 5G (128GB) [Grade A]","apple",8.8819,11,1768,0,0
+"CJ - PMax (Apple)","5811","Apple iPhone 15 Pro 5G (128GB) [Grade A]","apple",8.8819,11,1769,0,0
 "CJ - PMax (Apple) iPad","4920","Apple iPad 9th Gen (256GB) Wifi [Like New]","apple",8.88,3,565,0.5,962.5
-"SS - All Products >$1000","7778","Samsung Galaxy S25 Ultra 5G (256GB) [Like New]","samsung",8.87,8,1061,0,0
+"SS - All Products >$1000","7778","Samsung Galaxy S25 Ultra 5G (256GB) [Like New]","samsung",8.87,8,1062,0,0
 "CJ - PMax (Everything Else)","8561","Nothing Phone 2 5G Dual Sim (256GB) [Like New]","nothing",8.7619,16,1142,1,507
 "CJ - PMax (Samsung)","4360","Samsung Galaxy S22 Plus 5G (128GB) [Grade A]","samsung",8.74,5,198,0,0
-"CJ - PMax (Samsung)","8661","Samsung Galaxy S25 FE 5G (256GB) [Grade A]","samsung",8.74,16,1029,0,0
+"CJ - PMax (Samsung)","8661","Samsung Galaxy S25 FE 5G (256GB) [Grade A]","samsung",8.74,16,1034,0,0
 "Phonebot (B) Standard Shopping","7183","Samsung Galaxy S24 FE 5G (128GB) [Open Box]","samsung",8.73,4,88,0,0
 "CJ - PMax (Apple)","6007","Apple iPhone 15 Plus 5G (256GB) [Like New]","apple",8.6936,4,364,0,0
 "CJ - PMax (Google)","8248","Google Pixel Buds Pro 2 [Open Box]","google",8.61,14,284,2,406.01
@@ -402,8 +403,8 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Apple)","4336","Apple iPhone SE 5G 3rd Gen (64GB) [Grade B]","apple",7.92,6,361,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","7257","Pelican Guardian Case with MagSafe for iPhone 15 Pro Max","pelican",7.81,3,239,0,0
 "PMax - Apple Watches","6213","Apple Watch Hermès Series 8 45mm GPS Cellular Stainless Steel Case [Grade A]","apple",7.75,30,1395,0,0
-"SS - All Products >$1000","7141","Apple iPhone 16 Plus 5G (128GB) [Like New]","apple",7.73,12,1626,0,0
-"CJ - PMax (Everything Else)","8566","OnePlus 10 Pro 5G NE2213 Global Ver (128GB) [Grade A]","oneplus",7.6871,14,1564,0,0
+"SS - All Products >$1000","7141","Apple iPhone 16 Plus 5G (128GB) [Like New]","apple",7.73,12,1629,0,0
+"CJ - PMax (Everything Else)","8566","OnePlus 10 Pro 5G NE2213 Global Ver (128GB) [Grade A]","oneplus",7.6871,14,1566,0,0
 "CJ - PMax (Apple)","1816","Apple iPhone 11 Pro (512GB) [Grade A]","apple",7.686,5,438,0,0
 "PMax - Apple Watches","5180","Apple Watch Series 8 41mm GPS Aluminium Case [Grade B]","apple",7.67,10,893,0,0
 "CJ - PMax (Apple)","2059","Apple iPhone 11 (256GB) [Grade A]","apple",7.6583,8,730,0,0
@@ -415,9 +416,9 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "SS - All Products >$1000","8497","Google Pixel 9 Pro 5G | DeGoogled Graphene OS Secure (256GB) [Grade A]","google",7.2,3,314,0,0
 "CJ - PMax (Apple)","2157","Apple iPhone 12 Pro 5G (256GB) [Grade A]","apple",7.1967,5,944,0,0
 "CJ - PMax (Google)","8101","Google Pixel 9a 5G (128GB) [Grade A]","google",7.19,11,892,0,0
-"CJ - PMax (Samsung)","8649","Samsung Galaxy Tab A9 Plus Wifi (64GB) [Grade A]","samsung",7.17,10,465,0,0
-"PMax - Apple Watches","8483","Apple Watch Series 10 46mm GPS Aluminium Case [Grade B]","apple",7.15,11,725,0,0
-"SS - All Products >$1000","8651","Samsung Galaxy S26 Ultra 5G (256GB) [Open Box]","samsung",7.15,8,544,0,0
+"CJ - PMax (Samsung)","8649","Samsung Galaxy Tab A9 Plus Wifi (64GB) [Grade A]","samsung",7.17,10,463,0,0
+"PMax - Apple Watches","8483","Apple Watch Series 10 46mm GPS Aluminium Case [Grade B]","apple",7.15,11,726,0,0
+"SS - All Products >$1000","8651","Samsung Galaxy S26 Ultra 5G (256GB) [Open Box]","samsung",7.15,8,545,0,0
 "PMax - Apple Watches","6735","Apple Watch Series 9 41mm GPS Aluminium Case [Grade A]","apple",7.1,14,1044,0,0
 "CJ - PMax (Everything Else)","7826","Honor Magic V2 5G Dual Sim (512GB) [Like New]","honor",7.09,14,966,0,0
 "SS - All Products >$1000","6015","Apple iPhone 15 Pro 5G (256GB) [Like New]","apple",7,3,363,0,0
@@ -432,7 +433,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Google)","6846","Google Pixel 7 Pro 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",6.49,7,417,0,0
 "CJ - PMax (Everything Else)","6150","Sony PlayStation 4 (500GB) [Like New]","sony",6.46,10,1586,0,0
 "Phonebot (B) Standard Shopping","6007","Apple iPhone 15 Plus 5G (256GB) [Like New]","apple",6.46,1,19,0,0
-"CJ - PMax (Google)","8573","Google Pixel 10 5G (128GB) [Grade A]","google",6.44,10,245,0,0
+"CJ - PMax (Google)","8573","Google Pixel 10 5G (128GB) [Grade A]","google",6.44,10,248,0,0
 "CJ - PMax (Apple) iPad","2323","Apple iPad 6th Gen (32GB) WiFi [Grade B]","apple",6.42,8,1105,0,0
 "Phonebot (B) Standard Shopping","2157","Apple iPhone 12 Pro 5G (256GB) [Grade A]","apple",6.36,1,203,1,209
 "CJ - PMax (Google)","8507","Google Pixel 9a 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",6.31,7,970,0,0
@@ -440,14 +441,13 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","2499","Samsung Galaxy Note 20 5G (256GB) [Grade A]","samsung",6.2288,9,800,0,0
 "CJ - PMax (Everything Else)","8440","Nothing Phone 2a 5G (128GB) [Grade A]","nothing",6.21,10,2851,0,0
 "PMax - Covers - Excl.Products","5666","Samsung Galaxy S22 Plus Smart LED View Cover","samsung",6.19,17,287,0,0
-"CJ - PMax (Apple)","1373","Apple iPhone X (256GB) [Grade B]","apple",6.1443,14,784,0,0
+"CJ - PMax (Apple)","1373","Apple iPhone X (256GB) [Grade B]","apple",6.1443,14,783,0,0
 "CJ - PMax (Apple) iPad","1419","Apple iPad 5th Gen (32GB) WiFi [Grade A]","apple",6.11,6,948,0,0
 "CJ - PMax (Samsung)","4082","﻿Samsung Galaxy S22 5G (256GB) [Like New]","samsung",6.07,4,371,0,0
 "CJ - PMax (Samsung)","8302","Samsung Galaxy Watch 8 40mm Bluetooth [Like New]","samsung",6.0361,14,1086,0,0
 "SS - All Products >$1000","6521","Samsung Galaxy S24 Ultra 5G (1TB) [Like New]","samsung",6.02,2,246,0,0
 "SS - All Products >$1000","7420","Apple iPhone 16 Plus 5G (256GB) [Like New]","apple",6.01,4,775,0,0
 "CJ - PMax (Apple) iPad","1273","Apple iPad Mini 4 (128GB) WiFi [Grade A]","apple",6,6,337,1,177
-"SS - All Products >$1000","7512","Apple iPhone 16 Pro 5G (512GB) [Like New]","apple",5.98,6,64,0,0
 "CJ - PMax (Everything Else)","7982","Vivo X50 Pro 5G Dual Sim (256GB) [Open Box]","vivo",5.8878,21,2177,1,369
 "CJ - PMax (Apple)","2652","Apple iPhone 12 Mini 5G (256GB) [Grade A]","apple",5.88,2,186,0,0
 "PMax - Apple Watches","6690","Apple Watch SE 2022 44mm GPS [Grade B]","apple",5.79,7,851,0.99,225.99
@@ -465,7 +465,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Google)","6842","Google Pixel 7a 5G | DeGoogled Graphene OS Secure (128GB) [Grade A]","google",5.47,11,1309,0,0
 "CJ - PMax (Apple) iPad","2669","Apple iPad 5th Gen (32GB) WiFi Cellular [Like New]","apple",5.4451,8,754,0,0
 "CJ - PMax (Apple) iPad","3114","Apple iPad Pro 12.9-inch 1st Gen (256GB) WiFi Cellular [Grade B]","apple",5.42,4,205,0,0
-"PMax - Apple Watches","5203","Apple Watch Series 8 41mm GPS Cellular Stainless Steel Case [Grade A]","apple",5.38,5,618,0,0
+"PMax - Apple Watches","5203","Apple Watch Series 8 41mm GPS Cellular Stainless Steel Case [Grade A]","apple",5.38,5,619,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","5356","Samsung Galaxy Tab S8 Ultra Book Cover","samsung",5.36,18,268,0,0
 "CJ - PMax (Samsung)","7948","Samsung Galaxy A35 5G Dual Sim (128GB) [Grade A]","samsung",5.35,9,169,0,0
 "CJ - PMax (Apple) iPad","2496","Apple iPad Mini 4 (128GB) WiFi [Like New]","apple",5.34,6,311,0,0
@@ -476,7 +476,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Google)","6845","Google Pixel 7 Pro 5G | DeGoogled Graphene OS Secure (128GB) [Grade A]","google",5.2797,5,1040,0,0
 "CJ - PMax (Apple)","4873","Apple iPhone 14 Plus 5G (128GB) [Grade A]","apple",5.22,6,1100,0,0
 "SS - All Products >$1000","7134","Apple iPhone 16 Pro 5G (256GB) [Grade A]","apple",5.15,8,948,0,0
-"CJ - PMax (Apple)","2154","Apple iPhone 12 5G (128GB) [Like New]","apple",5.1289,8,1468,0,0
+"CJ - PMax (Apple)","2154","Apple iPhone 12 5G (128GB) [Like New]","apple",5.1289,8,1469,0,0
 "CJ - PMax (Samsung)","6550","Samsung Galaxy A24 (128GB) [Grade A]","samsung",5.1,11,923,0,0
 "CJ - PMax (Everything Else)","8606","Oppo A6 5G (256GB) [Like New]","oppo",5.05,15,755,0,0
 "CJ - PMax (Google)","7161","Google Pixel 7 Pro 5G | DeGoogled Graphene OS Secure (512GB) [Like New]","google",5.05,2,134,0,0
@@ -488,18 +488,18 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "Phonebot (B) Standard Shopping","3574","Apple iPhone 13 Pro (128GB) [Like New]","apple",4.89,2,150,0,0
 "Phonebot (B) Standard Shopping","4867","Apple iPhone 14 5G (128GB) [Grade A]","apple",4.86,6,609,0,0
 "CJ - PMax (Apple)","3947","Apple iPhone 13 (512GB) [Grade A]","apple",4.8506,4,259,0,0
-"CJ - PMax (Apple)","3556","Apple iPhone 13 Pro Max (256GB) [Like New]","apple",4.7391,2,359,0.07,36.42
+"CJ - PMax (Apple)","3556","Apple iPhone 13 Pro Max (256GB) [Like New]","apple",4.7391,2,360,0.07,36.42
 "PMax - Apple Watches","6780","Apple Watch Hermès Series 7 41mm GPS Cellular Stainless Steel Case [Grade A]","apple",4.73,16,1091,0,0
 "CJ - PMax (Everything Else)","5845","Motorola Edge 30 Fusion 5G Dual Sim (128GB) [Grade B]","motorola",4.72,20,1233,0,0
+"CJ - PMax (Samsung)","8319","Samsung Galaxy Watch 8 44mm Bluetooth [Like New]","samsung",4.67,10,604,1,359
 "CJ - PMax (Apple) iPad","3417","Apple iPad Pro 12.9-inch 5th Gen M1 (128GB) Wifi Cellular [Like New]","apple",4.63,4,175,0,0
 "Phonebot (B) Standard Shopping","6973","Samsung Galaxy S24 Ultra 5G (256GB) [Grade B]","samsung",4.62,4,404,0,0
 "CJ - PMax (Apple) iPad","3139","Apple iPad Air 3rd Gen (64GB) Wifi [Grade B]","apple",4.56,12,928,0,0
-"CJ - PMax (Samsung)","8319","Samsung Galaxy Watch 8 44mm Bluetooth [Like New]","samsung",4.52,9,596,1,359
 "CJ - PMax (Apple) iPad","2712","Apple iPad 8th Gen (128GB) WiFi [Grade A]","apple",4.51,1,253,0,0
 "CJ - PMax (Apple)","4872","Apple iPhone 14 Plus 5G (128GB) [Like New]","apple",4.5038,2,1411,0,0
 "CJ - PMax (Apple)","2163","Apple iPhone 12 Pro 5G (512GB) [Grade A]","apple",4.5,1,540,0,0
 "CJ - PMax (Apple)","1201","Apple iPhone XS (64GB) [Grade A]","apple",4.4776,3,1256,0,0
-"CJ - PMax (Apple) iPad","3543","Apple iPad Air 4th Gen (64GB) Wifi Cellular [Like New]","apple",4.45,3,175,0,0
+"CJ - PMax (Apple) iPad","3543","Apple iPad Air 4th Gen (64GB) Wifi Cellular [Like New]","apple",4.45,3,176,0,0
 "CJ - PMax (Google)","5958","Google Pixel 8 Pro 5G (128GB) [Like New]","google",4.31,2,469,0,2.03
 "CJ - PMax (< $100 / Accessories) (PB)","7723","Apple Leather Case Cover for iPhone 14","apple",4.3,12,280,1,29
 "CJ - PMax (Apple) iPad","3410","Apple iPad 8th Gen (32GB) WiFi Cellular [Like New]","apple",4.247,5,469,0,0
@@ -508,11 +508,11 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (< $100 / Accessories) (PB)","7605","ZAGG InvisibleShield Glass XTR3 Tempered Glass Screen Protector for iPhone 15 Pro Max","zagg",4.18,6,48,1,35
 "PMax - Apple Watches","5208","Apple Watch Series 8 45mm GPS Cellular Stainless Steel Case [Grade A]","apple",4.18,5,707,0,0
 "SS - All Products >$1000","8170","Apple iPad Air 13-inch M3 Wifi Cellular (512GB) [Like New]","apple",4.18,4,284,0,0
-"CJ - PMax (Apple)","8330","Apple iPhone 16e 5G (128GB) [Grade A]","apple",4.13,6,357,0,0
-"CJ - PMax (Apple) iPad","3413","Apple iPad Pro 11-inch 2nd Gen (128GB) WiFi [Like New]","apple",4.09,8,1247,0,0
-"CJ - PMax (Apple) iPad","4614","Apple iPad Air 4th Gen (256GB) WiFi [Grade B]","apple",4.076,4,812,0,0
+"CJ - PMax (Apple)","8330","Apple iPhone 16e 5G (128GB) [Grade A]","apple",4.13,6,359,0,0
+"CJ - PMax (Apple) iPad","3413","Apple iPad Pro 11-inch 2nd Gen (128GB) WiFi [Like New]","apple",4.09,8,1248,0,0
+"CJ - PMax (Apple) iPad","4614","Apple iPad Air 4th Gen (256GB) WiFi [Grade B]","apple",4.076,4,813,0,0
 "SS - Excluded Products - >$100","4211","Oppo Find X5 5G (256GB) [Grade A]","oppo",4.07,6,394,0,0
-"CJ - PMax (Everything Else)","1894","Boost Mobile $300 Pre-Paid SIM Card Starter Pack","boost",4.06,13,1553,0,0
+"CJ - PMax (Everything Else)","1894","Boost Mobile $300 Pre-Paid SIM Card Starter Pack","boost",4.06,13,1556,0,0
 "CJ - PMax (Google)","6849","Google Pixel 8 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",4.05,5,601,0,0
 "CJ - PMax (Apple)","3492","Apple iPhone 12 Pro Max 5G (512GB) [Grade B]","apple",3.99,2,60,0,0
 "Phonebot (B) Standard Shopping","2458","Apple iPhone 12 Pro Max 5G (256GB) [Like New]","apple",3.96,2,19,0,0
@@ -520,8 +520,8 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Apple)","5407","Apple iPhone 14 Plus 5G (512GB) [Like New]","apple",3.9,5,411,0,0
 "Phonebot (B) Standard Shopping","5840","Apple iPhone 14 5G (512GB) [Grade A]","apple",3.84,1,481,0,0
 "CJ - PMax (Apple)","4242","Apple iPhone 13 5G (256GB) [Grade B]","apple",3.79,5,304,0,0
-"CJ - PMax (Google)","8546","Google Pixel 10 5G (128GB) [Like New]","google",3.79,5,281,0,0
-"CJ - PMax (Apple)","3144","Apple iPhone 12 Pro Max 5G (256GB) [Grade A]","apple",3.7784,6,1360,0,0
+"CJ - PMax (Google)","8546","Google Pixel 10 5G (128GB) [Like New]","google",3.79,5,283,0,0
+"CJ - PMax (Apple)","3144","Apple iPhone 12 Pro Max 5G (256GB) [Grade A]","apple",3.7784,6,1359,0,0
 "SS - Excluded Products - >$100","1339","Apple iPhone 11 Pro (256GB) [Like New]","apple",3.77,2,319,0,0
 "CJ - PMax (Apple)","3503","Apple iPhone 12 Pro 5G (512GB) [Grade B]","apple",3.75,2,554,0,0
 "CJ - PMax (Everything Else)","4657","Sony PlayStation 4 (500GB) [Grade A]","sony",3.6,8,2683,0,0
@@ -559,14 +559,14 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "PMax - Covers - Excl.Products","6979","Samsung Galaxy S23 Plus Silicone Case","samsung",2.87,7,109,0,0
 "CJ - PMax (Apple)","3839","Apple iPhone 13 Pro Max 5G (1TB) [Grade A]","apple",2.86,3,170,0,0
 "Phonebot (B) Standard Shopping","6391","Samsung Galaxy S23 FE 5G (128GB) [Grade A]","samsung",2.85,2,149,0,0
-"Phonebot (B) Standard Shopping","5811","Apple iPhone 15 Pro 5G (128GB) [Grade A]","apple",2.84,3,553,0,0
+"Phonebot (B) Standard Shopping","5811","Apple iPhone 15 Pro 5G (128GB) [Grade A]","apple",2.84,3,554,0,0
 "Phonebot (B) Standard Shopping","7939","Samsung Galaxy S24 Plus 5G (256GB) [Grade B]","samsung",2.83,2,135,0,0
 "SS - All Products >$1000","7557","Samsung Galaxy S25 Ultra 5G (256GB) [Open Box]","samsung",2.83,6,160,0,0
 "Phonebot (B) Standard Shopping","4082","﻿Samsung Galaxy S22 5G (256GB) [Like New]","samsung",2.81,2,19,0,0
-"CJ - PMax (Apple)","3664","Apple iPhone 13 Pro Max (128GB) [Like New]","apple",2.806,3,1428,0,0
+"CJ - PMax (Apple)","3664","Apple iPhone 13 Pro Max (128GB) [Like New]","apple",2.806,3,1427,0,0
 "CJ - PMax (Samsung)","4224","Samsung Galaxy S22 Plus 5G (128GB) [Like New]","samsung",2.8,2,384,1,397
-"CJ - PMax (Apple)","4674","Apple iPhone 14 Pro 5G (128GB) [Like New]","apple",2.7659,2,155,0,0
-"SS - All Products >$1000","6026","Apple iPhone 15 Pro Max 5G (256GB) [Grade B]","apple",2.75,3,175,0,0
+"CJ - PMax (Apple)","4674","Apple iPhone 14 Pro 5G (128GB) [Like New]","apple",2.7659,2,158,0,0
+"SS - All Products >$1000","6026","Apple iPhone 15 Pro Max 5G (256GB) [Grade B]","apple",2.75,3,176,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6971","Samsung Galaxy S23 Clear Gadget Case","samsung",2.73,1,19,0,0
 "CJ - PMax (Apple) iPad","1552","Apple iPad Air 2 (16GB) WiFi Cellular [Grade A]","apple",2.73,5,306,0,0
 "Phonebot (B) Standard Shopping","8661","Samsung Galaxy S25 FE 5G (256GB) [Grade A]","samsung",2.7,1,9,0,0
@@ -592,7 +592,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Apple)","1569","Apple iPhone XS (256GB) [Grade A]","apple",2.36,5,378,0,0
 "CJ - PMax (Apple)","5441","Apple iPhone 14 Plus 5G (256GB) [Grade B]","apple",2.25,1,346,0,0
 "CJ - PMax (Samsung)","7320","Samsung Galaxy Chromebook Go LTE (64GB) [Like New]","samsung",2.24,13,648,2,566
-"CJ - PMax (Apple)","5320","Apple iPhone 14 Pro 5G (512GB) [Grade B]","apple",2.2242,3,558,0,0
+"CJ - PMax (Apple)","5320","Apple iPhone 14 Pro 5G (512GB) [Grade B]","apple",2.2242,3,559,0,0
 "SS - All Products >$1000","7894","Apple iPhone 16 Pro Max 5G (512GB) [Grade A]","apple",2.2,3,765,0,0
 "Phonebot (B) Standard Shopping","6344","Samsung Galaxy S24 Plus 5G (512GB) [Like New]","samsung",2.19,1,9,0,0
 "CJ - PMax (Apple)","4868","Apple iPhone 14 5G (128GB) [Grade B]","apple",2.18,7,977,0,0
@@ -615,7 +615,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","5578","Samsung Galaxy A34 5G Dual Sim (128GB) [Like New]","samsung",1.95,3,247,0,0
 "PMax - Apple Watches","8503","Apple Watch Series 10 42mm GPS Aluminium Case [Grade A]","apple",1.95,4,420,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","3358","Speck Smartshell Case For Macbook Pro 16-inch","speck",1.94,2,30,0,0
-"CJ - PMax (Samsung)","7132","Samsung Galaxy S23 FE 5G (128GB) [Grade B]","samsung",1.92,2,84,0,0
+"CJ - PMax (Samsung)","7132","Samsung Galaxy S23 FE 5G (128GB) [Grade B]","samsung",1.92,2,87,0,0
 "CJ - PMax (Apple) iPad","1225","Apple iPad Pro 12.9-inch 2nd Gen (64GB) Wifi Cellular [Grade A]","apple",1.89,1,218,0,0
 "CJ - PMax (Google)","8492","Google Pixel 9 5G | DeGoogled Graphene OS Secure (256GB) [Like New]","google",1.85,2,201,0,0
 "Phonebot (B) Standard Shopping","4675","Apple iPhone 14 Pro 5G (128GB) [Grade A]","apple",1.84,2,256,0,0
@@ -625,11 +625,11 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "SS - All Products >$1000","8572","Google Pixel 10 Pro 5G | DeGoogled Graphene OS Secure (256GB) [Grade A]","google",1.78,1,200,0,0
 "Phonebot (B) Standard Shopping","8396","Apple iPhone 17 5G (256GB) [Like New]","apple",1.76,4,501,1,1298
 "CJ - PMax (Apple)","6014","Apple iPhone 15 5G (256GB) [Like New]","apple",1.74,1,94,0,0
-"CJ - PMax (Google)","5188","Google Pixel 7 5G (256GB) [Grade A]","google",1.7,1,318,0,0
+"CJ - PMax (Google)","5188","Google Pixel 7 5G (256GB) [Grade A]","google",1.7,1,323,0,0
 "Phonebot (B) Standard Shopping","2333","Apple iPad Pro 11-inch 2nd Gen (128GB) WiFi [Grade A]","apple",1.69,1,35,0,0
 "SS - All Products >$1000","6025","Apple iPhone 15 Pro Max 5G (256GB) [Like New]","apple",1.69,3,74,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","7648","Samsung Galaxy Z Flip5 Flap Eco-Leather Case","samsung",1.68,6,167,0,0
-"CJ - PMax (Apple)","5262","Apple iPhone 14 Pro Max 5G (512GB) [Grade A]","apple",1.68,3,280,0,0
+"CJ - PMax (Apple)","5262","Apple iPhone 14 Pro Max 5G (512GB) [Grade A]","apple",1.68,3,279,0,0
 "CJ - PMax (Everything Else)","8597","Cocopar Portable 15.6-inch Monitor [Open Box]","cocopar",1.68,1,564,0,0
 "Phonebot (B) Standard Shopping","7626","Apple iPhone 16 Pro Max 5G (1TB) [Grade A]","apple",1.66,3,46,0,0
 "Standard Shopping - iPhone 17","8580","Apple iPhone 17 Pro Max 5G (512GB) [Open Box]","apple",1.66,2,40,0,0
@@ -673,23 +673,23 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Samsung)","6813","Samsung Galaxy Buds 3 [Brand New]","samsung",1.172,2,259,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6983","Samsung Galaxy S24 Silicone Case","samsung",1.13,3,277,0,0
 "Phonebot (B) Standard Shopping","3955","Samsung Galaxy S22 Ultra 5G (256GB) [Like New]","samsung",1.13,1,10,0,0
-"CJ - PMax (Everything Else)","8564","OnePlus 9 5G LE2113 Global Ver (128GB) [Grade A]","oneplus",1.12,1,1023,0,0
+"CJ - PMax (Everything Else)","8564","OnePlus 9 5G LE2113 Global Ver (128GB) [Grade A]","oneplus",1.12,1,1024,0,0
 "CJ - PMax (Samsung)","7780","Samsung Galaxy S25 Plus 5G (256GB) [Like New]","samsung",1.1,2,33,1,2306
 "CJ - PMax (< $100 / Accessories) (PB)","7619","ZAGG InvisibleShield Glass XTR3 Screen Protector for Samsung Galaxy S23 FE","zagg",1.09,1,39,0,0
 "Phonebot (B) Standard Shopping","4931","Apple iPhone 14 Pro Max 5G (128GB) [Grade A]","apple",1.09,5,433,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6252","Samsung Galaxy Watch5 | Watch5 Pro Sport Band 20MM (M/L)","samsung",1.08,3,61,0,0
 "CJ - PMax (Apple)","4794","Apple iPhone 14 Pro Max 5G (256GB) [Like New]","apple",1.08,1,139,0,0
 "CJ - PMax (Samsung)","5577","Samsung Galaxy A34 5G Dual Sim (128GB) [Grade A]","samsung",1.05,4,316,0,0
-"SS - All Products >$1000","8542","Google Pixel 10 Pro XL 5G (256GB) [Like New]","google",1.05,2,126,0,0
+"SS - All Products >$1000","8542","Google Pixel 10 Pro XL 5G (256GB) [Like New]","google",1.05,2,128,0,0
 "CJ - PMax (Samsung)","5151","Samsung Galaxy S23 Ultra 5G (512GB) [Like New]","samsung",1.0492,1,928,0,0
 "CJ - PMax (Samsung)","3955","Samsung Galaxy S22 Ultra 5G (256GB) [Like New]","samsung",1.04,1,38,0,0
-"CJ - PMax (Samsung)","6563","Samsung Galaxy S24 5G (128GB) [Grade A]","samsung",1.04,2,37,0,0
+"CJ - PMax (Samsung)","6563","Samsung Galaxy S24 5G (128GB) [Grade A]","samsung",1.04,2,40,0,0
 "CJ - PMax (Google)","6558","Google Pixel 8a 5G (128GB) [Open Box]","google",1.03,1,200,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","7663","Otterbox Symmetry Series Case for Samsung Galaxy S23 FE","otterbox",1,1,87,0,0
-"CJ - PMax (Google)","7519","Google Pixel 9 Pro XL 5G (128GB) [Like New]","google",1,3,277,0,0
+"CJ - PMax (Google)","7519","Google Pixel 9 Pro XL 5G (128GB) [Like New]","google",1,3,285,0,0
 "Phonebot (B) Standard Shopping","5212","Samsung Galaxy Z Fold 4 5G (1TB) [Grade A]","samsung",1,1,104,0,0
 "Phonebot (B) Standard Shopping","8290","Samsung Galaxy Z Flip7 FE 5G (128GB) [Like New]","samsung",0.99,2,199,0,0
-"Phonebot (B) Standard Shopping","7511","Apple iPhone 16 Pro 5G (128GB) [Grade A]","apple",0.98,3,556,0,0
+"Phonebot (B) Standard Shopping","7511","Apple iPhone 16 Pro 5G (128GB) [Grade A]","apple",0.98,3,557,0,0
 "SS - Excluded Products - >$100","6492","Pout Eyes3 Lift Height Adjustable Laptop Riser","pout",0.97,3,137,1,49
 "PMax - Covers - Excl.Products","8100","Otterbox Fre Case for iPhone 16 Pro Max","otterbox",0.94,3,41,1,59
 "Phonebot (B) Standard Shopping","1032","Apple iPad 5th Gen (128GB) WiFi Cellular [Grade A]","apple",0.94,1,8,0,0
@@ -740,14 +740,14 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "Phonebot (B) Standard Shopping","1201","Apple iPhone XS (64GB) [Grade A]","apple",0.58,2,12,0,0
 "Phonebot (B) Standard Shopping","8427","Apple iPhone 17 5G (256GB) [Brand New]","apple",0.58,4,237,0,0
 "Phonebot (B) Standard Shopping","8194","Apple iPhone 17 Pro Max 5G (256GB) [Brand New]","apple",0.57,6,261,0,0
-"CJ - PMax (Apple)","2061","Apple iPhone 11 Pro (256GB) [Grade A]","apple",0.5638,1,1155,0,0
+"CJ - PMax (Apple)","2061","Apple iPhone 11 Pro (256GB) [Grade A]","apple",0.5638,1,1154,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","3034","Pelican Ranger Case for iPhone 12 Pro Max","pelican",0.56,2,33,0,0
 "CJ - PMax (Google)","8490","Google Pixel 9 5G | DeGoogled Graphene OS Secure (256GB) [Grade A]","google",0.56,1,192,0,0
 "CJ - PMax (Apple)","5319","Apple iPhone 14 Pro 5G (512GB) [Grade A]","apple",0.5557,1,132,0,0
 "PMax - Covers - Excl.Products","7662","Samsung Galaxy SmartTag2 Silicone Case","samsung",0.55,1,160,0,0
 "PMax - Covers - Excl.Products","7675","Otterbox Symmetry Series Case for Samsung Galaxy S24 Plus","otterbox",0.55,2,62,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6969","Samsung Galaxy S23 Clear Case","samsung",0.54,2,30,0,0
-"CJ - PMax (Google)","5376","Google Pixel 7a 5G (128GB) [Like New]","google",0.54,1,182,0,0
+"CJ - PMax (Google)","5376","Google Pixel 7a 5G (128GB) [Like New]","google",0.54,1,183,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6993","Samsung Galaxy S24 Plus Silicone Case","samsung",0.52,1,32,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","4439","Samsung Galaxy A72 Clear Standing Cover","samsung",0.51,1,18,0,0
 "CJ - PMax (Apple) iPad","3966","Apple iPad Pro 9.7-inch (32GB) WiFi Cellular [Grade B]","apple",0.5,1,155,0,0
@@ -787,7 +787,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "PMax - Covers - Excl.Products","7652","Samsung Galaxy Z Fold5 Slim S-Pen Cover","samsung",0.3193,1,137,0,0
 "CJ - PMax (Google)","6855","Google Pixel 8a 5G | DeGoogled Graphene OS Secure (128GB) [Grade B]","google",0.312,1,601,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","5325","OtterBox Symmetry Series Clear Case for Samsung Galaxy S21 Plus 5G","otterbox",0.3,1,40,0,0
-"CJ - PMax (Apple)","2060","Apple iPhone 11 Pro Max (256GB) [Grade A]","apple",0.2864,2,436,0,0
+"CJ - PMax (Apple)","2060","Apple iPhone 11 Pro Max (256GB) [Grade A]","apple",0.2864,2,435,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","5550","Samsung Rugged Protective Case for Samsung Galaxy S10e","samsung",0.28,1,33,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6201","Apple iPhone 12 | 12 Pro Clear Case with MagSafe","apple",0.28,1,87,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","6470","HyperDrive 5-in-1 USB-C Hub for iMac 24-inch","hyper",0.28,1,103,0,0
@@ -804,7 +804,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (< $100 / Accessories) (PB)","7484","UAG Monarch Kevlar Case for iPhone 15 Plus","urban armor gear - uag",0.24,1,37,0,0
 "Phonebot (B) Standard Shopping","2151","Apple iPhone 12 5G (64GB) [Like New]","apple",0.24,1,135,0,0
 "Phonebot (B) Standard Shopping","3942","Apple iPhone 13 Pro Max (1TB) [Like New]","apple",0.24,1,9,0,0
-"SS - All Products >$1000","8663","Apple iPhone 17 Pro 5G (256GB) [Grade A]","apple",0.24,1,34,0,0
+"SS - All Products >$1000","8663","Apple iPhone 17 Pro 5G (256GB) [Grade A]","apple",0.24,1,37,0,0
 "CJ - PMax (Google)","6851","Google Pixel 8 Pro 5G | DeGoogled Graphene OS Secure (128GB) [Grade A]","google",0.22,1,295,0,0
 "Phonebot (B) Standard Shopping","8618","Samsung Galaxy S25 Ultra 5G (1TB) [Grade A]","samsung",0.22,1,18,0,0
 "CJ - PMax (< $100 / Accessories) (PB)","1318","Samsung Leather Cover for Samsung Galaxy S10e","samsung",0.21,1,23,0,0
@@ -838,7 +838,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (< $100 / Accessories) (PB)","6837","Baseus Enjoyment Pro 60W Retractable USB-C Car Charger","baseus",0.06,1,113,0,0
 "CJ - PMax (Apple)","1201","","apple",0.057,0,17,0,0
 "CJ - PMax (Apple) iPad","1887","Apple iPad Air 3rd Gen (64GB) Wifi Cellular [Grade A]","apple",0.0552,1,509,0,0
-"CJ - PMax (Samsung)","4083","﻿Samsung Galaxy S22 5G (256GB) [Grade A]","samsung",0.0505,0,150,0,0
+"CJ - PMax (Samsung)","4083","﻿Samsung Galaxy S22 5G (256GB) [Grade A]","samsung",0.0505,0,151,0,0
 "Phonebot (B) Standard Shopping","5766","Samsung Galaxy A54 5G Dual Sim (128GB) [Grade B]","samsung",0.05,1,69,0,0
 "Phonebot (B) Standard Shopping","6452","Samsung Galaxy Tab A9 LTE (64GB) [Like New]","samsung",0.05,1,2,0,0
 "CJ - PMax (Apple)","3831","Apple iPhone 13 Pro 5G (512GB) [Grade A]","apple",0.0496,1,372,0,0
@@ -1164,7 +1164,7 @@ Campaign name,OfferId,ProductTitle,Brand,Cost,Clicks,Impressions,Conversions,Con
 "CJ - PMax (Everything Else)","8564","","oneplus",0,0,8,0,0
 "CJ - PMax (Everything Else)","8565","","oneplus",0,0,55,0,0
 "CJ - PMax (Everything Else)","8597","","cocopar",0,0,9,0,0
-"CJ - PMax (Everything Else)","8616","OnePlus 9 5G LE2113 Global Ver (128GB) [Like New]","oneplus",0,0,210,0,0
+"CJ - PMax (Everything Else)","8616","OnePlus 9 5G LE2113 Global Ver (128GB) [Like New]","oneplus",0,0,214,0,0
 "CJ - PMax (Google)","4854","","google",0,0,2,0,0
 "CJ - PMax (Google)","6623","","google",0,0,3,0,0
 "CJ - PMax (Google)","6839","","google",0,0,4,0,0

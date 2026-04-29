@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { router, publicProcedure } from '../middleware';
 import { runQuery } from '../lib/duckdb';
+import { bqQuery, bqAvailable } from '../lib/bq';
 
 // Profit Ops — analyses targeted at finding waste and lifting net profit.
 // Each procedure stays self-contained so the dashboard can render any subset on demand.
@@ -630,6 +631,271 @@ export const profitOpsRouter = router({
       totalAnnualised: total * 12,
       lossSkuCount: negativeMarginSpend[0]?.loss_skus || 0,
       caveat: 'These are estimates with explicit assumptions (80% branded recovery, brand-level OOS proxy, brand-margin × SKU conversion_value for GP). Validate the largest line with a holdout test before acting at full scale.',
+    };
+  }),
+
+  // === BigQuery-backed procedures (live GA4 export, project bigquery-api-494711) ===
+  // These run actual BQ queries via the `bq` CLI on each call.
+  // Cached in-process for 5 min to avoid re-billing on every dashboard render.
+
+  // BQ status — does this machine have bq installed + how much data has landed?
+  bqStatus: publicProcedure.query(async () => {
+    const available = await bqAvailable();
+    if (!available) {
+      return { available: false, days: 0, earliest: null, latest: null, totalEvents: 0, error: 'bq CLI not installed on this machine' };
+    }
+    try {
+      const rows = await bqQuery<{ days: number; earliest: string; latest: string; total_events: number }>(`
+        SELECT
+          COUNT(DISTINCT event_date) AS days,
+          MIN(event_date) AS earliest,
+          MAX(event_date) AS latest,
+          COUNT(*) AS total_events
+        FROM \`bigquery-api-494711.analytics_284223207.vw_events_flat\`
+      `);
+      const r = rows[0];
+      return {
+        available: true,
+        days: Number(r.days) || 0,
+        earliest: r.earliest,
+        latest: r.latest,
+        totalEvents: Number(r.total_events) || 0,
+      };
+    } catch (e: any) {
+      return { available: false, days: 0, earliest: null, latest: null, totalEvents: 0, error: e.message };
+    }
+  }),
+
+  // BQ click-ID capture rate per channel — the killer attribution finding
+  bqClickIdCapture: publicProcedure.query(async () => {
+    const rows = await bqQuery<{
+      source: string; medium: string; sessions: number;
+      w_gclid: number; w_fbclid: number; w_msclkid: number;
+      pct_with_gclid: number; pct_with_fbclid: number; pct_with_msclkid: number;
+    }>(`
+      SELECT
+        source, medium,
+        COUNT(*) AS sessions,
+        COUNTIF(gclid IS NOT NULL) AS w_gclid,
+        COUNTIF(fbclid IS NOT NULL) AS w_fbclid,
+        COUNTIF(msclkid IS NOT NULL) AS w_msclkid,
+        ROUND(COUNTIF(gclid IS NOT NULL) / NULLIF(COUNT(*), 0) * 100, 1) AS pct_with_gclid,
+        ROUND(COUNTIF(fbclid IS NOT NULL) / NULLIF(COUNT(*), 0) * 100, 1) AS pct_with_fbclid,
+        ROUND(COUNTIF(msclkid IS NOT NULL) / NULLIF(COUNT(*), 0) * 100, 1) AS pct_with_msclkid
+      FROM \`bigquery-api-494711.analytics_284223207.vw_sessions\`
+      WHERE source IN ('google', 'bing', 'fb', 'facebook', 'msn') OR medium IN ('cpc', 'paid')
+      GROUP BY source, medium
+      HAVING sessions >= 5
+      ORDER BY sessions DESC
+      LIMIT 30
+    `);
+    return rows.map(r => ({ ...r, sessions: Number(r.sessions), w_gclid: Number(r.w_gclid), w_fbclid: Number(r.w_fbclid), w_msclkid: Number(r.w_msclkid) }));
+  }),
+
+  // BQ channel attribution — what GA4 says happened
+  bqChannelAttribution: publicProcedure.query(async () => {
+    const rows = await bqQuery<{
+      source: string; medium: string; sessions: number;
+      purchases: number; revenue: number; aov: number;
+    }>(`
+      SELECT
+        COALESCE(NULLIF(source, ''), '(none)') AS source,
+        COALESCE(NULLIF(medium, ''), '(none)') AS medium,
+        COUNT(*) AS sessions,
+        SUM(purchase_count) AS purchases,
+        ROUND(SUM(purchase_revenue), 0) AS revenue,
+        ROUND(SUM(purchase_revenue) / NULLIF(SUM(purchase_count), 0), 0) AS aov
+      FROM \`bigquery-api-494711.analytics_284223207.vw_sessions\`
+      GROUP BY source, medium
+      ORDER BY revenue DESC NULLS LAST
+      LIMIT 25
+    `);
+    return rows.map(r => ({ ...r, sessions: Number(r.sessions), purchases: Number(r.purchases || 0), revenue: Number(r.revenue || 0), aov: Number(r.aov || 0) }));
+  }),
+
+  // BQ conversion funnel by channel
+  bqFunnelByChannel: publicProcedure.query(async () => {
+    const rows = await bqQuery<{
+      source: string; medium: string;
+      sessions: number; w_view: number; w_atc: number; w_co: number; w_purchase: number;
+      pct_view: number; view_to_atc: number; atc_to_co: number; co_to_buy: number;
+    }>(`
+      SELECT
+        COALESCE(NULLIF(source, ''), '(none)') AS source,
+        COALESCE(NULLIF(medium, ''), '(none)') AS medium,
+        COUNT(*) AS sessions,
+        COUNTIF(view_item_count > 0) AS w_view,
+        COUNTIF(add_to_cart_count > 0) AS w_atc,
+        COUNTIF(begin_checkout_count > 0) AS w_co,
+        COUNTIF(purchase_count > 0) AS w_purchase,
+        ROUND(COUNTIF(view_item_count > 0) / NULLIF(COUNT(*), 0) * 100, 1) AS pct_view,
+        ROUND(COUNTIF(add_to_cart_count > 0) / NULLIF(COUNTIF(view_item_count > 0), 0) * 100, 1) AS view_to_atc,
+        ROUND(COUNTIF(begin_checkout_count > 0) / NULLIF(COUNTIF(add_to_cart_count > 0), 0) * 100, 1) AS atc_to_co,
+        ROUND(COUNTIF(purchase_count > 0) / NULLIF(COUNTIF(begin_checkout_count > 0), 0) * 100, 1) AS co_to_buy
+      FROM \`bigquery-api-494711.analytics_284223207.vw_sessions\`
+      GROUP BY source, medium
+      HAVING sessions >= 30
+      ORDER BY sessions DESC
+      LIMIT 20
+    `);
+    return rows.map(r => ({
+      ...r,
+      sessions: Number(r.sessions), w_view: Number(r.w_view), w_atc: Number(r.w_atc),
+      w_co: Number(r.w_co), w_purchase: Number(r.w_purchase),
+    }));
+  }),
+
+  // BQ landing page performance — top entry pages by sessions × CVR × revenue.
+  // For Phonebot: identifies which product/category pages convert best, surfaces
+  // page-level GTM tag misconfigs (low click-id capture on a single landing page),
+  // and finds high-traffic-low-CVR pages worth a UX fix vs scaling ad spend on winners.
+  bqLandingPages: publicProcedure
+    .input(z.object({
+      minSessions: z.number().default(20),
+      paidOnly: z.boolean().default(false),
+    }).optional())
+    .query(async ({ input }) => {
+      const minSessions = input?.minSessions ?? 20;
+      const paidOnly = input?.paidOnly ?? false;
+      const paidFilter = paidOnly
+        ? `AND (medium IN ('cpc', 'paid', 'paid_search', 'paid_social') OR gclid IS NOT NULL OR fbclid IS NOT NULL OR msclkid IS NOT NULL)`
+        : '';
+
+      const rows = await bqQuery<{
+        landing_page: string;
+        sessions: number;
+        purchases: number;
+        revenue: number;
+        cvr: number;
+        aov: number;
+        view_item_rate: number;
+        atc_rate: number;
+        co_rate: number;
+        click_id_capture_pct: number;
+        avg_pageviews: number;
+        avg_duration_sec: number;
+      }>(`
+        SELECT
+          landing_page,
+          COUNT(*) AS sessions,
+          SUM(purchase_count) AS purchases,
+          ROUND(SUM(purchase_revenue), 0) AS revenue,
+          ROUND(SUM(purchase_count) / NULLIF(COUNT(*), 0) * 100, 2) AS cvr,
+          ROUND(SUM(purchase_revenue) / NULLIF(SUM(purchase_count), 0), 0) AS aov,
+          ROUND(COUNTIF(view_item_count > 0) / NULLIF(COUNT(*), 0) * 100, 1) AS view_item_rate,
+          ROUND(COUNTIF(add_to_cart_count > 0) / NULLIF(COUNT(*), 0) * 100, 1) AS atc_rate,
+          ROUND(COUNTIF(begin_checkout_count > 0) / NULLIF(COUNT(*), 0) * 100, 1) AS co_rate,
+          ROUND(
+            COUNTIF(gclid IS NOT NULL OR fbclid IS NOT NULL OR msclkid IS NOT NULL)
+            / NULLIF(COUNTIF(medium IN ('cpc', 'paid', 'paid_search', 'paid_social')), 0) * 100,
+            1
+          ) AS click_id_capture_pct,
+          ROUND(AVG(pageviews), 1) AS avg_pageviews,
+          ROUND(AVG(session_duration_sec), 0) AS avg_duration_sec
+        FROM \`bigquery-api-494711.analytics_284223207.vw_sessions\`
+        WHERE landing_page IS NOT NULL
+          AND landing_page != ''
+          ${paidFilter}
+        GROUP BY landing_page
+        HAVING sessions >= ${minSessions}
+        ORDER BY sessions DESC
+        LIMIT 50
+      `);
+
+      const normalized = rows.map(r => ({
+        ...r,
+        sessions: Number(r.sessions),
+        purchases: Number(r.purchases || 0),
+        revenue: Number(r.revenue || 0),
+        cvr: Number(r.cvr || 0),
+        aov: Number(r.aov || 0),
+        view_item_rate: Number(r.view_item_rate || 0),
+        atc_rate: Number(r.atc_rate || 0),
+        co_rate: Number(r.co_rate || 0),
+        click_id_capture_pct: r.click_id_capture_pct == null ? null : Number(r.click_id_capture_pct),
+        avg_pageviews: Number(r.avg_pageviews || 0),
+        avg_duration_sec: Number(r.avg_duration_sec || 0),
+      }));
+
+      const totalSessions = normalized.reduce((s, r) => s + r.sessions, 0);
+      const totalRevenue = normalized.reduce((s, r) => s + r.revenue, 0);
+      const blendedCvr = totalSessions > 0
+        ? normalized.reduce((s, r) => s + r.purchases, 0) / totalSessions * 100
+        : 0;
+
+      // Categorise: high-traffic + above-blended CVR → SCALE; high-traffic + below → FIX UX; low-traffic + high CVR → SCALE TRAFFIC
+      const sessionMedian = normalized.length > 0
+        ? [...normalized].sort((a, b) => a.sessions - b.sessions)[Math.floor(normalized.length / 2)].sessions
+        : 0;
+      const categorised = normalized.map(r => {
+        const highTraffic = r.sessions >= sessionMedian;
+        const aboveBlended = r.cvr > blendedCvr;
+        let tag: 'SCALE_AD_SPEND' | 'FIX_UX' | 'SCALE_TRAFFIC' | 'NEUTRAL';
+        let reason: string;
+        if (highTraffic && aboveBlended) {
+          tag = 'SCALE_AD_SPEND';
+          reason = 'Top-quartile traffic AND above-blended CVR. Fertile ground for more ad spend or wider targeting.';
+        } else if (highTraffic && !aboveBlended) {
+          tag = 'FIX_UX';
+          reason = 'High traffic but below-blended CVR. UX/copy/price audit before adding more spend.';
+        } else if (!highTraffic && aboveBlended) {
+          tag = 'SCALE_TRAFFIC';
+          reason = 'Converts above blend but starved for traffic. SEO/ads/email push could 10x revenue from this page.';
+        } else {
+          tag = 'NEUTRAL';
+          reason = 'Low traffic AND below-blended CVR. Watch but no urgent action.';
+        }
+        return { ...r, tag, reason };
+      });
+
+      return {
+        rows: categorised,
+        summary: {
+          pageCount: categorised.length,
+          totalSessions,
+          totalRevenue,
+          blendedCvr,
+          scaleAdSpendCount: categorised.filter(r => r.tag === 'SCALE_AD_SPEND').length,
+          fixUxCount: categorised.filter(r => r.tag === 'FIX_UX').length,
+          scaleTrafficCount: categorised.filter(r => r.tag === 'SCALE_TRAFFIC').length,
+        },
+        paidOnly,
+        minSessions,
+        caveats: [
+          'BigQuery GA4 export currently has 1 day of data (events_20260428). CVR and revenue figures are directional, not strategic — wait for 7+ days for confident decisions.',
+          'click_id_capture_pct is the % of paid sessions on this landing page that retained a click ID. Below 80% on a paid page suggests a GTM tag firing issue specific to that template.',
+          'Categorisation uses session-count median as the high/low-traffic split. Once 14d of data is available the tier boundaries should be re-set against a longer baseline.',
+        ],
+      };
+    }),
+
+  // BQ session capture rate on purchase events — corroborates ProfitMetrics' 68% claim
+  bqSessionCapture: publicProcedure.query(async () => {
+    const rows = await bqQuery<{
+      total_purchases: number; with_session_id: number; with_user_pseudo_id: number;
+      with_transaction_id: number; pct_with_session: number;
+      unique_transactions: number; total_revenue: number;
+    }>(`
+      SELECT
+        COUNT(*) AS total_purchases,
+        COUNTIF(ga_session_id IS NOT NULL) AS with_session_id,
+        COUNTIF(user_pseudo_id IS NOT NULL) AS with_user_pseudo_id,
+        COUNTIF(transaction_id IS NOT NULL) AS with_transaction_id,
+        ROUND(COUNTIF(ga_session_id IS NOT NULL) / COUNT(*) * 100, 1) AS pct_with_session,
+        COUNT(DISTINCT transaction_id) AS unique_transactions,
+        ROUND(SUM(purchase_revenue), 0) AS total_revenue
+      FROM \`bigquery-api-494711.analytics_284223207.vw_events_flat\`
+      WHERE event_name = 'purchase'
+    `);
+    const r = rows[0];
+    return {
+      totalPurchases: Number(r?.total_purchases || 0),
+      withSessionId: Number(r?.with_session_id || 0),
+      withUserPseudoId: Number(r?.with_user_pseudo_id || 0),
+      withTransactionId: Number(r?.with_transaction_id || 0),
+      pctWithSession: Number(r?.pct_with_session || 0),
+      uniqueTransactions: Number(r?.unique_transactions || 0),
+      totalRevenue: Number(r?.total_revenue || 0),
     };
   }),
 });

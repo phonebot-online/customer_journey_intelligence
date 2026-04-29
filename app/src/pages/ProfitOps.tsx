@@ -4,7 +4,7 @@ import TrustBadge from '../components/widgets/TrustBadge';
 import { formatCurrency, formatPercent, formatNumber } from '../types';
 import {
   Banknote, Zap, Target, Package, Search, Boxes,
-  ChevronDown, ChevronRight, Activity, FileSearch,
+  ChevronDown, ChevronRight, Activity, FileSearch, Database, AlertTriangle,
 } from 'lucide-react';
 
 type Window = '7d' | '30d';
@@ -20,7 +20,7 @@ export default function ProfitOps() {
   const [searchTermMinCost, setSearchTermMinCost] = useState(5);
   const [searchTermMinClicks, setSearchTermMinClicks] = useState(10);
   const [expandSection, setExpandSection] = useState<Record<string, boolean>>({
-    branded: true, oos: true, oosSku: true, sku: true, terms: true, anomalies: true,
+    branded: true, oos: true, oosSku: true, sku: true, terms: true, anomalies: true, bq: true, landing: true,
   });
 
   const headline = trpc.profitOps.wasteHeadline.useQuery();
@@ -35,6 +35,17 @@ export default function ProfitOps() {
   const anomalies = trpc.profitOps.anomalyScan.useQuery({ zThreshold });
   const oosSku = trpc.profitOps.oosSpendLeakBySku.useQuery({ window: oosSkuWindow });
   const wastedTerms = trpc.profitOps.wastedSearchTerms.useQuery({ minCost: searchTermMinCost, minClicks: searchTermMinClicks });
+  const bqStatus = trpc.profitOps.bqStatus.useQuery();
+  const bqClickId = trpc.profitOps.bqClickIdCapture.useQuery(undefined, { enabled: !!bqStatus.data?.available });
+  const bqAttribution = trpc.profitOps.bqChannelAttribution.useQuery(undefined, { enabled: !!bqStatus.data?.available });
+  const bqFunnel = trpc.profitOps.bqFunnelByChannel.useQuery(undefined, { enabled: !!bqStatus.data?.available });
+  const bqCapture = trpc.profitOps.bqSessionCapture.useQuery(undefined, { enabled: !!bqStatus.data?.available });
+  const [landingMinSessions, setLandingMinSessions] = useState(20);
+  const [landingPaidOnly, setLandingPaidOnly] = useState(false);
+  const bqLandingPages = trpc.profitOps.bqLandingPages.useQuery(
+    { minSessions: landingMinSessions, paidOnly: landingPaidOnly },
+    { enabled: !!bqStatus.data?.available }
+  );
 
   const toggle = (k: string) => setExpandSection(s => ({ ...s, [k]: !s[k] }));
 
@@ -85,6 +96,384 @@ export default function ProfitOps() {
           </div>
         </div>
       )}
+
+      {/* BIGQUERY CROSS-SECTION — live GA4 export */}
+      <div className="bg-white rounded-lg border-2 border-indigo-300 shadow-sm">
+        <button onClick={() => toggle('bq')} className="w-full flex items-center justify-between p-5 hover:bg-indigo-50 transition-colors">
+          <div className="flex items-center gap-2">
+            <Database className="w-5 h-5 text-indigo-700" />
+            <h3 className="text-lg font-semibold text-gray-900">BigQuery cross-section — live GA4 attribution truth</h3>
+            {bqStatus.data?.available && (
+              <span className="text-xs px-2 py-0.5 bg-indigo-100 text-indigo-800 rounded">
+                {bqStatus.data.days} day{bqStatus.data.days === 1 ? '' : 's'} of data
+              </span>
+            )}
+          </div>
+          {expandSection.bq ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+        </button>
+        {expandSection.bq && (
+          <div className="px-5 pb-5">
+            {!bqStatus.data?.available && (
+              <div className="p-4 bg-amber-50 border border-amber-200 rounded text-sm">
+                <p className="font-semibold text-amber-900 flex items-center gap-2">
+                  <AlertTriangle className="w-4 h-4" /> BigQuery CLI not available
+                </p>
+                <p className="text-amber-800 mt-1 text-xs">
+                  Run on this machine: <code className="bg-amber-100 px-1 rounded">brew install --cask google-cloud-sdk &amp;&amp; gcloud auth login &amp;&amp; gcloud config set project bigquery-api-494711</code>
+                </p>
+                {bqStatus.data?.error && (
+                  <p className="text-amber-700 mt-2 text-xs font-mono">{bqStatus.data.error}</p>
+                )}
+              </div>
+            )}
+
+            {bqStatus.data?.available && (
+              <>
+                <p className="text-sm text-gray-700 mb-3">
+                  Live queries against <code>bigquery-api-494711.analytics_284223207</code>. Data range:{' '}
+                  <strong>{bqStatus.data.earliest} → {bqStatus.data.latest}</strong> ({formatNumber(bqStatus.data.totalEvents)} events).
+                  Cached in-process for 5 minutes per query to minimize BQ cost. <em>Note: dataset is &lt;14 days old; small samples — re-evaluate weekly.</em>
+                </p>
+
+                {/* SESSION CAPTURE — quick stats */}
+                {bqCapture.data && (
+                  <div className="mb-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded">
+                    <p className="text-sm font-semibold text-gray-900 mb-2">GA4 transaction tracking health</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                      <div>
+                        <p className="text-xs text-gray-600">Purchase events</p>
+                        <p className="text-2xl font-bold text-green-900">{formatNumber(bqCapture.data.totalPurchases)}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-600">% with session_id</p>
+                        <p className="text-2xl font-bold text-green-900">{bqCapture.data.pctWithSession}%</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-600">Unique transactions</p>
+                        <p className="text-2xl font-bold text-green-900">{formatNumber(bqCapture.data.uniqueTransactions)}</p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-600">GA4 attributed revenue</p>
+                        <p className="text-2xl font-bold text-green-900">{formatCurrency(bqCapture.data.totalRevenue)}</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-gray-600 mt-2">
+                      GA4-side capture is healthy. The 32% loss flagged by ProfitMetrics is on their pixel, not GA4 events.
+                    </p>
+                  </div>
+                )}
+
+                {/* CLICK-ID CAPTURE — the killer finding */}
+                {bqClickId.data && bqClickId.data.length > 0 && (
+                  <div className="mb-4 p-4 bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-300 rounded">
+                    <p className="text-sm font-semibold text-red-900 mb-2 flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4" /> Click-ID capture rate per channel — gclid is leaking
+                    </p>
+                    <p className="text-xs text-red-800 mb-3">
+                      Healthy: 95%+. Anything below 80% means clicks lose their attribution before reaching your GA4 property.
+                      Common cause: site URL rewrites, redirect chains, or CDN cache stripping query params.
+                    </p>
+                    <table className="min-w-full text-xs">
+                      <thead className="bg-red-100">
+                        <tr>
+                          <th className="px-2 py-1 text-left">Source</th>
+                          <th className="px-2 py-1 text-left">Medium</th>
+                          <th className="px-2 py-1 text-right">Sessions</th>
+                          <th className="px-2 py-1 text-right">% gclid</th>
+                          <th className="px-2 py-1 text-right">% fbclid</th>
+                          <th className="px-2 py-1 text-right">% msclkid</th>
+                          <th className="px-2 py-1 text-left">Health</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {bqClickId.data.map((r, i) => {
+                          // Health: pick the most relevant click ID for the channel
+                          const isPaidGoogle = r.medium === 'cpc' && r.source === 'google';
+                          const isPaidBing = r.medium === 'cpc' && r.source === 'bing';
+                          const isFb = r.source === 'fb' || r.source === 'facebook';
+                          const relevantPct = isPaidGoogle ? r.pct_with_gclid : isPaidBing ? r.pct_with_msclkid : isFb ? r.pct_with_fbclid : null;
+                          const health = relevantPct === null ? '—' : relevantPct >= 90 ? '✅ healthy' : relevantPct >= 60 ? '⚠️ partial' : '🚨 broken';
+                          const healthColor = relevantPct === null ? 'text-gray-500' : relevantPct >= 90 ? 'text-green-700' : relevantPct >= 60 ? 'text-orange-700' : 'text-red-700';
+                          return (
+                            <tr key={i} className="border-t border-red-100">
+                              <td className="px-2 py-1 font-medium">{r.source}</td>
+                              <td className="px-2 py-1">{r.medium}</td>
+                              <td className="px-2 py-1 text-right">{formatNumber(r.sessions)}</td>
+                              <td className={`px-2 py-1 text-right font-mono ${r.pct_with_gclid < 80 && (r.source === 'google' && r.medium === 'cpc') ? 'text-red-700 font-bold' : ''}`}>
+                                {r.pct_with_gclid}%
+                              </td>
+                              <td className="px-2 py-1 text-right font-mono">{r.pct_with_fbclid}%</td>
+                              <td className="px-2 py-1 text-right font-mono">{r.pct_with_msclkid}%</td>
+                              <td className={`px-2 py-1 text-xs ${healthColor}`}>{health}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                    <div className="mt-3 p-2 bg-white rounded text-xs">
+                      <p className="font-semibold text-red-900 mb-1">What to do:</p>
+                      <ol className="list-decimal list-inside space-y-1 text-gray-700">
+                        <li><strong>Pat (GTM):</strong> add gclid persistence cookie — captures gclid on first page, persists in 1st-party cookie, downstream tags read from cookie not URL. ~1hr fix, recovers attribution immediately.</li>
+                        <li><strong>Internal dev (OpenCart 2.2):</strong> trace what's stripping <code>?gclid=</code> from URLs after first page. Common in OC: SEO URL rewriter, currency redirect, session middleware.</li>
+                      </ol>
+                    </div>
+                  </div>
+                )}
+
+                {/* CHANNEL ATTRIBUTION */}
+                {bqAttribution.data && bqAttribution.data.length > 0 && (
+                  <details className="mb-4" open>
+                    <summary className="text-sm font-semibold text-gray-900 cursor-pointer">
+                      Channel attribution — what GA4 thinks happened ({bqAttribution.data.length} channels)
+                    </summary>
+                    <table className="min-w-full text-xs mt-2">
+                      <thead className="bg-gray-50">
+                        <tr>
+                          <th className="px-2 py-1 text-left">Source</th>
+                          <th className="px-2 py-1 text-left">Medium</th>
+                          <th className="px-2 py-1 text-right">Sessions</th>
+                          <th className="px-2 py-1 text-right">Purchases</th>
+                          <th className="px-2 py-1 text-right">Revenue</th>
+                          <th className="px-2 py-1 text-right">AOV</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        {bqAttribution.data.slice(0, 15).map((r, i) => (
+                          <tr key={i}>
+                            <td className="px-2 py-1 font-medium">{r.source}</td>
+                            <td className="px-2 py-1">{r.medium}</td>
+                            <td className="px-2 py-1 text-right">{formatNumber(r.sessions)}</td>
+                            <td className="px-2 py-1 text-right">{r.purchases}</td>
+                            <td className="px-2 py-1 text-right font-semibold">{formatCurrency(r.revenue)}</td>
+                            <td className="px-2 py-1 text-right">{r.aov ? formatCurrency(r.aov) : '—'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <p className="text-xs text-gray-500 mt-2">
+                      ⚠️ These are GA4-side numbers. With gclid leaking, paid Google revenue is <em>understated</em> here and organic Google is <em>overstated</em>. Use as floor, not truth.
+                    </p>
+                  </details>
+                )}
+
+                {/* FUNNEL */}
+                {bqFunnel.data && bqFunnel.data.length > 0 && (
+                  <details className="mb-2">
+                    <summary className="text-sm font-semibold text-gray-900 cursor-pointer">
+                      Conversion funnel by channel ({bqFunnel.data.length} channels with ≥30 sessions)
+                    </summary>
+                    <table className="min-w-full text-xs mt-2">
+                      <thead className="bg-gray-50">
+                        <tr>
+                          <th className="px-2 py-1 text-left">Source / Medium</th>
+                          <th className="px-2 py-1 text-right">Sessions</th>
+                          <th className="px-2 py-1 text-right">View</th>
+                          <th className="px-2 py-1 text-right">ATC</th>
+                          <th className="px-2 py-1 text-right">Checkout</th>
+                          <th className="px-2 py-1 text-right">Purchase</th>
+                          <th className="px-2 py-1 text-right">View→ATC</th>
+                          <th className="px-2 py-1 text-right">CO→Buy</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        {bqFunnel.data.map((r: any, i: number) => (
+                          <tr key={i}>
+                            <td className="px-2 py-1 font-medium">{r.source} / {r.medium}</td>
+                            <td className="px-2 py-1 text-right">{formatNumber(r.sessions)}</td>
+                            <td className="px-2 py-1 text-right">{r.w_view}</td>
+                            <td className="px-2 py-1 text-right">{r.w_atc}</td>
+                            <td className="px-2 py-1 text-right">{r.w_co}</td>
+                            <td className="px-2 py-1 text-right font-semibold">{r.w_purchase}</td>
+                            <td className="px-2 py-1 text-right font-mono">{r.view_to_atc}%</td>
+                            <td className="px-2 py-1 text-right font-mono">{r.co_to_buy}%</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </details>
+                )}
+
+                <div className="mt-3">
+                  <TrustBadge
+                    source={`BigQuery: bigquery-api-494711.analytics_284223207.{vw_events_flat, vw_sessions, vw_events_items_flat}`}
+                    tier="confirmed"
+                    caveat={`Live BQ queries via local bq CLI. Cached 5min. Dataset is ${bqStatus.data.days} day(s) old — small samples; re-evaluate after 14 days.`}
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* BIGQUERY LANDING PAGES — entry-page CVR + click-id capture */}
+      <div className="bg-white rounded-lg border-2 border-emerald-300 shadow-sm">
+        <button onClick={() => toggle('landing')} className="w-full flex items-center justify-between p-5 hover:bg-emerald-50 transition-colors">
+          <div className="flex items-center gap-2">
+            <FileSearch className="w-5 h-5 text-emerald-700" />
+            <h3 className="text-lg font-semibold text-gray-900">BigQuery: landing-page performance</h3>
+            {bqStatus.data?.available && (
+              <span className="text-xs px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded">
+                live GA4 export · {bqStatus.data.days} day{bqStatus.data.days === 1 ? '' : 's'} of data
+              </span>
+            )}
+          </div>
+          {expandSection.landing ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+        </button>
+        {expandSection.landing && (
+          <div className="px-5 pb-5">
+            {!bqStatus.data?.available && (
+              <div className="bg-amber-50 border border-amber-200 rounded p-3 text-sm text-amber-900">
+                BigQuery CLI (`bq`) is not installed on this machine. Landing-page diagnostics need a live GA4 BQ export.
+                Install via <code className="bg-amber-100 px-1 rounded">brew install --cask google-cloud-sdk</code> then run
+                <code className="bg-amber-100 px-1 rounded ml-1">gcloud auth login</code>.
+              </div>
+            )}
+            {bqStatus.data?.available && (
+              <>
+                <p className="text-sm text-gray-700 mb-3">
+                  Top entry pages from the live GA4 export, ranked by sessions. Categorises each page so ad-spend reallocation is one-glance:
+                  <strong className="text-emerald-700"> SCALE_AD_SPEND</strong> = high traffic + above-blended CVR (push more here),
+                  <strong className="text-orange-700"> FIX_UX</strong> = high traffic + below-blended CVR (audit before adding spend),
+                  <strong className="text-blue-700"> SCALE_TRAFFIC</strong> = low traffic + above-blended CVR (SEO/email push could 10× this).
+                  The <em>click_id %</em> column flags GTM tag misconfigs on individual landing pages — anything below 80% on a paid-traffic page warrants a tag check.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4 mb-3 p-3 bg-emerald-50 rounded">
+                  <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                    Min sessions:
+                    <input
+                      type="number"
+                      min={1}
+                      max={1000}
+                      value={landingMinSessions}
+                      onChange={e => setLandingMinSessions(Math.max(1, parseInt(e.target.value) || 20))}
+                      className="w-20 px-2 py-1 border border-gray-300 rounded text-sm"
+                    />
+                  </label>
+                  <label className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={landingPaidOnly}
+                      onChange={e => setLandingPaidOnly(e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                    Paid traffic only (cpc / paid / has click ID)
+                  </label>
+                </div>
+
+                {bqLandingPages.isLoading && <p className="text-sm text-gray-500">Loading landing-page data from BigQuery…</p>}
+                {bqLandingPages.error && (
+                  <div className="bg-red-50 border border-red-200 rounded p-3 text-sm text-red-900">
+                    BQ query failed: {bqLandingPages.error.message}
+                  </div>
+                )}
+                {bqLandingPages.data && (
+                  <>
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4">
+                      <div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+                        <p className="text-xs text-gray-600">Pages analysed</p>
+                        <p className="text-2xl font-bold text-emerald-800">{bqLandingPages.data.summary.pageCount}</p>
+                      </div>
+                      <div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+                        <p className="text-xs text-gray-600">Total sessions</p>
+                        <p className="text-2xl font-bold text-emerald-800">{formatNumber(bqLandingPages.data.summary.totalSessions)}</p>
+                      </div>
+                      <div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+                        <p className="text-xs text-gray-600">Total revenue</p>
+                        <p className="text-2xl font-bold text-emerald-800">{formatCurrency(bqLandingPages.data.summary.totalRevenue)}</p>
+                      </div>
+                      <div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+                        <p className="text-xs text-gray-600">Blended CVR</p>
+                        <p className="text-2xl font-bold text-emerald-800">{bqLandingPages.data.summary.blendedCvr.toFixed(2)}%</p>
+                      </div>
+                      <div className="p-3 bg-emerald-50 rounded border border-emerald-200">
+                        <p className="text-xs text-gray-600">Action tags</p>
+                        <p className="text-sm font-semibold">
+                          <span className="text-emerald-700">SCALE×{bqLandingPages.data.summary.scaleAdSpendCount}</span>
+                          {' · '}
+                          <span className="text-orange-700">FIX×{bqLandingPages.data.summary.fixUxCount}</span>
+                          {' · '}
+                          <span className="text-blue-700">TRAFFIC×{bqLandingPages.data.summary.scaleTrafficCount}</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    {bqLandingPages.data.rows.length === 0 ? (
+                      <p className="text-sm text-gray-500 italic">No landing pages above the session threshold yet. Lower "Min sessions" or wait for more BQ data to land.</p>
+                    ) : (
+                      <div className="overflow-x-auto">
+                        <table className="w-full text-xs">
+                          <thead className="bg-gray-100">
+                            <tr>
+                              <th className="px-2 py-1 text-left">Tag</th>
+                              <th className="px-2 py-1 text-left">Landing page</th>
+                              <th className="px-2 py-1 text-right">Sessions</th>
+                              <th className="px-2 py-1 text-right">Purchases</th>
+                              <th className="px-2 py-1 text-right">Revenue</th>
+                              <th className="px-2 py-1 text-right">CVR</th>
+                              <th className="px-2 py-1 text-right">AOV</th>
+                              <th className="px-2 py-1 text-right">View item %</th>
+                              <th className="px-2 py-1 text-right">ATC %</th>
+                              <th className="px-2 py-1 text-right">Checkout %</th>
+                              <th className="px-2 py-1 text-right">Click-ID %</th>
+                              <th className="px-2 py-1 text-right">Avg pages</th>
+                              <th className="px-2 py-1 text-right">Avg dur (s)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {bqLandingPages.data.rows.map((r, i) => (
+                              <tr key={i} className={
+                                r.tag === 'SCALE_AD_SPEND' ? 'bg-emerald-50'
+                                : r.tag === 'FIX_UX' ? 'bg-orange-50'
+                                : r.tag === 'SCALE_TRAFFIC' ? 'bg-blue-50'
+                                : ''
+                              }>
+                                <td className="px-2 py-1">
+                                  <span className={`text-[10px] px-1.5 py-0.5 rounded font-semibold ${
+                                    r.tag === 'SCALE_AD_SPEND' ? 'bg-emerald-200 text-emerald-900'
+                                    : r.tag === 'FIX_UX' ? 'bg-orange-200 text-orange-900'
+                                    : r.tag === 'SCALE_TRAFFIC' ? 'bg-blue-200 text-blue-900'
+                                    : 'bg-gray-200 text-gray-700'
+                                  }`} title={r.reason}>
+                                    {r.tag.replace(/_/g, ' ')}
+                                  </span>
+                                </td>
+                                <td className="px-2 py-1 max-w-md truncate font-mono text-gray-700" title={r.landing_page}>{r.landing_page}</td>
+                                <td className="px-2 py-1 text-right font-mono">{formatNumber(r.sessions)}</td>
+                                <td className="px-2 py-1 text-right font-mono">{r.purchases}</td>
+                                <td className="px-2 py-1 text-right font-mono">{formatCurrency(r.revenue)}</td>
+                                <td className={`px-2 py-1 text-right font-mono ${r.cvr > bqLandingPages.data.summary.blendedCvr ? 'text-emerald-700 font-semibold' : 'text-gray-700'}`}>{r.cvr.toFixed(2)}%</td>
+                                <td className="px-2 py-1 text-right font-mono">{r.aov ? formatCurrency(r.aov) : '—'}</td>
+                                <td className="px-2 py-1 text-right font-mono text-gray-600">{r.view_item_rate}%</td>
+                                <td className="px-2 py-1 text-right font-mono text-gray-600">{r.atc_rate}%</td>
+                                <td className="px-2 py-1 text-right font-mono text-gray-600">{r.co_rate}%</td>
+                                <td className={`px-2 py-1 text-right font-mono ${r.click_id_capture_pct != null && r.click_id_capture_pct < 80 ? 'text-red-700 font-bold' : 'text-gray-600'}`}>
+                                  {r.click_id_capture_pct == null ? '—' : `${r.click_id_capture_pct}%`}
+                                </td>
+                                <td className="px-2 py-1 text-right font-mono text-gray-500">{r.avg_pageviews}</td>
+                                <td className="px-2 py-1 text-right font-mono text-gray-500">{r.avg_duration_sec}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+
+                    <div className="mt-3">
+                      <TrustBadge
+                        source="BigQuery: bigquery-api-494711.analytics_284223207.vw_sessions"
+                        tier="estimated"
+                        caveat={bqLandingPages.data.caveats[0]}
+                      />
+                    </div>
+                  </>
+                )}
+              </>
+            )}
+          </div>
+        )}
+      </div>
 
       {/* BRANDED CANNIBALIZATION */}
       <div className="bg-white rounded-lg border border-gray-200 shadow-sm">

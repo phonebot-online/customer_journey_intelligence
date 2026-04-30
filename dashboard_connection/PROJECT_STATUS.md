@@ -1,7 +1,21 @@
 # Phonebot Marketing Dashboard — Project Status & Starting Guide
 
-> **Last updated:** 2026-04-25
-> **Status:** MVP COMPLETE — Data ingestion, backend API, and frontend dashboard all operational with real data
+> **Last updated:** 2026-04-30
+> **Status:** OPERATIONAL — Data ingestion, backend API, frontend dashboard, BigQuery integration, ProfitMetrics-via-GAWA refresh, and 9 Profit Ops analyses all live with refreshed data through 2026-04-29.
+
+## Recent updates
+
+**2026-04-30**
+- All Supermetrics-sourced CSVs refreshed (Google Ads account daily, shopping_sku 7d/30d, search terms, campaign summary; GA4 channel + campaign×source/medium AU; ProfitMetrics revenue + GP via GAWA accounts 488590631 / 488618020; GMC products with offer_id).
+- BigQuery export now has 2 daily shards (`events_20260428`, `events_20260429`, 52,572 events total).
+- New "BigQuery: landing-page performance" section added to `/profit-ops` (`bqLandingPages` tRPC procedure). Pages auto-tagged SCALE_AD_SPEND / FIX_UX / SCALE_TRAFFIC / NEUTRAL with per-page click-ID capture diagnostic. Caveat copy adapts to actual BQ window depth.
+- Discovered ProfitMetrics CSVs are **not** manual exports — they're available via GAWA with the dedicated PM accounts. Future refreshes are automated.
+- Headline finding: Unassigned channel = 290 transactions / $134k revenue / 30d in PM data (largest single channel by both metrics, ~40% of monthly web orders).
+
+**2026-04-29**
+- Profit Ops dashboard shipped (route `/profit-ops`) with 7 waste/anomaly analyses.
+- ProfitMetrics Conversion Booster V2 deployed by Pat (GTM v86 live).
+- BigQuery cross-section added to Profit Ops (5 procedures: bqStatus, bqClickIdCapture, bqChannelAttribution, bqFunnelByChannel, bqSessionCapture).
 
 ---
 

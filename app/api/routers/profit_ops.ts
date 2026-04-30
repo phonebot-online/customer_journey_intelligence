@@ -848,6 +848,18 @@ export const profitOpsRouter = router({
         return { ...r, tag, reason };
       });
 
+      // Pull window stats so the caveat reflects how much data has actually landed
+      const windowRow = await bqQuery<{ days: number; earliest: string; latest: string }>(`
+        SELECT
+          COUNT(DISTINCT event_date) AS days,
+          MIN(event_date) AS earliest,
+          MAX(event_date) AS latest
+        FROM \`bigquery-api-494711.analytics_284223207.vw_events_flat\`
+      `);
+      const days = Number(windowRow[0]?.days || 0);
+      const earliest = windowRow[0]?.earliest || '?';
+      const latest = windowRow[0]?.latest || '?';
+
       return {
         rows: categorised,
         summary: {
@@ -861,8 +873,11 @@ export const profitOpsRouter = router({
         },
         paidOnly,
         minSessions,
+        windowDays: days,
+        windowEarliest: earliest,
+        windowLatest: latest,
         caveats: [
-          'BigQuery GA4 export currently has 1 day of data (events_20260428). CVR and revenue figures are directional, not strategic — wait for 7+ days for confident decisions.',
+          `BigQuery GA4 export window: ${days} day${days === 1 ? '' : 's'} (${earliest} → ${latest}). CVR and revenue are ${days < 7 ? 'directional, not strategic — wait for 7+ days for confident decisions' : 'usable for trend reads, but still light for tail-end pages'}.`,
           'click_id_capture_pct is the % of paid sessions on this landing page that retained a click ID. Below 80% on a paid page suggests a GTM tag firing issue specific to that template.',
           'Categorisation uses session-count median as the high/low-traffic split. Once 14d of data is available the tier boundaries should be re-set against a longer baseline.',
         ],

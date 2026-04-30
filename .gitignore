@@ -40,3 +40,11 @@ Desktop.ini
 # Logs
 *.log
 /tmp/
+
+# Diagnostic outputs (regenerated from running scripts)
+outputs/
+scripts/gclid_trace/outputs/
+
+# Per-tool node_modules under scripts/
+scripts/*/node_modules/
+scripts/*/package-lock.json

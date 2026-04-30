@@ -1,0 +1,13 @@
+{
+  "name": "gclid-trace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "trace:server": "tsx trace.ts",
+    "trace:client": "tsx trace_client.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "tsx": "^4.19.0"
+  }
+}

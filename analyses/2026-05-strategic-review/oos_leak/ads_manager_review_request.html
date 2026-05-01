@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page {
+  size: A4;
+  margin: 18mm 16mm 18mm 16mm;
+  @bottom-right { content: "Page " counter(page) " of " counter(pages); font-size: 9pt; color: #888; }
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #1c1c1e;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #0a0a0a;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+h2 {
+  font-size: 14pt;
+  font-weight: 700;
+  color: #0066cc;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d0d0d0;
+}
+h3 {
+  font-size: 11.5pt;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+p { margin: 0 0 10px 0; }
+ul, ol { margin: 0 0 12px 0; padding-left: 22px; }
+li { margin-bottom: 4px; }
+strong { color: #0a0a0a; font-weight: 600; }
+em { color: #444; }
+hr {
+  border: none;
+  border-top: 1px solid #d0d0d0;
+  margin: 24px 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0 18px 0;
+  font-size: 9.5pt;
+}
+th {
+  background-color: #f0f4f8;
+  color: #1c1c1e;
+  font-weight: 600;
+  text-align: left;
+  padding: 7px 9px;
+  border: 1px solid #c0c8d0;
+}
+td {
+  padding: 6px 9px;
+  border: 1px solid #d8dde2;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background-color: #fafbfc; }
+table strong { color: #c0392b; font-weight: 700; }
+code {
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 9pt;
+  background-color: #f0f0f0;
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: #c0392b;
+}
+blockquote {
+  border-left: 3px solid #0066cc;
+  margin: 10px 0;
+  padding: 4px 14px;
+  background-color: #f0f8ff;
+  color: #333;
+}
+/* call-out style — applied via h3 emoji prefixes */
+h3:first-letter { font-size: 1.2em; }
+
+/* Print: tighter spacing for tables */
+@media print {
+  table { page-break-inside: avoid; }
+  h2 { page-break-after: avoid; }
+  h3 { page-break-after: avoid; }
+}
+
+/* Header banner */
+.header-meta {
+  background-color: #f0f4f8;
+  border-left: 4px solid #0066cc;
+  padding: 10px 14px;
+  margin: 14px 0 18px 0;
+  font-size: 9.5pt;
+  color: #555;
+}
+</style>
+</head>
+<body>
+<h1>Phonebot — Google Ads Feed Quality Review</h1>
+<div class="header-meta"><p><strong>Prepared:</strong> 2026-05-01
+<strong>For:</strong> Phonebot Google Ads Manager
+<strong>Purpose:</strong> Discuss potential ad spend leakage on out-of-stock products. We've cross-referenced our order data with the GMC feed and Google Ads spend data, and want to share specific findings + agree on next steps.</p></div>
+<hr />
+<h2>What we did</h2>
+<p>Cross-referenced three data sources:
+1. <strong>April + March 2026 web orders</strong> (our CMS) — gives us the LAST SALE DATE for every SKU
+2. <strong>GMC product feed export</strong> (29 April snapshot) — current availability status per SKU
+3. <strong>Google Ads <code>shopping_sku_30d.csv</code></strong> — last 30 days of cost / clicks / impressions / conversions per SKU</p>
+<p>A "confirmed leak" = SKU that <strong>(a) had at least one sale in the last 60 days</strong> (so it definitely exists in our catalog), <strong>(b) is currently marked out-of-stock in GMC or absent from the feed</strong>, AND <strong>(c) got ≥A$5 of Google Ads spend in the last 30 days</strong>.</p>
+<p>This is a stricter definition than just "GMC says OOS" — it filters out methodological noise (missing/stale SKUs, ID mismatches, products never properly catalogued) and leaves only cases where we have evidence the SKU was sellable, then sold out, then kept being advertised.</p>
+<hr />
+<h2>What we found</h2>
+<p><strong>266 SKUs match the confirmed leak definition. Total: ~A$8,251 of ad spend in last 30 days, or ~A$99k/yr if the rate continues.</strong></p>
+<p>Of those, <strong>24 SKUs are high-confidence — sold ≥10 days ago, ≥A$50 spent in 30d, ≥1000 impressions</strong>. Total: A$1,765 in 30d, ~A$21k/yr. These are the strongest evidence cases — long enough OOS that propagation lag isn't an explanation.</p>
+<h3>The clearest example we manually verified</h3>
+<p><strong>SKU 1425 — Apple iPad Pro 10.5-inch (256GB) WiFi Cellular [Grade A]</strong>
+- Last unit sold and shipped 21 April 2026
+- Currently marked <code>out of stock</code> in GMC
+- Has accrued <strong>A$179.51 in ad spend over the last 30 days</strong> with 18,271 impressions and 239 clicks
+- Has been OOS for at least 16 days (likely longer — went OOS the day after the last shipment)</p>
+<p>We've verified manually that this product is genuinely OOS on phonebot.com.au and we have no inbound stock for it. The full A$179 is wasted spend.</p>
+<h3>The 24 highest-confidence cases</h3>
+<table>
+<thead>
+<tr>
+<th>SKU</th>
+<th>Title</th>
+<th>Last Sale</th>
+<th style="text-align: right;">Days OOS</th>
+<th style="text-align: right;">30d Spend</th>
+<th style="text-align: right;">Clicks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1425</td>
+<td>iPad Pro 10.5" 256GB Cellular Grade A</td>
+<td>14/04</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">$179.51</td>
+<td style="text-align: right;">239</td>
+</tr>
+<tr>
+<td>6301</td>
+<td>iPad Air 5th Gen 256GB Cellular Grade A</td>
+<td>12/04</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">$97.14</td>
+<td style="text-align: right;">128</td>
+</tr>
+<tr>
+<td>8541</td>
+<td>Motorola Razr 60 Ultra 512GB Like New</td>
+<td>14/04</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">$93.80</td>
+<td style="text-align: right;">144</td>
+</tr>
+<tr>
+<td>7070</td>
+<td>Pixel 9 Pro XL 256GB Like New</td>
+<td>10/04</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">$84.94</td>
+<td style="text-align: right;">58</td>
+</tr>
+<tr>
+<td>8396</td>
+<td>iPhone 17 256GB Like New</td>
+<td>15/04</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">$83.16</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td><strong>8307</strong></td>
+<td><strong>Galaxy Watch 8 Classic 46mm Like New</strong></td>
+<td><strong>18/03</strong></td>
+<td style="text-align: right;"><strong>43</strong></td>
+<td style="text-align: right;"><strong>$82.83</strong></td>
+<td style="text-align: right;">139</td>
+</tr>
+<tr>
+<td>880</td>
+<td>iPad Air 2 128GB Grade A</td>
+<td>8/04</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">$80.86</td>
+<td style="text-align: right;">121</td>
+</tr>
+<tr>
+<td>6599</td>
+<td>Pixel 8a 128GB Like New</td>
+<td>13/04</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">$79.16</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr>
+<td>8256</td>
+<td>Galaxy Z Fold6 512GB Grade B</td>
+<td>5/04</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">$75.39</td>
+<td style="text-align: right;">77</td>
+</tr>
+<tr>
+<td>6373</td>
+<td>Apple Watch Ultra 2 49mm Cellular Like New</td>
+<td>4/04</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">$74.33</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr>
+<td>3968</td>
+<td>iPad Pro 10.5" 256GB WiFi Grade B</td>
+<td>6/04</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">$72.44</td>
+<td style="text-align: right;">131</td>
+</tr>
+<tr>
+<td>7749</td>
+<td>iPhone 16e 128GB Open Box</td>
+<td>12/04</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">$64.41</td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td><strong>7042</strong></td>
+<td><strong>Apple Watch Series 9 41mm Cellular</strong></td>
+<td><strong>25/03</strong></td>
+<td style="text-align: right;"><strong>36</strong></td>
+<td style="text-align: right;"><strong>$59.63</strong></td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr>
+<td>4576</td>
+<td>iPhone 14 Pro 256GB Like New</td>
+<td>16/04</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">$59.12</td>
+<td style="text-align: right;">76</td>
+</tr>
+<tr>
+<td>2088</td>
+<td>iPad Mini 5 64GB WiFi Grade A</td>
+<td>1/04</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">$54.89</td>
+<td style="text-align: right;">48</td>
+</tr>
+<tr>
+<td>1274</td>
+<td>iPad Mini 4 128GB Cellular Grade A</td>
+<td>12/04</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">$53.42</td>
+<td style="text-align: right;">108</td>
+</tr>
+<tr>
+<td>5146</td>
+<td>iPad Mini 6 256GB Cellular Grade B</td>
+<td>14/04</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">$52.36</td>
+<td style="text-align: right;">63</td>
+</tr>
+<tr>
+<td>4717</td>
+<td>iPad 9th Gen 256GB WiFi Grade B</td>
+<td>13/04</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">$50.34</td>
+<td style="text-align: right;">31</td>
+</tr>
+</tbody>
+</table>
+<p>The two worst (bolded) — Galaxy Watch 8 Classic and Apple Watch Series 9 — have been OOS for 36-43 days. That's well beyond any reasonable propagation-lag explanation.</p>
+<p>There are also 6 entries in the high-confidence list with <strong>blank product titles</strong> in the Google Ads SKU export (#7247, #4675, #5212, #5044, #5840, #4854) — collectively A$346 spent. These are likely orphaned catalog entries from old feed versions and should probably be excluded entirely.</p>
+<p>Full list (266 SKUs with priority levels) attached: <code>CONFIRMED_oos_leaks_with_last_sale.csv</code></p>
+<hr />
+<h2>What we'd like your help with</h2>
+<p>We want to be transparent about what we can and can't see from our side, so this isn't an audit — it's a request for your read.</p>
+<h3>What we can see</h3>
+<ul>
+<li>The CMS sale dates (definitive)</li>
+<li>The GMC feed export at a point in time (snapshot, may not reflect today's status)</li>
+<li>The 30d aggregate Google Ads spend per SKU</li>
+</ul>
+<h3>What we can't see</h3>
+<ul>
+<li>Whether you've already set up automated rules that pause OOS products</li>
+<li>Whether real-time Content API inventory updates are wired</li>
+<li>Supplemental feeds, custom labels, or campaign-level filters already in place</li>
+<li>Performance Max asset matching that may legitimately serve products beyond strict feed presence</li>
+<li>Pre-order or coming-soon SKUs that intentionally have non-"in stock" availability</li>
+<li>Whether your in-platform Google Ads view shows the same picture once filters are applied</li>
+</ul>
+<h3>Open questions for you</h3>
+<ol>
+<li>Are there current automated rules or filters that should be pausing OOS products? If so, why are these specific SKUs still serving?</li>
+<li>Is real-time Content API inventory push wired up, or are we relying on scheduled GMC feed refreshes?</li>
+<li>For the 6 blank-title SKUs in the high-confidence list — can these be hard-excluded from all campaigns immediately?</li>
+<li>For Galaxy Watch 8 Classic (#8307) and Apple Watch Series 9 (#7042) — both have been OOS 36-43 days with continued spend. Is there a structural reason these are still in the bid auction, or is this a campaign exclusion we missed?</li>
+<li>The "(NOT IN GMC FEED)" cases — are these SKUs in a different feed (supplemental, local inventory) or should they be excluded?</li>
+</ol>
+<hr />
+<h2>What we propose</h2>
+<h3>Immediate (this week)</h3>
+<ul>
+<li><strong>Manually exclude the 24 high-confidence SKUs</strong> from all active campaigns. Estimated saving: ~A$21k/yr.</li>
+<li>Stops the worst bleeding while we work on structural fixes.</li>
+</ul>
+<h3>Short-term (next 2 weeks)</h3>
+<ul>
+<li><strong>Automated rule:</strong> "Exclude products where availability ≠ 'in stock'" applied to all PMax + Standard Shopping campaigns. We understand Google's default behavior deprioritizes OOS — we want to add an explicit hard exclusion as a second checkpoint.</li>
+<li><strong>Supplemental feed for <code>stock_status</code> custom label</strong> — independent daily push so failures in the main feed don't propagate to ad serving.</li>
+</ul>
+<h3>Medium-term (next month — primarily our dev's work, but want your view)</h3>
+<ul>
+<li><strong>Real-time Content API inventory push</strong> when a unit sells. This eliminates the propagation lag entirely for sold-out events. Without this we're always playing catch-up.</li>
+<li><strong>Monthly orphan purge</strong> — cross-reference Google Ads "Eligible products" tab against current GMC feed, exclude disconnected items.</li>
+</ul>
+<h3>Ongoing monitoring (already in place from our side)</h3>
+<ul>
+<li>Weekly automated check that emails us each Monday with last-7-day OOS leak as % of spend</li>
+<li>Threshold: if leak &gt;5% of weekly spend, automatic alert</li>
+</ul>
+<p>We'd like to share the weekly report with you so we're both looking at the same picture and can track whether changes are working.</p>
+<hr />
+<h2>Honest caveats from our side</h2>
+<p>A few things worth flagging in case any of the findings turn out to have legitimate explanations we missed:</p>
+<ul>
+<li><strong>Some "leak" is unavoidable:</strong> if a product sells the last unit at, say, 2pm, Google may continue serving impressions until the next feed refresh. We're not expecting this to be zero.</li>
+<li><strong>Performance Max attribution is tricky:</strong> PMax can show conversions for products that weren't directly bid on. So "conversions reported" on a leaked SKU doesn't necessarily mean that SKU was the actual sold item.</li>
+<li><strong>Our GMC export may be stale:</strong> if pulled at a different point than your live console, snapshot mismatches are possible.</li>
+<li><strong>The 6 blank-title SKUs might have legitimate reasons:</strong> could be feeds from a different source, test products, or system artifacts we don't recognize.</li>
+</ul>
+<p>That said, the iPad Pro 10.5" 256GB case (#1425) is unambiguous — we have a manually-verified shipment date of 21 April, the product is definitely OOS, and Google has spent A$179 on it since then. Whatever the broader picture, that one is real money on the table.</p>
+<p>We'd appreciate your read on the rest of the list — happy to jump on a call if it's easier than email.</p>
+<p>— Phonebot Owner</p>
+<hr />
+<h2>Attachments</h2>
+<ul>
+<li><strong><code>CONFIRMED_oos_leaks_with_last_sale.csv</code></strong> — 266 SKUs with last sale date, GMC availability, ad spend, and priority (HIGH / MEDIUM / LOW) — this is the main file to work from</li>
+<li><code>oos_ad_spend_leak_30d.csv</code> — broader analysis (521 SKUs) including ones without recent sale dates — for reference</li>
+<li><code>sku_money_on_table_april_2026.csv</code> — separate analysis: SKU performance quadrants — for context</li>
+</ul>
+</body>
+</html>

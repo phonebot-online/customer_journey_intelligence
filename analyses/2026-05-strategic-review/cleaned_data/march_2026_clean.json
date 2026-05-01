@@ -1,0 +1,34 @@
+{
+  "period": "2026-03",
+  "web": {
+    "orders": 943,
+    "gross_rev": 505922.0,
+    "gross_gp": 134519.0,
+    "ref_orders": 36,
+    "ref_rev": 23959.0,
+    "ref_gp_imputed": 6370.43,
+    "net_rev": 481963.0,
+    "net_gp": 128148.57
+  },
+  "store": {
+    "orders": 313,
+    "gross_rev": 174755.0,
+    "gross_gp_after_imputation": 48884.9,
+    "walkin_imputed_count": 67,
+    "ref_rev": 4217.0,
+    "ref_gp_imputed": 1179.64,
+    "net_rev": 170538.0,
+    "net_gp": 47705.26
+  },
+  "total": {
+    "net_rev": 652501.0,
+    "net_gp": 175853.83,
+    "gp_pct": 26.95
+  },
+  "marketing_spend": {
+    "google": 28037.1,
+    "meta": 10559.64,
+    "bing": 2378.09,
+    "total": 40974.83
+  }
+}

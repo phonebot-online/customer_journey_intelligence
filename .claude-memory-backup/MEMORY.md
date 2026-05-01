@@ -1,0 +1,17 @@
+- [Phonebot business context](project_phonebot.md) — AU phone retailer, $500k+ AUD ad spend/yr, optimizing for net profit not ROAS
+- [GA4 → BigQuery export](project_ga4_bq.md) — set up 2026-04-28, project `bigquery-api-494711`, dataset `analytics_284223207`, flat views in dashboard_connection/
+- [GA4 click-ID retention is by-design](project_ga4_attribution.md) — fbclid/gclid only land on session_start, not on purchase events; use vw_sessions for attribution, NOT vw_events_flat per-event lookups
+- [Cross-device Claude usage](user_workflow.md) — user runs Claude across multiple iMacs/PCs on the same project; always commit + push before session ends
+- [Profit Ops dashboard feature](project_profit_ops.md) — new `/profit-ops` page in dashboard with 7 live analyses; wired 2026-04-29
+- [Email-based alerting via Brevo](project_alerting.md) — anomaly worker + diagnostic AI worker use Brevo transactional API; user prefers email over Slack
+- [Supermetrics MCP for live data fetches](reference_supermetrics.md) — Google Ads ds_id=AW account 3900249467, GMC ds_id=GMC account 101150783
+- [BigQuery access via gcloud CLI](reference_bq_access.md) — install `gcloud` + `bq` per-machine so Claude can run BQ queries via Bash; avoids copy-paste
+- [ProfitMetrics Conversion Booster V2 deployed 2026-04-29](project_profitmetrics_v2_tag.md) — Pat published GTM Version 86 live; monitor Unassigned channel impact for 14d
+- [Phonebot's PPC agency does NOT charge % of ad spend](feedback_agency_fee.md) — fee structure not %-of-spend; don't write copy assuming misaligned-incentive narrative for them
+- [Always normalize Supermetrics CSV headers](feedback_csv_header_normalization.md) — rewrite display names to DuckDB schema names or columns silently NULL out
+- [Unassigned channel = 290 trans / $134k / 30d](project_unassigned_channel.md) — biggest channel in PM data; the value-prop of PM, not a bug to fix
+- ["Fraud" status is a risk rating, not confirmed fraud](feedback_order_status_fraud.md) — count Fraud/Fraud Review as revenue; only Returned & refunded should be netted out
+- [Walk-in cost defaults: 40% accessory / 50% repair / 60% parts-only](feedback_walkin_cost_defaults.md) — impute cost on store walk-ins where Cost Price = $0
+- [AUD/GBP FX is a structural tailwind in 2026](project_fx_tailwind.md) — +11% YoY = ~$25k/mo GP gift; always report YoY both headline AND FX-stripped
+- [AU staff costs down ~$14k/mo YoY](project_staff_cost_reduction.md) — cut 2 senior dispatch staff; OpEx below GP line; add to YoY operating-profit math
+- [Stock depth structurally constrained by UK auctioneer politics](project_supply_constraint.md) — auctioneers retail their own stock first; bigger bids don't always unlock inventory; UK expansion changes the supply game

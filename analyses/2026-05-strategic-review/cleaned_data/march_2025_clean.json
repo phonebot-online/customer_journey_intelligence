@@ -1,0 +1,29 @@
+{
+  "web": {
+    "orders": 1095,
+    "gross_rev": 593259.0,
+    "gross_gp": 176862.4,
+    "gp_pct": 29.81,
+    "ref_orders": 85,
+    "ref_rev": 32909.0,
+    "ref_gp": 9810.83,
+    "net_rev": 560350.0,
+    "net_gp": 167051.57
+  },
+  "store": {
+    "orders": 304,
+    "gross_rev": 162959.0,
+    "gross_gp": 41952.9,
+    "gp_pct": 25.74,
+    "ref_orders": 17,
+    "ref_rev": 12277.0,
+    "ref_gp": 3160.65,
+    "net_rev": 150682.0,
+    "net_gp": 38792.25
+  },
+  "total": {
+    "net_rev": 711032.0,
+    "net_gp": 205843.82,
+    "gp_pct": 28.95
+  }
+}

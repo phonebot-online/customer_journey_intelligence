@@ -1,0 +1,50 @@
+{
+  "period": "2026-04",
+  "rules_applied": {
+    "fraud_treatment": "web: keep only 221197/221195/221208; store: keep all fraud as revenue",
+    "walkin_cost_imputation": {
+      "accessory": 0.4,
+      "repair": 0.5,
+      "parts_only": 0.6,
+      "unclassified": 0.5
+    },
+    "refund_gp_imputation": "channel-specific cohort GP% applied to refund revenue"
+  },
+  "web": {
+    "orders_revenue_cohort": 714,
+    "gross_revenue": 384202.0,
+    "gross_gp": 106889.6,
+    "gp_pct": 27.82,
+    "refund_orders": 17,
+    "refund_revenue": 13910.0,
+    "refund_gp_imputed": 3869.93,
+    "net_revenue": 370292.0,
+    "net_gp": 103019.67
+  },
+  "store": {
+    "orders_revenue_cohort": 310,
+    "gross_revenue": 172016.0,
+    "gross_gp": 51926.5,
+    "gp_pct": 30.19,
+    "refund_orders": 6,
+    "refund_revenue": 2005.0,
+    "refund_gp_imputed": 605.25,
+    "net_revenue": 170011.0,
+    "net_gp": 51321.25
+  },
+  "total": {
+    "gross_revenue": 556218.0,
+    "gross_gp": 158816.1,
+    "refund_revenue": 15915.0,
+    "refund_gp_imputed": 4475.18,
+    "net_revenue": 540303.0,
+    "net_gp": 154340.92
+  },
+  "marketing_spend": {
+    "google_ads": 18889.77,
+    "facebook_ads": 6072.27,
+    "microsoft_ads": 1491.58,
+    "total": 26453.62,
+    "currency": "AUD"
+  }
+}

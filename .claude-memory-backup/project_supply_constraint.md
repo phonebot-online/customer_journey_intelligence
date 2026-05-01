@@ -14,8 +14,8 @@ Phonebot's procurement runs entirely through UK-based auction houses. Critical s
 
 **Strategic implications:**
 - AU growth has a hard supply ceiling that's not fixable with marketing spend.
-- UK expansion is more attractive than UAE on supply terms — by entering UK retail, Phonebot becomes the auctioneers' direct retail competitor, which forces a renegotiation OR pushes Phonebot upstream to refurbishers / network operators / business buybacks (cutting out auctioneers entirely).
-- UAE expansion is BETTER on supply terms than AU growth (UAE retail doesn't compete with UK auctioneer retail, so less skimming incentive) — but UAE has a smaller refurb-receptive market.
+- UK expansion has a specific structural advantage: by entering UK retail, Phonebot becomes the auctioneers' direct retail competitor, which forces renegotiation OR pushes Phonebot upstream to refurbishers / network operators / business buybacks (cutting out auctioneers entirely).
+- UAE is already an operational market (profitable Burjuman Centre mall store in Dubai). On supply terms, UAE retail doesn't compete with UK auctioneer retail so there's less skimming incentive than AU. Don't frame UAE as a "side bet" or future expansion — it's a live retail channel today.
 - When evaluating "should I scale AU inventory?" — the answer is partially gated by what the auctioneers will let you have, not what you can pay for.
 
 **How to apply:**

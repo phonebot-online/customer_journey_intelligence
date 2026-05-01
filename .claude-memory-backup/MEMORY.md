@@ -15,4 +15,5 @@
 - [AUD/GBP FX is a structural tailwind in 2026](project_fx_tailwind.md) — +11% YoY = ~$25k/mo GP gift; always report YoY both headline AND FX-stripped
 - [AU staff costs down ~$14k/mo YoY](project_staff_cost_reduction.md) — cut 2 senior dispatch staff; OpEx below GP line; add to YoY operating-profit math
 - [Stock depth structurally constrained by UK auctioneer politics](project_supply_constraint.md) — auctioneers retail their own stock first; bigger bids don't always unlock inventory; UK expansion changes the supply game
-- [Profitable Dubai mall store at Burjuman Centre](project_uae_burjuman.md) — UAE is a LIVE retail channel, not a side bet; active FB walk-in campaign on AU master ad account; key gap is store-side walk-in attribution
+- [Profitable Dubai mall store at Burjuman Centre](project_uae_burjuman.md) — UAE is a LIVE retail channel, not a side bet; active FB walk-in campaign on AU master ad account; baseline metrics + active 14-day promo-code attribution + Search-only placement experiment kicked off 2026-05-02
+- [Meta couples Marketplace placement with Feed for Lead/Messenger campaigns](feedback_meta_placement_coupling.md) — for OUTCOME_LEADS campaigns, Marketplace can't run standalone; workarounds: Search-only, cost-cap, or Catalog Ads

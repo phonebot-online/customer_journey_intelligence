@@ -64,6 +64,10 @@ A multi-day analysis comparing April 2025 vs March 2026 vs April 2026 to answer:
 
 - **Weekly cron routine** runs every Monday 9am AEST (`0 23 * * 0` UTC). Pulls last-7-day spend across all 3 platforms via Supermetrics, classifies supply recovery state vs March/April baselines, runs OOS leak detection (>5% of weekly spend = ELEVATED), drafts a weekly digest in user's Gmail Drafts folder + writes markdown backup. Routine ID: `trig_015zhzCXXmSZfdhCaHYPa3N6`. Manage at https://claude.ai/code/routines/trig_015zhzCXXmSZfdhCaHYPa3N6. **Should be manually disabled around 30 June 2026** when EOFY tracking window ends (no API auto-stop).
 
+## Active experiments
+
+- **UAE Burjuman walk-in attribution + placement test (kicked off 2026-05-02).** Campaign `UAE - Burjuman Store - Walk-in Traffic` on Meta `act_14359173`. Two-part 14-day experiment: (a) print a unique promo code on the ad creative + chat agent reply, train Burjuman counter staff to log redemptions — this is the actual attribution mechanism (bypasses Meta Pixel/Store Traffic/offline conversions); (b) duplicate the existing Feed-dominated ad set into a Search-only ad set with a different promo code, A$10/day each. After 14 days compare redemptions × store GP per dollar. **Decision rule:** Search-only wins → kill original, scale Search; Feed wins → revert and try creative/audience angles instead; neither produces redemptions → channel is dead, stop spending. **Important platform constraint:** for `OUTCOME_LEADS`/Messenger campaigns, Marketplace placement is bundled with Feed by Meta — Marketplace cannot run standalone. That's why the test is Search-only, not Marketplace-only. Full baseline metrics + decision rules in [.claude-memory-backup/project_uae_burjuman.md](.claude-memory-backup/project_uae_burjuman.md). Meta placement-coupling constraint in [.claude-memory-backup/feedback_meta_placement_coupling.md](.claude-memory-backup/feedback_meta_placement_coupling.md).
+
 ## User profile and collaboration style
 
 - User runs Claude across multiple iMacs/PCs on the same project. **Always commit + push before session ends.** (See `.claude-memory-backup/user_workflow.md`)

@@ -6,6 +6,47 @@
 
 ---
 
+> ## ⚠️ ADDENDUM (2026-05-01) — Two material corrections to the headline numbers
+>
+> Re-checks since the doc was locked on 2026-04-25 invalidated two of the larger figures used in the executive summary and the opportunity-sizing. The conclusions below should be read with these corrections in mind.
+>
+> ### Correction 1 — FX tailwind was overstated
+>
+> The "+11% YoY AUD/GBP" figure used in this doc anchored on April-2025-spot vs April-2026-spot rates (xe.com 1Y window). That ignores the ~30-day procurement-to-sale lag — March 2026 sales had COGS locked in at **Feb 2026** GBP rates, not April 2026 rates. RBA monthly data (F11 historical) shows:
+>
+> - Feb 2025 → Feb 2026: AUD strengthened **+6.48%** (drives March 2026 sales)
+> - Mar 2025 → Mar 2026: AUD strengthened **+6.55%** (drives April 2026 sales)
+>
+> The procurement-corrected FX gift on March 2026 sales is **~A$15-19k/mo, not A$25-30k/mo**. With the corrected FX gift, the YoY underlying GP decline is closer to **-A$50k (March)** than the -A$56-61k previously stated, and the "FX-stripped underlying business roughly flat YoY" verdict in this doc is too optimistic — there is a real underlying decline that cost cuts absorb but don't fully offset.
+>
+> *Source:* `.claude-memory-backup/project_fx_tailwind.md` (memory record) and CLAUDE.md (rewritten 2026-04-30).
+>
+> ### Correction 2 — OOS leak was overstated by 73%
+>
+> The "~A$8,250/30d ≈ A$99k/yr OOS leak" figure cited as a major opportunity here was overstated. The original analysis took 30-day cumulative spend on SKUs that were *currently* OOS at analysis time, but most of that spend was during the in-stock (pre-OOS) period — i.e. legitimate, profitable advertising. Verified via Jelena (Google Ads agent), who showed a representative SKU (1425, iPad Pro 10.5 Grade A) where AW correctly auto-disabled the listing once GMC marked it OOS.
+>
+> Re-analysed using daily SKU spend over 60d, splitting each SKU's spend into pre- vs post-`last_sale_date`:
+>
+> - **Pre-OOS legitimate spend:** A$15,466/30d (worked as designed)
+> - **Post-OOS candidate leak:** A$2,205/30d ≈ **A$26.8k/yr** (central estimate)
+> - **Conservative bound** (>=7d sync lag and >=3 active post-OOS days): **A$21.5k/yr**
+>
+> Real leak is concentrated in **36 SKUs with 22+ day sync delay** (47% of leak $) — those look like genuine broken-sync cases worth investigating. The other ~230 SKUs in the original list are either pre-OOS spend or normal sub-7-day sync lag.
+>
+> Action priority for OOS-leak fixes is **demoted from P0 to P2** as a result.
+>
+> *Source:* `analyses/2026-05-strategic-review/oos_leak/REVISION_NOTE.md`, `REVISED_post_oos_leak_analysis.csv`.
+>
+> ### Net effect on this doc's strategic conclusions
+>
+> - The "easy money on the table" narrative shrinks. Of the three tailwinds emphasised in this doc — OOS leak fix opportunity (~A$99k/yr), FX gift (~A$25-30k/mo), and cost cuts (~A$18k/mo) — only the cost cuts hold at the originally-stated magnitude. OOS leak fix opportunity is roughly **A$22k/yr**, FX gift is **~A$15-19k/mo**.
+> - **Marketing scale-back was not strategic.** This doc framed it as "scaling back worked AS DEFENSE." The corrected reading: the algorithm pulled spend back automatically as supply constraints + organic-ranking loss reduced profitable auction opportunities. Cost cuts (staff + algorithm-driven marketing pullback) tracked the shrinkage rather than defended against it.
+> - **FX-adjusted operating profit YoY March is approximately -A$22k/mo (-14.5%)**, not "roughly flat." The headline-flat figure was masking real underlying decline through FX gift + staff savings.
+>
+> The decisions, opportunities, and recommendations below are still mostly directionally valid, but the *magnitude* of the upside they imply is smaller than this doc originally suggested. Re-read accordingly.
+
+---
+
 ## 1. Executive truth
 
 The "FB account profitable, not broken" framing in prior memory was correct *at the FB account-level dashboards*. But triangulating with CMS, GA4 last-click, and ProfitMetrics commercial truth reveals a substantially different picture:
